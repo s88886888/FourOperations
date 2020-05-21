@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp2
 {
-    public  class BasicData : IBasicData
+    public abstract  class BasicData : IBasicData
     {
         public int BasicDataA { get; set; } 
         public int BasicDataB { get; set; }
@@ -10,13 +10,13 @@
 
         public readonly string[] ArrayTheme = new string[10];//题目集合
         public readonly string[] ArrayAnswer = new string[10];//答案集合
-        public void AddThemeCount()
-        {
 
-        }
-        public  void SubThemeCount()
-        {
+        public abstract void AddThemeCount();
 
-        }
+        public abstract void SubThemeCount();
+
+        public abstract void AddTheme();
+
+        public abstract void SubTheme();
     }
 }

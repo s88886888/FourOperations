@@ -1,4 +1,4 @@
-﻿using FourOperationsDemo.BaseDate;
+﻿
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Text;
 
 namespace ConsoleApp2.Themeup
 {
-    public class ThreeTheme :IBasicTheme
+    public class ThreeTheme
     {
         readonly Random random = new Random();
 
@@ -15,6 +15,8 @@ namespace ConsoleApp2.Themeup
         public string Divisions { get; private set; }
         public double DM { get; set; }
         public int C { get; set; }
+        public int BasicDataA { get; }
+        public int BasicDataB { get; }
 
         readonly List<string> list1 = new List<string> { "+", "-", "×", "÷" };
 
@@ -120,9 +122,5 @@ namespace ConsoleApp2.Themeup
 
             return Divisions + Multiplys;
         }
-
-
-
-
     }
 }
