@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.exe
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.deps.json
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.runtimeconfig.json
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.dll
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.pdb
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperations.dll
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperations.pdb
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csproj.CopyComplete
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.dll
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.pdb
+C:\Users\Administrator\Desktop\xin仓库\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.genruntimeconfig.cache

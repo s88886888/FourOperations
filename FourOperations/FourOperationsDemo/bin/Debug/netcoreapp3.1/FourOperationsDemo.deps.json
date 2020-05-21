@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "FourOperationsDemo/1.0.0": {
+        "dependencies": {
+          "FourOperations": "1.0.0"
+        },
+        "runtime": {
+          "FourOperationsDemo.dll": {}
+        }
+      },
+      "FourOperations/1.0.0": {
+        "runtime": {
+          "FourOperations.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FourOperationsDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FourOperations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
