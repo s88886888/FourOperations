@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "cKtolG8vsdAwbMXD/U7IHavPWfILbEjFFw1KR9VnKMUhe5OIYV/v0cTrrQORCLsP5uKaLl9EjCowrrndxYqDbg==",
+  "dgSpecHash": "Blx8y2C9SnDB95sjdAtdx/+BtzQdXH9FTugoBPz/fiXJufjbpxHn/eUrryXW35IHZDdQOJGrKTIcbgvkoXxMdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\linso\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
