@@ -1,12 +1,12 @@
 ﻿using ConsoleApp2.Base;
-using FourOperationsDemo.BaseDate;
+
 using System;
 using System.Collections.Generic;
 using System.Data;
 
 namespace ConsoleApp2.Themeup
 {
-    public class FourTheme :  IBasicTheme
+    public class FourTheme:BasicData
     {
         readonly Random random = new Random();
 
@@ -42,7 +42,7 @@ namespace ConsoleApp2.Themeup
             E = random.Next(-200, 200);
             D = random.Next(-200, 200);
         }
-        public string AddTheme()
+        public override void AddTheme()
         {
             try
             {
@@ -54,17 +54,14 @@ namespace ConsoleApp2.Themeup
                 {
                     Add = BasicDataA + "+" + BasicDataB;
                     DM = BasicDataA + BasicDataB;
-                    return Add;
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return Add = null;
-
         }
-        public string SubTheme()
+        public override void SubTheme()
         {
             try
             {
@@ -86,19 +83,12 @@ namespace ConsoleApp2.Themeup
                         Sub = BasicDataA + "-" + BasicDataB;
                     }
                     DM = BasicDataA + BasicDataB;
-                    return Sub;
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return Sub = null;
-
-
-
-
-
         }
 
         public string Multiply()
@@ -185,6 +175,16 @@ namespace ConsoleApp2.Themeup
             }
 
             return Divisions + Multiplys;
+        }
+
+        public override void AddThemeCount()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SubThemeCount()
+        {
+            throw new NotImplementedException();
         }
     }
 }

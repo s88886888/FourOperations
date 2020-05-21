@@ -1,9 +1,9 @@
-﻿using FourOperationsDemo.BaseDate;
+﻿
 using System;
 
 namespace ConsoleApp2.Themeup
 {
-    public class TwoTheme :IBasicTheme
+    public class TwoTheme 
     {
         readonly Random random = new Random();
 
@@ -12,6 +12,9 @@ namespace ConsoleApp2.Themeup
         public int DM { get; private set; }
         public string Add { get; private set; }
         public string Sub { get; private set; }
+        public int BasicDataA { get; set; }
+        public int BasicDataB { get; set; }
+
         /// <summary>
         /// 二年级出题范围100以内加减
         /// </summary>
