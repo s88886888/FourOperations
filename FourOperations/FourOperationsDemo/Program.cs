@@ -67,7 +67,7 @@ namespace FourOperations
             //oneTheme1.SubThemeCount();
             //oneTheme1.AddOutPutTxt();
             OneTheme oneTheme = new OneTheme();
-            oneTheme.AddOutPutTxt();
+            oneTheme.AddThemeCount();
         }
     }
 }
