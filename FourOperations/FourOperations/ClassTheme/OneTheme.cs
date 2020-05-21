@@ -12,7 +12,7 @@ namespace ConsoleApp2.Base
         /// </summary>
         public OneTheme()
         {
-            Randomnum();
+
         }
         /// <summary>
         /// 随机生成两位数0-20的范围
