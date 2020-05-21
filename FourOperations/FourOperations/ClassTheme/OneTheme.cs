@@ -6,15 +6,7 @@ namespace ConsoleApp2.Base
 {
     public class OneTheme : IBasicTheme
     {
-        readonly Random random = new Random();
-
-        
-        public string Theme { get; set; }//题目
-        public int Answer { get; set; }//答案
-        public string FFF { get; private set; } = "=";
-
-        public readonly string[] ArrayTheme = new string[10];//题目集合
-        public readonly string[] ArrayAnswer = new string[10];//答案集合
+        private readonly Random random = new Random();
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
@@ -34,7 +26,7 @@ namespace ConsoleApp2.Base
         /// 调用此方法，生成一道加法题目
         /// </summary>
         /// <returns></returns>
-        public string AddTheme()
+        public void AddTheme()
         {
             try
             {
@@ -46,20 +38,18 @@ namespace ConsoleApp2.Base
                 {
                     Theme = BasicDataA + "+" + BasicDataB;
                     Answer = BasicDataA + BasicDataB;
-                    return Theme;
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return Theme = null;
         }
         /// <summary>
         /// 调用此方法，生成一道减法题目
         /// </summary>
         /// <returns></returns>
-        public string SubTheme()
+        public void SubTheme()
         {
             try
             {
@@ -80,15 +70,12 @@ namespace ConsoleApp2.Base
                         BasicDataA -= BasicDataB;
                         Theme = BasicDataA + "-" + BasicDataB;
                     }
-                    Answer = BasicDataA - BasicDataB;
-                    return Theme;
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return Theme = null;
         }
         /// <summary>
         ///      ///调用此方法一次出10题加法题目
