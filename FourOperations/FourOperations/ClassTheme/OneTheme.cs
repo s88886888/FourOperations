@@ -157,9 +157,6 @@ namespace ConsoleApp2.Base
             oneTheme.AddThemeCount();
             OutPutTxt(result, oneTheme);
         }
-
-
-
         /// <summary>
         /// 输出减法文件
         /// </summary>
