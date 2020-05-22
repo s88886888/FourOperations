@@ -30,3 +30,18 @@ C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOpe
 C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.dll
 C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.pdb
 C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.exe
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.deps.json
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.runtimeconfig.json
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.dll
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.pdb
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperations.dll
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperations.pdb
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csproj.CopyComplete
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.dll
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.pdb
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.genruntimeconfig.cache
