@@ -6,6 +6,7 @@ namespace ConsoleApp2.Base
 {
     public class OneTheme : BasicData
     {
+        public int Num { get; set; }
         private readonly Random random = new Random();
         /// <summary>
         /// 一年级出题范围：20以内加减
@@ -147,24 +148,22 @@ namespace ConsoleApp2.Base
 
 
         /// <summary>
-        /// 输出10题目 加法文件
+        /// 打印生成的10道题目Add
         /// </summary>
         public void AddOutPutTxt()
         {
             string result = @"D:\打印文件Add.txt";//保存文件路径
             OneTheme oneTheme = new OneTheme();
-            oneTheme.AddThemeCount();
             OutPutTxt(result, oneTheme);
             AddOutPutXml(oneTheme);
         }
         /// <summary>
-        /// 输出10题目 输出减法文件
+        /// 打印生成的10道题目Sub
         /// </summary>
         public void SubOutPutTxt()
         {
             string result = @"D:\打印文件Sub.txt";//保存文件路径
             OneTheme oneTheme = new OneTheme();
-            oneTheme.SubThemeCount();
             OutPutTxt(result, oneTheme);
             SubOutPutXml(oneTheme);
         }
@@ -178,9 +177,9 @@ namespace ConsoleApp2.Base
         {
             FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
             StreamWriter wr = new StreamWriter(fs);
-            for (int i = 0; i < ArrayTheme.Length; i++)
+            for (int i = 0; i < oneTheme.ArrayTheme.Length; i++)
             {
-                wr.WriteLine(oneTheme.ArrayTheme[i] + FFF + oneTheme.ArrayAnswer[i]);
+                wr.WriteLine(ArrayTheme[i] + FFF + ArrayAnswer[i]);
             }
             wr.Flush();
             fs.Close();
@@ -259,15 +258,14 @@ namespace ConsoleApp2.Base
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
                 writer.WriteStartElement("生成题目");
-                for (int i = 0; i < ArrayTheme.Length; i++)
+                for (int i = 0; i < oneTheme.ArrayTheme.Length; i++)
                 {
-                    writer.WriteElementString("题目", oneTheme.ArrayTheme[i]);
-                    writer.WriteElementString("答案", oneTheme.ArrayAnswer[i]);
+                    writer.WriteElementString("题目", ArrayTheme[i]);
+                    writer.WriteElementString("答案", ArrayAnswer[i]);
                 }
                 writer.WriteEndElement();
             }
             Console.WriteLine("xml同步写入成功");
         }
-
     }
 }

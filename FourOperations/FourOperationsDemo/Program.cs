@@ -65,7 +65,10 @@ namespace FourOperations
             //oneTheme1.AddThemeCount();
             //Console.WriteLine("---------------------------------------");
             //oneTheme1.SubThemeCount();
+            onetheme.AddThemeCount();
             onetheme.AddOutPutTxt();
+            onetheme.AddOutPutXml(onetheme);
+
         }
     }
 }
