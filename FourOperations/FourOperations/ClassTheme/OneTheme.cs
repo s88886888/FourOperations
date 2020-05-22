@@ -1,10 +1,12 @@
 ﻿using System;
 using System.IO;
+using System.Xml;
 
 namespace ConsoleApp2.Base
 {
     public class OneTheme : BasicData
     {
+        public int Num { get; set; }
         private readonly Random random = new Random();
         /// <summary>
         /// 一年级出题范围：20以内加减
@@ -16,7 +18,7 @@ namespace ConsoleApp2.Base
         /// <summary>
         /// 随机生成两位数0-20的范围
         /// </summary>
-        public void Randomnum()
+        public override void RandomNumber()
         {
             BasicDataA = random.Next(0, 20);
             BasicDataB = random.Next(0, 20);
@@ -29,7 +31,7 @@ namespace ConsoleApp2.Base
         {
             try
             {
-                Randomnum();
+                RandomNumber();
                 if (BasicDataA > 20 && BasicDataB > 20)
                 {
                     throw new Exception("A>20 并且 B>20");
@@ -51,7 +53,7 @@ namespace ConsoleApp2.Base
         /// <returns></returns>
         public override void SubTheme()
         {
-            Randomnum();
+            RandomNumber();
             try
             {
                 if (BasicDataA > 20 && BasicDataB > 20)
@@ -72,7 +74,7 @@ namespace ConsoleApp2.Base
                         BasicDataA -= BasicDataB;
                         Theme = BasicDataA + "-" + BasicDataB;
                         Answer = BasicDataA - BasicDataB;
-                    }           
+                    }
                 }
             }
             catch (Exception ex)
@@ -112,7 +114,7 @@ namespace ConsoleApp2.Base
         }
 
         /// <summary>
-        /// 用来装10道题目
+        /// 用来装10道题目Data
         /// </summary>
         /// <param name="Array1"></param>
         /// <param name="Array2"></param>
@@ -127,7 +129,7 @@ namespace ConsoleApp2.Base
         }
 
         /// <summary>
-        /// 输出10道题目和答案
+        /// 输出10道题目和答案Date
         /// </summary>
         /// <param name="Array1"></param>
         /// <param name="Array2"></param>
@@ -146,27 +148,24 @@ namespace ConsoleApp2.Base
 
 
         /// <summary>
-        /// 输出10题目 加法文件
+        /// 打印生成的10道题目Add
         /// </summary>
         public void AddOutPutTxt()
         {
             string result = @"D:\打印文件Add.txt";//保存文件路径
             OneTheme oneTheme = new OneTheme();
-            oneTheme.AddThemeCount();
             OutPutTxt(result, oneTheme);
+            AddOutPutXml(oneTheme);
         }
-
-
-
         /// <summary>
-        /// 输出减法文件
+        /// 打印生成的10道题目Sub
         /// </summary>
         public void SubOutPutTxt()
         {
             string result = @"D:\打印文件Sub.txt";//保存文件路径
             OneTheme oneTheme = new OneTheme();
-            oneTheme.SubThemeCount();
             OutPutTxt(result, oneTheme);
+            SubOutPutXml(oneTheme);
         }
 
         /// <summary>
@@ -178,12 +177,95 @@ namespace ConsoleApp2.Base
         {
             FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
             StreamWriter wr = new StreamWriter(fs);
-            for (int i = 0; i < ArrayTheme.Length; i++)
+            for (int i = 0; i < oneTheme.ArrayTheme.Length; i++)
             {
-                wr.WriteLine(oneTheme.ArrayTheme[i] + FFF + oneTheme.ArrayAnswer[i]);
+                wr.WriteLine(ArrayTheme[i] + FFF + ArrayAnswer[i]);
             }
             wr.Flush();
             fs.Close();
+        }
+
+
+        /// <summary>
+        /// 读取打印成txt的加法文件
+        /// </summary>
+        public void AddReaderTxt()
+        {
+            try
+            {
+                using (StreamReader sr = new StreamReader(@"D:\打印文件Add.txt"))
+                {
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        Console.WriteLine(line);
+                    }
+                }
+            }
+            catch
+            {
+                throw new Exception("没有这个文件");
+            }
+        }
+        /// <summary>
+        /// 读取打印成txt的减法文件
+        /// </summary>
+        public void SubReaderTxt()
+        {
+            try
+            {
+                using (StreamReader sr = new StreamReader(@"D:\打印文件Sub.txt"))
+                {
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        Console.WriteLine(line);
+                    }
+                }
+            }
+            catch
+            {
+                throw new Exception("没有这个文件");
+            }
+        }
+        /// <summary>
+        /// 同步Add打印xml
+        /// </summary>
+        /// <param name="oneTheme"></param>
+        public void AddOutPutXml(OneTheme oneTheme)
+        {
+            string fileName = "打印文件Add.xml";
+            OutPutXml(oneTheme, fileName);
+        }
+        /// <summary>
+        /// 同步Sub打印xml
+        /// </summary>
+        /// <param name="oneTheme"></param>
+        public void SubOutPutXml(OneTheme oneTheme)
+        {
+            string fileName = "打印文件Sub.xml";
+            OutPutXml(oneTheme, fileName);
+        }
+        /// <summary>
+        /// 打印Xml的数据
+        /// </summary>
+        /// <param name="oneTheme"></param>
+        /// <param name="fileName"></param>
+        private void OutPutXml(OneTheme oneTheme, string fileName)
+        {
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
+            {
+                writer.WriteStartElement("生成题目");
+                for (int i = 0; i < oneTheme.ArrayTheme.Length; i++)
+                {
+                    writer.WriteElementString("题目", ArrayTheme[i]);
+                    writer.WriteElementString("答案", ArrayAnswer[i]);
+                }
+                writer.WriteEndElement();
+            }
+            Console.WriteLine("xml同步写入成功");
         }
     }
 }
