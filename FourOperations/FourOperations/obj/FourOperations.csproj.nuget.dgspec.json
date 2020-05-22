@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {}
+    "C:\\Users\\linso\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {}
   },
   "projects": {
-    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
+    "C:\\Users\\linso\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "projectUniqueName": "C:\\Users\\linso\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
         "projectName": "FourOperations",
-        "projectPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "projectPath": "C:\\Users\\linso\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
         "packagesPath": "C:\\Users\\linso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\obj\\",
+        "outputPath": "C:\\Users\\linso\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperations\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
