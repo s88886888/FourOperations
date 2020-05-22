@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Xml;
 
 namespace ConsoleApp2.Base
 {
@@ -72,7 +73,7 @@ namespace ConsoleApp2.Base
                         BasicDataA -= BasicDataB;
                         Theme = BasicDataA + "-" + BasicDataB;
                         Answer = BasicDataA - BasicDataB;
-                    }           
+                    }
                 }
             }
             catch (Exception ex)
@@ -184,6 +185,28 @@ namespace ConsoleApp2.Base
             }
             wr.Flush();
             fs.Close();
+        }
+
+        /// <summary>
+        /// 文本转化XMl
+        /// </summary>
+        /// <param name="fileName"></param>
+        public void WriteXMLAdd(string fileName)
+        {
+            //var oneTheme = new OneTheme();
+            XmlWriterSettings settings = new XmlWriterSettings();//XML文件设置
+            settings.Indent = true;//换行
+            using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
+            {
+                writer.WriteStartElement("生成题目");//节点头
+
+                for (int i = 0; i < ArrayTheme.Length; i++)
+                {
+                    writer.WriteElementString("Topic", ArrayTheme[i]);
+                }
+                writer.WriteEndElement();
+            }
+            Console.WriteLine("写入成功");
         }
     }
 }
