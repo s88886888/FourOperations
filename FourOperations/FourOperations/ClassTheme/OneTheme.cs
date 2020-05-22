@@ -17,7 +17,7 @@ namespace ConsoleApp2.Base
         /// <summary>
         /// 随机生成两位数0-20的范围
         /// </summary>
-        public void Randomnum()
+        public override void RandomNumber()
         {
             BasicDataA = random.Next(0, 20);
             BasicDataB = random.Next(0, 20);
@@ -30,7 +30,7 @@ namespace ConsoleApp2.Base
         {
             try
             {
-                Randomnum();
+                RandomNumber();
                 if (BasicDataA > 20 && BasicDataB > 20)
                 {
                     throw new Exception("A>20 并且 B>20");
@@ -52,7 +52,7 @@ namespace ConsoleApp2.Base
         /// <returns></returns>
         public override void SubTheme()
         {
-            Randomnum();
+            RandomNumber();
             try
             {
                 if (BasicDataA > 20 && BasicDataB > 20)
@@ -73,7 +73,7 @@ namespace ConsoleApp2.Base
                         BasicDataA -= BasicDataB;
                         Theme = BasicDataA + "-" + BasicDataB;
                         Answer = BasicDataA - BasicDataB;
-                    }           
+                    }
                 }
             }
             catch (Exception ex)
@@ -155,12 +155,10 @@ namespace ConsoleApp2.Base
             OneTheme oneTheme = new OneTheme();
             oneTheme.AddThemeCount();
             OutPutTxt(result, oneTheme);
+            AddOutPutXml(oneTheme);
         }
-
-
-
         /// <summary>
-        /// 输出减法文件
+        /// 输出10题目 输出减法文件
         /// </summary>
         public void SubOutPutTxt()
         {
@@ -168,6 +166,7 @@ namespace ConsoleApp2.Base
             OneTheme oneTheme = new OneTheme();
             oneTheme.SubThemeCount();
             OutPutTxt(result, oneTheme);
+            SubOutPutXml(oneTheme);
         }
 
         /// <summary>
@@ -188,46 +187,85 @@ namespace ConsoleApp2.Base
         }
 
 
-
-        public void ReaderTxt()
+        /// <summary>
+        /// 读取打印成txt的加法文件
+        /// </summary>
+        public void AddReaderTxt()
         {
-            using (StreamReader sr = new StreamReader(@"D:\打印文件Add.txt"))
+            try
             {
-                string line;
-                while ((line = sr.ReadLine()) != null)
+                using (StreamReader sr = new StreamReader(@"D:\打印文件Add.txt"))
                 {
-                    Console.WriteLine(line);
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        Console.WriteLine(line);
+                    }
                 }
             }
-            using (StreamReader sr = new StreamReader(@"D:\打印文件Sub.txt"))
+            catch
             {
-                string line;
-                while ((line = sr.ReadLine()) != null)
-                {
-                    Console.WriteLine(line);
-                }
+                throw new Exception("没有这个文件");
             }
-
-
         }
-
-        public void WriteXMLAdd(string fileName)
+        /// <summary>
+        /// 读取打印成txt的减法文件
+        /// </summary>
+        public void SubReaderTxt()
         {
-            var oneTheme = new OneTheme();
+            try
+            {
+                using (StreamReader sr = new StreamReader(@"D:\打印文件Sub.txt"))
+                {
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        Console.WriteLine(line);
+                    }
+                }
+            }
+            catch
+            {
+                throw new Exception("没有这个文件");
+            }
+        }
+        /// <summary>
+        /// 同步Add打印xml
+        /// </summary>
+        /// <param name="oneTheme"></param>
+        public void AddOutPutXml(OneTheme oneTheme)
+        {
+            string fileName = "打印文件Add.xml";
+            OutPutXml(oneTheme, fileName);
+        }
+        /// <summary>
+        /// 同步Sub打印xml
+        /// </summary>
+        /// <param name="oneTheme"></param>
+        public void SubOutPutXml(OneTheme oneTheme)
+        {
+            string fileName = "打印文件Sub.xml";
+            OutPutXml(oneTheme, fileName);
+        }
+        /// <summary>
+        /// 打印Xml的数据
+        /// </summary>
+        /// <param name="oneTheme"></param>
+        /// <param name="fileName"></param>
+        private void OutPutXml(OneTheme oneTheme, string fileName)
+        {
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
-                writer.WriteStartElement("生成题目");//开始写入标记
-                                                 //writer.WriteElementString("题目", oneTheme.AddThemeCount());
-                oneTheme.AddThemeCount();
+                writer.WriteStartElement("生成题目");
                 for (int i = 0; i < ArrayTheme.Length; i++)
                 {
                     writer.WriteElementString("题目", oneTheme.ArrayTheme[i]);
                 }
                 writer.WriteEndElement();
             }
-            Console.WriteLine("写入成功");
+            Console.WriteLine("xml同步写入成功");
         }
 
     }
