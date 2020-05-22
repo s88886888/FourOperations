@@ -6,7 +6,6 @@ namespace ConsoleApp2.Base
 {
     public class OneTheme : BasicData
     {
-        public int Num { get; set; }
         private readonly Random random = new Random();
         /// <summary>
         /// 一年级出题范围：20以内加减
@@ -137,16 +136,10 @@ namespace ConsoleApp2.Base
         {
             for (int i = 0; i < Array1.Length; i++)
             {
-                Console.WriteLine(Array1[i]);
-            }
-            Console.WriteLine("----------答案-------------");
-            for (int i = 0; i < Array2.Length; i++)
-            {
-                Console.WriteLine(Array2[i]);
+                Console.Write(Array1[i]);
+                Console.WriteLine("="+Array2[i]);
             }
         }
-
-
         /// <summary>
         /// 打印生成的10道题目Add
         /// </summary>
