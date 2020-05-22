@@ -16,3 +16,12 @@ C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOpe
 C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.deps.json
 C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.dll
 C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.pdb
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.deps.json
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.dll
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.pdb
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csprojAssemblyReference.cache
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csproj.CoreCompileInputs.cache
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfoInputs.cache
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfo.cs
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb
