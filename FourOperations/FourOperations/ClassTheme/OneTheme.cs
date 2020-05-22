@@ -262,6 +262,7 @@ namespace ConsoleApp2.Base
                 for (int i = 0; i < ArrayTheme.Length; i++)
                 {
                     writer.WriteElementString("题目", oneTheme.ArrayTheme[i]);
+                    writer.WriteElementString("答案", oneTheme.ArrayAnswer[i]);
                 }
                 writer.WriteEndElement();
             }
