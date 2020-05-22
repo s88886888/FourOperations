@@ -257,7 +257,7 @@ namespace ConsoleApp2.Base
             settings.Indent = true;
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
-                writer.WriteStartElement("生成题目");
+                writer.WriteStartElement("-生成题目-");
                 for (int i = 0; i < oneTheme.ArrayTheme.Length; i++)
                 {
                     writer.WriteElementString("题目", ArrayTheme[i]);
