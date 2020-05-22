@@ -187,5 +187,10 @@ namespace ConsoleApp2.Themeup
         {
             throw new NotImplementedException();
         }
+
+        public override void RandomNumber()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -11,6 +11,8 @@
         public readonly string[] ArrayTheme = new string[10];//题目集合
         public readonly string[] ArrayAnswer = new string[10];//答案集合
 
+        public abstract void RandomNumber();
+
         public abstract void AddThemeCount();
 
         public abstract void SubThemeCount();
