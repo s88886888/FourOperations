@@ -7,6 +7,8 @@ namespace ConsoleApp2.Base
     public class OneTheme : BasicData
     {
         private readonly Random random = new Random();
+
+
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
@@ -153,8 +155,8 @@ namespace ConsoleApp2.Base
         {
             string result = @"D:\打印文件Add.txt";//保存文件路径
             OneTheme oneTheme = new OneTheme();
-            //oneTheme.AddThemeCount();
-            this.AddThemeCount();
+            oneTheme.AddThemeCount();
+            //this.AddThemeCount();
             OutPutTxt(result, oneTheme);
         }
 
@@ -194,15 +196,17 @@ namespace ConsoleApp2.Base
         /// <param name="fileName"></param>
         public void WriteXMLAdd(string fileName)
         {
-            //var oneTheme = new OneTheme();
+            var oneTheme = new OneTheme();
             XmlWriterSettings settings = new XmlWriterSettings();//XML文件设置
             settings.Indent = true;//换行
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
                 writer.WriteStartElement("TopicName");//节点头
 
+
                 for (int i = 0; i < ArrayTheme.Length; i++)
                 {
+                    //writer.WriteElementString("Topic", ArrayTheme[i]);
                     writer.WriteElementString("Topic", ArrayTheme[i]);
                 }
                 writer.WriteEndElement();
