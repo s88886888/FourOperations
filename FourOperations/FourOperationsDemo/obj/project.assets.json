@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\新建文件夹\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "projectName": "FourOperationsDemo",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\新建文件夹\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\新建文件夹\\FourOperations\\FourOperationsDemo\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperationsDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Lenovo\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations.csproj"
+            "C:\\Users\\Lenovo\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperations.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperations.csproj"
             }
           }
         }

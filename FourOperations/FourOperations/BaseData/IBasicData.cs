@@ -12,7 +12,7 @@ namespace ConsoleApp2
         void SubThemeCount();
         void AddTheme();
 
-        void SubTheme();
+        string  SubTheme();
 
 
     }

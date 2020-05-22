@@ -49,7 +49,7 @@ namespace ConsoleApp2.Base
         /// 调用此方法，生成一道减法题目
         /// </summary>
         /// <returns></returns>
-        public override void SubTheme()
+        public override string SubTheme()
         {
             Randomnum();
             try
@@ -72,13 +72,15 @@ namespace ConsoleApp2.Base
                         BasicDataA -= BasicDataB;
                         Theme = BasicDataA + "-" + BasicDataB;
                         Answer = BasicDataA - BasicDataB;
-                    }           
+                    }
+                    
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
+           return Theme;
         }
         /// <summary>
         ///      ///调用此方法一次出10题加法题目

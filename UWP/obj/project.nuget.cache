@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BHfY14p5Ysl3GvSlng8Tqf8JehEiKedpM/3Xhx42Z4PXpDya7hiyjx3Dlt7FXVvg58ImE6lx0irl/JK811bBaw==",
+  "dgSpecHash": "CcZo6IuEDJYiiTjZEARdu5u81tYeVsfqnkiYK0eezAruUbzrXb3cK8FH5DxWdGF99MU3RYGJ4ya/o28GIY/3BA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\UWP\\UWP.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\新建文件夹 (2)\\UWP\\UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.7-rel-27913-00\\microsoft.net.native.compiler.2.2.7-rel-27913-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.9\\microsoft.net.uwpcoreruntimesdk.2.2.9.nupkg.sha512",

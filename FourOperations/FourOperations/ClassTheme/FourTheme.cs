@@ -61,7 +61,7 @@ namespace ConsoleApp2.Themeup
                 Console.WriteLine(ex.Message);
             }
         }
-        public override void SubTheme()
+        public override string  SubTheme()
         {
             try
             {
@@ -89,6 +89,7 @@ namespace ConsoleApp2.Themeup
             {
                 Console.WriteLine(ex.Message);
             }
+            return Theme;
         }
 
         public string Multiply()

@@ -8157,11 +8157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UWP\\UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\新建文件夹 (2)\\UWP\\UWP.csproj",
       "projectName": "UWP",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\UWP\\UWP.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\新建文件夹 (2)\\UWP\\UWP.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\UWP\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\新建文件夹 (2)\\UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
