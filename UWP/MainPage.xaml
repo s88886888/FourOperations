@@ -6,24 +6,64 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="851" Width="1360">
 
-    <Grid>
-        <Button x:Name="button1" Content="随机出题" Margin="542,55,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="listBox" Margin="45,120,261,84" Visibility="Visible">
+    <Grid Margin="134,0,-95,0" FocusVisualPrimaryBrush="#FFE0822F">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="616*"/>
+            <ColumnDefinition Width="705*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.FocusVisualSecondaryBrush>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.FocusVisualSecondaryBrush>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="422*"/>
+            <RowDefinition Height="429*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button1" Content="随机出题" Margin="97,56,0,0" VerticalAlignment="Top" Background="#CCF7DE90" RenderTransformOrigin="-2.518,0.195" Grid.Column="1"/>
+        <ListBox x:Name="listBox" Margin="45,120,261,0" Visibility="Visible" Grid.RowSpan="2" Height="456" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <ListBox.Background>
+                <AcrylicBrush TintColor="#CCD8B1EE"/>
+            </ListBox.Background>
             <TextBlock x:Name="textBlock1" Text="TextBlock" TextWrapping="Wrap" RenderTransformOrigin="1.055,0.991" Visibility="Collapsed"/>
         </ListBox>
         <TextBox x:Name="Topic" HorizontalAlignment="Left" Margin="54,180,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Visibility="Collapsed"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="312,190,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Collapsed" RenderTransformOrigin="-1.047,0.759"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="219,182,0,0" Text="=" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" RenderTransformOrigin="5.664,-0.077" Visibility="Collapsed"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="243,183,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Collapsed"/>
-        <Button x:Name="button_Copy" Content="减法" Margin="461,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.4,0.145" Click="button_Copy_Click"/>
-        <Button x:Name="but5" Content="加法" Margin="365,55,0,0" VerticalAlignment="Top" Height="33" Width="76" Click="but5_Click"/>
-        <Button x:Name="but1" Content="一年级" Margin="28,24,0,0" VerticalAlignment="Top" Click="but1_Click"/>
-        <Button x:Name="but2" Content="二年级" Margin="108,24,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="but3" Content="三年级" Margin="190,24,0,0" VerticalAlignment="Top" />
-        <Button x:Name="but4" Content="四年级" Margin="278,24,0,0" VerticalAlignment="Top"/>
-        
+        <Button x:Name="button_Copy" Content="减法" Margin="479,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.4,0.145" Click="button_Copy_Click" Width="73" Background="#CCF7DE90"/>
+        <Button x:Name="but5" Content="加法" Margin="227,57,0,0" VerticalAlignment="Top" Height="33" Width="76" Click="but5_Click" RenderTransformOrigin="-5.52,0.435">
+            <Button.Background>
+                <AcrylicBrush TintColor="#CCF7DE90"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="but1" Content="一年级" Margin="481,145,0,0" VerticalAlignment="Top" Click="but1_Click" Visibility="Visible" RequestedTheme="Default" BorderThickness="2,2,2,3" FontWeight="Bold" FocusVisualSecondaryBrush="#99F71111" FocusVisualPrimaryBrush="#FF429CE3" RenderTransformOrigin="16.777,2.58" Grid.Column="1" >
+            <Button.Background>
+                <AcrylicBrush TintColor="#CCF47C7C"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <AcrylicBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="but2" Content="二年级" Margin="481,239,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="6.256,4.88" Grid.Column="1">
+            <Button.Background>
+                <AcrylicBrush TintColor="#CCBFF781"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="but3" Content="三年级" Margin="481,348,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" >
+            <Button.Background>
+                <AcrylicBrush TintColor="#CC7EF4D9"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="but4" Content="四年级" Margin="481,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.Row="1" Grid.Column="1">
+            <Button.Background>
+                <AcrylicBrush TintColor="#CCF36AF9"/>
+            </Button.Background>
+        </Button>
+
         <Button x:Name="button_Copy1" Content="提交" Margin="278,236,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,0.548" Click="button_Copy1_Click" Visibility="Collapsed"/>
     </Grid>
 

@@ -17,6 +17,6 @@
 
         public abstract void AddTheme();
 
-        public abstract void SubTheme();
+        public abstract string  SubTheme();
     }
 }

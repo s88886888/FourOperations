@@ -87,5 +87,10 @@ namespace UWP
                 }
             }
             }
+
+        //private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+
+        //}
     }
 }
