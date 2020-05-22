@@ -1,6 +1,7 @@
 ﻿using FourOperationsDemo.BaseDate;
 using System;
 using System.IO;
+using System.Xml;
 
 namespace ConsoleApp2.Base
 {
@@ -122,7 +123,7 @@ namespace ConsoleApp2.Base
         }
 
         /// <summary>
-        /// 用来装10道题目
+        /// 用来装10道题目Data
         /// </summary>
         /// <param name="Array1"></param>
         /// <param name="Array2"></param>
@@ -137,7 +138,7 @@ namespace ConsoleApp2.Base
         }
 
         /// <summary>
-        /// 输出10道题目和答案
+        /// 输出10道题目和答案Date
         /// </summary>
         /// <param name="Array1"></param>
         /// <param name="Array2"></param>
@@ -195,5 +196,49 @@ namespace ConsoleApp2.Base
             wr.Flush();
             fs.Close();
         }
+
+
+
+        public void ReaderTxt()
+        {
+            using (StreamReader sr = new StreamReader(@"D:\打印文件Add.txt"))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(line);
+                }
+            }
+            using (StreamReader sr = new StreamReader(@"D:\打印文件Sub.txt"))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(line);
+                }
+            }
+
+
+        }
+
+        public void WriteXMLAdd(string fileName)
+        {
+            var oneTheme = new OneTheme();
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
+            {
+                writer.WriteStartElement("生成题目");//开始写入标记
+                                                 //writer.WriteElementString("题目", oneTheme.AddThemeCount());
+                oneTheme.AddThemeCount();
+                for (int i = 0; i < ArrayTheme.Length; i++)
+                {
+                    writer.WriteElementString("题目", oneTheme.ArrayTheme[i]);
+                }
+                writer.WriteEndElement();
+            }
+            Console.WriteLine("写入成功");
+        }
+
     }
 }
