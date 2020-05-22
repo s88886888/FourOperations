@@ -153,7 +153,8 @@ namespace ConsoleApp2.Base
         {
             string result = @"D:\打印文件Add.txt";//保存文件路径
             OneTheme oneTheme = new OneTheme();
-            oneTheme.AddThemeCount();
+            //oneTheme.AddThemeCount();
+            this.AddThemeCount();
             OutPutTxt(result, oneTheme);
         }
 
@@ -198,7 +199,7 @@ namespace ConsoleApp2.Base
             settings.Indent = true;//换行
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
-                writer.WriteStartElement("生成题目");//节点头
+                writer.WriteStartElement("TopicName");//节点头
 
                 for (int i = 0; i < ArrayTheme.Length; i++)
                 {
