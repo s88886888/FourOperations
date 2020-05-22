@@ -6,7 +6,7 @@ namespace ConsoleApp2.Themeup
 {
     public interface IMultiplyAndDivisionTheme
     {
-        string Multiply();
-        string Division();
+        void Multiply();
+        void Division();
     }
 }

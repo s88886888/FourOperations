@@ -6,9 +6,9 @@ namespace ConsoleApp2.Base
 {
     public interface IAddandSubTheme 
     {
-        string AddTheme();
+        void AddTheme();
 
-        string SubTheme();
+        void SubTheme();
 
     }
 }

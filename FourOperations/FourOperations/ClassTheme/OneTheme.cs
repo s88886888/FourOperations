@@ -1,27 +1,18 @@
-﻿using FourOperationsDemo.BaseDate;
-using System;
+﻿using System;
 using System.IO;
 using System.Xml;
 
 namespace ConsoleApp2.Base
 {
-    public class OneTheme : IBasicTheme
+    public class OneTheme : BasicData
     {
-        readonly Random random = new Random();
-
-        
-        public string Theme { get; set; }//题目
-        public int Answer { get; set; }//答案
-        public string FFF { get; private set; } = "=";
-
-        public readonly string[] ArrayTheme = new string[10];//题目集合
-        public readonly string[] ArrayAnswer = new string[10];//答案集合
+        private readonly Random random = new Random();
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
         public OneTheme()
         {
-            Randomnum();
+
         }
         /// <summary>
         /// 随机生成两位数0-20的范围
@@ -35,10 +26,11 @@ namespace ConsoleApp2.Base
         /// 调用此方法，生成一道加法题目
         /// </summary>
         /// <returns></returns>
-        public string AddTheme()
+        public override void AddTheme()
         {
             try
             {
+                Randomnum();
                 if (BasicDataA > 20 && BasicDataB > 20)
                 {
                     throw new Exception("A>20 并且 B>20");
@@ -47,21 +39,20 @@ namespace ConsoleApp2.Base
                 {
                     Theme = BasicDataA + "+" + BasicDataB;
                     Answer = BasicDataA + BasicDataB;
-                    return Theme;
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return Theme = null;
         }
         /// <summary>
         /// 调用此方法，生成一道减法题目
         /// </summary>
         /// <returns></returns>
-        public string SubTheme()
+        public override void SubTheme()
         {
+            Randomnum();
             try
             {
                 if (BasicDataA > 20 && BasicDataB > 20)
@@ -73,6 +64,7 @@ namespace ConsoleApp2.Base
                     if (BasicDataA > BasicDataB)
                     {
                         Theme = BasicDataA + "-" + BasicDataB;
+                        Answer = BasicDataA - BasicDataB;
                     }
                     else
                     {
@@ -80,21 +72,19 @@ namespace ConsoleApp2.Base
                         BasicDataB = BasicDataA - BasicDataB;
                         BasicDataA -= BasicDataB;
                         Theme = BasicDataA + "-" + BasicDataB;
-                    }
-                    Answer = BasicDataA - BasicDataB;
-                    return Theme;
+                        Answer = BasicDataA - BasicDataB;
+                    }           
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return Theme = null;
         }
         /// <summary>
         ///      ///调用此方法一次出10题加法题目
         /// </summary>
-        public new void AddThemeCount()
+        public override void AddThemeCount()
         {
             string[] Array1 = new string[10];
             string[] Array2 = new string[10];
@@ -109,7 +99,7 @@ namespace ConsoleApp2.Base
         /// <summary>
         ///  //调用此方法一次出10题减法题目
         /// </summary>
-        public new void SubThemeCount()
+        public override void SubThemeCount()
         {
             string[] Array1 = new string[10];
             string[] Array2 = new string[10];
@@ -155,10 +145,10 @@ namespace ConsoleApp2.Base
             }
         }
 
-        
-       /// <summary>
-       /// 输出10题目 加法文件
-       /// </summary>
+
+        /// <summary>
+        /// 输出10题目 加法文件
+        /// </summary>
         public void AddOutPutTxt()
         {
             string result = @"D:\打印文件Add.txt";//保存文件路径
@@ -167,7 +157,7 @@ namespace ConsoleApp2.Base
             OutPutTxt(result, oneTheme);
         }
 
-      
+
 
         /// <summary>
         /// 输出减法文件
@@ -191,7 +181,7 @@ namespace ConsoleApp2.Base
             StreamWriter wr = new StreamWriter(fs);
             for (int i = 0; i < ArrayTheme.Length; i++)
             {
-                wr.WriteLine(oneTheme.ArrayTheme[i] +FFF+ oneTheme.ArrayAnswer[i]);
+                wr.WriteLine(oneTheme.ArrayTheme[i] + FFF + oneTheme.ArrayAnswer[i]);
             }
             wr.Flush();
             fs.Close();
