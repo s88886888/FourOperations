@@ -25,3 +25,9 @@ D:\Git\Clone2\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperati
 D:\Git\Clone2\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfo.cs
 D:\Git\Clone2\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
 D:\Git\Clone2\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb
+D:\Git\Clone3\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csprojAssemblyReference.cache
+D:\Git\Clone3\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csproj.CoreCompileInputs.cache
+D:\Git\Clone3\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfoInputs.cache
+D:\Git\Clone3\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfo.cs
+D:\Git\Clone3\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
+D:\Git\Clone3\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb

@@ -61,17 +61,12 @@ namespace FourOperations
             //wr.WriteLine("测试！");
             //wr.Close();
             //oneTheme.AddThemeCount();
-            OneTheme onetheme = new OneTheme();
             //oneTheme1.AddThemeCount();
             //Console.WriteLine("---------------------------------------");
             //oneTheme1.SubThemeCount();
             //onetheme.SubOutPutTxt();
             //onetheme.AddThemeCount();
-            //
-            onetheme.AddThemeCount();
-            onetheme.WriteXMLAdd("A.xml");
 
-            onetheme.AddOutPutTxt();
 
 
         }
