@@ -1,5 +1,6 @@
 ﻿
 using ConsoleApp2.Base;
+using ConsoleApp2.Themeup;
 using System;
 using System.IO;
 using System.Text;
@@ -81,10 +82,12 @@ namespace FourOperations
             //oneTheme.SubOutPutTxt();
             //oneTheme.AddOutPutTxt();
             //oneTheme.AddReaderXML();
-            oneTheme.AddThemeCount();
-            oneTheme.AddOutPutTxt();
+            //oneTheme.AddThemeCount();
+            //oneTheme.AddOutPutTxt();
 
-
+            TwoTheme twoTheme = new TwoTheme();
+            twoTheme.AddThemeCount();
+            twoTheme.AddOutPutTxt();
         }
     }
 }
