@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp2.Themeup;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
@@ -149,9 +150,9 @@ namespace ConsoleApp2.Base
         public void AddOutPutTxt()
          {
             string result = @"D:\打印文件Add.txt";//保存文件路径
-            OneTheme oneTheme = new OneTheme();
-            OutPutTxt(result, oneTheme);
-            AddOutPutXml(oneTheme);
+            TwoTheme twoTheme = new TwoTheme();
+            OutPutTxt(result);
+            AddOutPutXml(twoTheme);
         }
         /// <summary>
         /// 打印生成的10道题目Sub
@@ -159,9 +160,9 @@ namespace ConsoleApp2.Base
         public void SubOutPutTxt()
         {
             string result = @"D:\打印文件Sub.txt";//保存文件路径
-            OneTheme oneTheme = new OneTheme();
-            OutPutTxt(result, oneTheme);
-            SubOutPutXml(oneTheme);
+            TwoTheme twoTheme = new TwoTheme();
+            OutPutTxt(result);
+            SubOutPutXml(twoTheme);
         }
 
         /// <summary>
@@ -169,7 +170,7 @@ namespace ConsoleApp2.Base
         /// </summary>
         /// <param name="result"></param>
         /// <param name="oneTheme"></param>
-        private void OutPutTxt(string result, OneTheme oneTheme)
+        private void OutPutTxt(string result)
         {
             FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
             StreamWriter wr = new StreamWriter(fs);
@@ -227,27 +228,27 @@ namespace ConsoleApp2.Base
         /// <summary>
         /// 同步Add打印xml
         /// </summary>
-        /// <param name="oneTheme"></param>
-        public void AddOutPutXml(OneTheme oneTheme)
+        /// <param name="twoTheme"></param>
+        public void AddOutPutXml(TwoTheme twoTheme)
         {
             string fileName = "打印文件Add.xml";
-            OutPutXml(oneTheme, fileName);
+            OutPutXml(fileName);
         }
         /// <summary>
         /// 同步Sub打印xml
         /// </summary>
         /// <param name="oneTheme"></param>
-        public void SubOutPutXml(OneTheme oneTheme)
+        public void SubOutPutXml(TwoTheme twoTheme)
         {
             string fileName = "打印文件Sub.xml";
-            OutPutXml(oneTheme, fileName);
+            OutPutXml(fileName);
         }
         /// <summary>
         /// 打印Xml的数据
         /// </summary>
         /// <param name="oneTheme"></param>
         /// <param name="fileName"></param>
-        private void OutPutXml(OneTheme oneTheme, string fileName)
+        private void OutPutXml(string fileName)
         {
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
