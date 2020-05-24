@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWP", "UWP.csproj", "{875CF619-1AD2-49DF-8364-42AB38DFDF45}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FourOperations", "..\..\新建文件夹 (2)\FourOperations\FourOperations\FourOperations.csproj", "{814A63F7-05E9-441C-8FC6-5E1D83540805}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,26 +45,6 @@ Global
 		{875CF619-1AD2-49DF-8364-42AB38DFDF45}.Release|x86.ActiveCfg = Release|x86
 		{875CF619-1AD2-49DF-8364-42AB38DFDF45}.Release|x86.Build.0 = Release|x86
 		{875CF619-1AD2-49DF-8364-42AB38DFDF45}.Release|x86.Deploy.0 = Release|x86
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Debug|ARM.Build.0 = Debug|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Debug|ARM64.ActiveCfg = Debug|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Debug|ARM64.Build.0 = Debug|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Debug|x64.Build.0 = Debug|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Debug|x86.Build.0 = Debug|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Release|Any CPU.Build.0 = Release|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Release|ARM.ActiveCfg = Release|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Release|ARM.Build.0 = Release|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Release|ARM64.ActiveCfg = Release|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Release|ARM64.Build.0 = Release|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Release|x64.ActiveCfg = Release|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Release|x64.Build.0 = Release|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Release|x86.ActiveCfg = Release|Any CPU
-		{814A63F7-05E9-441C-8FC6-5E1D83540805}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

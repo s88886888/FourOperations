@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FourOperations",
+    "\\FourOperations\\FourOperationsDemo"
   ],
+  "SelectedNode": "\\FourOperations\\FourOperations",
   "PreviewInSolutionExplorer": false
 }

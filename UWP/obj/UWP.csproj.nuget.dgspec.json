@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\UWP\\UWP.csproj": {}
+    "C:\\Users\\CYH\\Desktop\\2\\UWP\\UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\UWP\\UWP.csproj": {
+    "C:\\Users\\CYH\\Desktop\\2\\UWP\\UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\UWP\\UWP.csproj",
+        "projectUniqueName": "C:\\Users\\CYH\\Desktop\\2\\UWP\\UWP.csproj",
         "projectName": "UWP",
-        "projectPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\UWP\\UWP.csproj",
-        "packagesPath": "C:\\Users\\linso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\UWP\\obj\\",
+        "projectPath": "C:\\Users\\CYH\\Desktop\\2\\UWP\\UWP.csproj",
+        "packagesPath": "C:\\Users\\CYH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CYH\\Desktop\\2\\UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\linso\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\CYH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "uap10.0.17763"
