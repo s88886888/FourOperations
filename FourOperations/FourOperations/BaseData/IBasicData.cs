@@ -2,7 +2,7 @@
 
 namespace ConsoleApp2
 {
-    public interface IBasicData
+     interface IBasicData
     {
          int BasicDataA { get; }
          int BasicDataB { get; }

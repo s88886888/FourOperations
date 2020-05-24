@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<生成题目>
-  <题目>17+12</题目>
-  <答案>29</答案>
-  <题目>8+0</题目>
-  <答案>8</答案>
-  <题目>5+0</题目>
-  <答案>5</答案>
-  <题目>13+10</题目>
-  <答案>23</答案>
-  <题目>12+8</题目>
-  <答案>20</答案>
-  <题目>17+15</题目>
-  <答案>32</答案>
-  <题目>19+13</题目>
-  <答案>32</答案>
-  <题目>1+1</题目>
-  <答案>2</答案>
-  <题目>1+18</题目>
-  <答案>19</答案>
-  <题目>10+3</题目>
-  <答案>13</答案>
-</生成题目>
+<Create>
+  <Theme>2+5</Theme>
+  <Answer>7</Answer>
+  <Theme>13+18</Theme>
+  <Answer>31</Answer>
+  <Theme>2+13</Theme>
+  <Answer>15</Answer>
+  <Theme>14+10</Theme>
+  <Answer>24</Answer>
+  <Theme>13+7</Theme>
+  <Answer>20</Answer>
+  <Theme>10+8</Theme>
+  <Answer>18</Answer>
+  <Theme>6+14</Theme>
+  <Answer>20</Answer>
+  <Theme>9+4</Theme>
+  <Answer>13</Answer>
+  <Theme>10+0</Theme>
+  <Answer>10</Answer>
+  <Theme>5+11</Theme>
+  <Answer>16</Answer>
+</Create>
