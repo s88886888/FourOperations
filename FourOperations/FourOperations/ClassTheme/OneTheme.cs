@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Security.Cryptography;
 using System.Xml;
 
 namespace ConsoleApp2.Base
 {
     public class OneTheme : BasicData
     {
+        
         private readonly Random random = new Random();
         /// <summary>
         /// 一年级出题范围：20以内加减
@@ -115,14 +118,14 @@ namespace ConsoleApp2.Base
         /// <summary>
         /// 用来装10道题目Data
         /// </summary>
-        /// <param name="Array1"></param>
-        /// <param name="Array2"></param>
+        /// <param name="ShowTheme"></param>
+        /// <param name="ShowAnswer"></param>
         /// <param name="i"></param>
         /// <param name="oneTheme"></param>的数据
-        private void ArrayDate(string[] Array1, string[] Array2, int i, OneTheme oneTheme)
+        private void ArrayDate(string[] ShowTheme, string[] ShowAnswer, int i, OneTheme oneTheme)
         {
-            Array1[i] = oneTheme.Theme;
-            Array2[i] = oneTheme.Answer.ToString();
+            ShowTheme[i] = oneTheme.Theme;
+            ShowAnswer[i] = oneTheme.Answer.ToString();
             ArrayTheme[i] = oneTheme.Theme;
             ArrayAnswer[i] = oneTheme.Answer.ToString();
         }
@@ -136,35 +139,27 @@ namespace ConsoleApp2.Base
         {
             for (int i = 0; i < Array1.Length; i++)
             {
-                Console.WriteLine(Array1[i]);
-            }
-            Console.WriteLine("----------答案-------------");
-            for (int i = 0; i < Array2.Length; i++)
-            {
-                Console.WriteLine(Array2[i]);
+                Console.Write(Array1[i]);
+                Console.WriteLine("=" + Array2[i]);
             }
         }
-
-
         /// <summary>
-        /// 输出10题目 加法文件
+        /// 打印生成的10道题目Add
         /// </summary>
         public void AddOutPutTxt()
         {
             string result = @"D:\打印文件Add.txt";//保存文件路径
             OneTheme oneTheme = new OneTheme();
-            oneTheme.AddThemeCount();
             OutPutTxt(result, oneTheme);
             AddOutPutXml(oneTheme);
         }
         /// <summary>
-        /// 输出10题目 输出减法文件
+        /// 打印生成的10道题目Sub
         /// </summary>
         public void SubOutPutTxt()
         {
             string result = @"D:\打印文件Sub.txt";//保存文件路径
             OneTheme oneTheme = new OneTheme();
-            oneTheme.SubThemeCount();
             OutPutTxt(result, oneTheme);
             SubOutPutXml(oneTheme);
         }
@@ -178,9 +173,9 @@ namespace ConsoleApp2.Base
         {
             FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
             StreamWriter wr = new StreamWriter(fs);
-            for (int i = 0; i < ArrayTheme.Length; i++)
+            for (int i = 0; i < oneTheme.ArrayTheme.Length; i++)
             {
-                wr.WriteLine(oneTheme.ArrayTheme[i] + FFF + oneTheme.ArrayAnswer[i]);
+                wr.WriteLine(ArrayTheme[i] + FFF + ArrayAnswer[i]);
             }
             wr.Flush();
             fs.Close();
@@ -258,15 +253,64 @@ namespace ConsoleApp2.Base
             settings.Indent = true;
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
-                writer.WriteStartElement("CreateTopic");
-                for (int i = 0; i < ArrayTheme.Length; i++)
+                writer.WriteStartElement("Create");
+                for (int i = 0; i < oneTheme.ArrayTheme.Length; i++)
                 {
-                    writer.WriteElementString("topic", oneTheme.ArrayTheme[i]);
-                    writer.WriteElementString("answer", oneTheme.ArrayAnswer[i]);
+                    writer.WriteElementString("Theme", ArrayTheme[i]);
+                    writer.WriteElementString("Answer", ArrayAnswer[i]);
                 }
                 writer.WriteEndElement();
             }
             Console.WriteLine("xml同步写入成功");
+        }
+
+        /// <summary>
+        /// 读取加法XML文件
+        /// </summary>
+        public void AddReaderXML()
+        {
+            OneTheme oneTheme = new OneTheme();
+            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Add.xml"))
+            {
+                while (!reader.EOF)
+                {
+                    if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "Theme")
+                    {
+                        vsArrayTheme.Add(reader.ReadElementContentAsString());
+                        if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "Answer")
+                        {
+                            vsArrayAnswer.Add(reader.ReadElementContentAsString());
+                        }
+                    }
+                    else
+                    {
+                        reader.Read();
+                    }
+                }
+            }
+        }
+        public void SubReaderXML()
+        {
+
+            OneTheme oneTheme = new OneTheme();
+            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Sub.xml"))
+            {
+                while (!reader.EOF)
+                {
+                    if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "Theme")
+                    {
+                        vsArrayTheme.Add(reader.ReadElementContentAsString());
+                        if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "Answer")
+                        {
+                            vsArrayAnswer.Add(reader.ReadElementContentAsString());
+                        }
+                    }
+                    else
+                    {
+                        reader.Read();
+                    }
+                }
+            }
         }
 
     }

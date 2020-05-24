@@ -30,22 +30,22 @@ C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOpe
 C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.dll
 C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.pdb
 C:\Users\linso\Desktop\新建文件夹 (2)\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.genruntimeconfig.cache
-D:\Git\Clone2\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.exe
-D:\Git\Clone2\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.deps.json
-D:\Git\Clone2\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.runtimeconfig.json
-D:\Git\Clone2\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.runtimeconfig.dev.json
-D:\Git\Clone2\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.dll
-D:\Git\Clone2\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.pdb
-D:\Git\Clone2\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperations.dll
-D:\Git\Clone2\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperations.pdb
-D:\Git\Clone2\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csprojAssemblyReference.cache
-D:\Git\Clone2\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csproj.CoreCompileInputs.cache
-D:\Git\Clone2\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.AssemblyInfoInputs.cache
-D:\Git\Clone2\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.AssemblyInfo.cs
-D:\Git\Clone2\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csproj.CopyComplete
-D:\Git\Clone2\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.dll
-D:\Git\Clone2\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.pdb
-D:\Git\Clone2\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.genruntimeconfig.cache
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.exe
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.deps.json
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.runtimeconfig.json
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.runtimeconfig.dev.json
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.dll
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.pdb
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperations.dll
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperations.pdb
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csprojAssemblyReference.cache
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csproj.CoreCompileInputs.cache
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.AssemblyInfoInputs.cache
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.AssemblyInfo.cs
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csproj.CopyComplete
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.dll
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.pdb
+C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.genruntimeconfig.cache
 D:\Git\Clone3\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.exe
 D:\Git\Clone3\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.deps.json
 D:\Git\Clone3\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperationsDemo.runtimeconfig.json
