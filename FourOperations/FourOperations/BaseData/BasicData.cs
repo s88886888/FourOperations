@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp2
+﻿using System.Collections.Generic;
+
+namespace ConsoleApp2
 {
     public abstract  class BasicData : IBasicData
     {
@@ -10,6 +12,10 @@
 
         protected readonly string[] ArrayTheme = new string[10];//题目集合
         protected readonly string[] ArrayAnswer = new string[10];//答案集合
+
+        //读取xml 文本 的题目和答案
+        protected List<string> vsArrayTheme = new List<string>();
+        protected List<string> vsArrayAnswer = new List<string>();
 
         public abstract void RandomNumber();
 
