@@ -61,13 +61,20 @@ namespace FourOperations
             //wr.WriteLine("测试！");
             //wr.Close();
             //oneTheme.AddThemeCount();
-            OneTheme onetheme = new OneTheme();
+            OneTheme oneTheme = new OneTheme();
             //oneTheme1.AddThemeCount();
             //Console.WriteLine("---------------------------------------");
             //oneTheme1.SubThemeCount();
-            onetheme.SubThemeCount();
-            onetheme.SubOutPutTxt();
-            onetheme.SubOutPutXml(onetheme);
+            //onetheme.SubThemeCount();
+            //onetheme.SubOutPutTxt();
+            //onetheme.SubOutPutXml(onetheme);
+            //oneTheme.AddThemeCount();
+            //oneTheme.SubOutPutXml(oneTheme);
+            //oneTheme.AddReaderXML();
+            //oneTheme.SubThemeCount();
+            //oneTheme.SubOutPutTxt();
+            //oneTheme.AddOutPutTxt();
+            oneTheme.AddReaderXML();
 
         }
     }
