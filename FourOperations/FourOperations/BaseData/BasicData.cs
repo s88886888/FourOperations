@@ -10,8 +10,8 @@ namespace ConsoleApp2
         protected int Answer { get; set; }//答案
         protected  string FFF { get; set; } = "=";
 
-        protected readonly string[] ArrayTheme = new string[10];//题目集合
-        protected readonly string[] ArrayAnswer = new string[10];//答案集合
+        protected readonly List<string> ArrayTheme = new List<string>();//题目集合
+        protected readonly List<string> ArrayAnswer = new List<string>();//答案集合
 
         //读取xml 文本 的题目和答案
         protected List<string> vsArrayTheme = new List<string>();
@@ -26,6 +26,5 @@ namespace ConsoleApp2
         public abstract void AddTheme();
 
         public abstract void SubTheme();
-        public abstract void RandomNumber();
     }
 }

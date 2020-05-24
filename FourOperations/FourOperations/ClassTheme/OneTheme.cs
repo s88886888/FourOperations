@@ -126,8 +126,8 @@ namespace ConsoleApp2.Base
         {
             ShowTheme[i] = oneTheme.Theme;
             ShowAnswer[i] = oneTheme.Answer.ToString();
-            ArrayTheme[i] = oneTheme.Theme;
-            ArrayAnswer[i] = oneTheme.Answer.ToString();
+            ArrayTheme.Add(oneTheme.Theme);
+            ArrayAnswer.Add(oneTheme.Answer.ToString());
         }
 
         /// <summary>
@@ -147,7 +147,7 @@ namespace ConsoleApp2.Base
         /// 打印生成的10道题目Add
         /// </summary>
         public void AddOutPutTxt()
-        {
+         {
             string result = @"D:\打印文件Add.txt";//保存文件路径
             OneTheme oneTheme = new OneTheme();
             OutPutTxt(result, oneTheme);
@@ -173,9 +173,9 @@ namespace ConsoleApp2.Base
         {
             FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
             StreamWriter wr = new StreamWriter(fs);
-            for (int i = 0; i < oneTheme.ArrayTheme.Length; i++)
+            for (int i = 0; i <ArrayTheme.Count; i++)
             {
-                wr.WriteLine(ArrayTheme[i] + FFF + ArrayAnswer[i]);
+                wr.WriteLine(ArrayTheme[i] + FFF +ArrayAnswer[i]);
             }
             wr.Flush();
             fs.Close();
@@ -254,7 +254,7 @@ namespace ConsoleApp2.Base
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
                 writer.WriteStartElement("Create");
-                for (int i = 0; i < oneTheme.ArrayTheme.Length; i++)
+                for (int i = 0; i < ArrayTheme.Count; i++)
                 {
                     writer.WriteElementString("Theme", ArrayTheme[i]);
                     writer.WriteElementString("Answer", ArrayAnswer[i]);
@@ -269,49 +269,37 @@ namespace ConsoleApp2.Base
         /// </summary>
         public void AddReaderXML()
         {
-            OneTheme oneTheme = new OneTheme();
             using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Add.xml"))
-            {
-                while (!reader.EOF)
-                {
-                    if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "Theme")
-                    {
-                        vsArrayTheme.Add(reader.ReadElementContentAsString());
-                        if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "Answer")
-                        {
-                            vsArrayAnswer.Add(reader.ReadElementContentAsString());
-                        }
-                    }
-                    else
-                    {
-                        reader.Read();
-                    }
-                }
+            {                
+                    ReaderXML(reader);               
             }
         }
         public void SubReaderXML()
         {
 
-            OneTheme oneTheme = new OneTheme();
             using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Sub.xml"))
             {
-                while (!reader.EOF)
-                {
-                    if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "Theme")
-                    {
-                        vsArrayTheme.Add(reader.ReadElementContentAsString());
-                        if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "Answer")
-                        {
-                            vsArrayAnswer.Add(reader.ReadElementContentAsString());
-                        }
-                    }
-                    else
-                    {
-                        reader.Read();
-                    }
-                }
+                ReaderXML(reader);
             }
         }
 
+        private void ReaderXML(XmlReader reader)
+        {
+            while (!reader.EOF)
+            {
+                if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "Theme")
+                {
+                    vsArrayTheme.Add(reader.ReadElementContentAsString());
+                    if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "Answer")
+                    {
+                        vsArrayAnswer.Add(reader.ReadElementContentAsString());
+                    }
+                }
+                else
+                {
+                    reader.Read();
+                }
+            }
+        }
     }
 }
