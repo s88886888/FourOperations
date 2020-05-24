@@ -27,36 +27,40 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Users\\linso\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\Clone3\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectUniqueName": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "projectName": "FourOperationsDemo",
-      "projectPath": "D:\\Git\\Clone3\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\Clone3\\FourOperations\\FourOperationsDemo\\obj\\",
+      "projectPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "packagesPath": "C:\\Users\\linso\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperationsDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\linso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "https://www.nuget.org/api/v2/": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Git\\Clone3\\FourOperations\\FourOperations\\FourOperations.csproj": {
-              "projectPath": "D:\\Git\\Clone3\\FourOperations\\FourOperations\\FourOperations.csproj"
+            "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
+              "projectPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj"
             }
           }
         }
