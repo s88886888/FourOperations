@@ -1,5 +1,6 @@
 ﻿
 using ConsoleApp2.Base;
+using ConsoleApp2.Themeup;
 using System;
 using System.IO;
 using System.Text;
@@ -61,7 +62,14 @@ namespace FourOperations
             //wr.WriteLine("测试！");
             //wr.Close();
             //oneTheme.AddThemeCount();
-            OneTheme oneTheme = new OneTheme();
+
+
+
+            //OneTheme oneTheme = new OneTheme();
+            //oneTheme.AddThemeCount();
+            //oneTheme.AddOutPutTxt();
+
+
             //oneTheme1.AddThemeCount();
             //Console.WriteLine("---------------------------------------");
             //oneTheme1.SubThemeCount();
@@ -74,7 +82,24 @@ namespace FourOperations
             //oneTheme.SubThemeCount();
             //oneTheme.SubOutPutTxt();
             //oneTheme.AddOutPutTxt();
-            oneTheme.AddReaderXML();
+            //oneTheme.AddReaderXML();
+            //oneTheme.AddThemeCount();
+            //oneTheme.AddOutPutTxt();
+
+            //TwoTheme twoTheme = new TwoTheme();
+            //twoTheme.AddThemeCount();
+            //twoTheme.AddOutPutTxt();
+
+            ThreeTheme threeTheme = new ThreeTheme();
+            //threeTheme.Division();
+
+
+            //threeTheme.MultiplyAndDivisionTheme();
+            //Console.WriteLine(threeTheme.Theme);
+            //Console.WriteLine(threeTheme.Answer.ToString());
+            //threeTheme.DivisionTheme();
+
+            threeTheme.MultiplyAndDivisionThemeCount();
 
         }
     }
