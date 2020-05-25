@@ -9,6 +9,8 @@ namespace ConsoleApp2.Base
     {
         
         private readonly Random random = new Random();
+        readonly string[] ShowTheme = new string[10];
+        readonly string[] ShowAnswer = new string[10];
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
@@ -88,30 +90,27 @@ namespace ConsoleApp2.Base
         /// </summary>
         public override void AddThemeCount()
         {
-            string[] Array1 = new string[10];
-            string[] Array2 = new string[10];
-            for (int i = 0; i < Array1.Length; i++)
+       
+            for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var oneTheme = new OneTheme();
                 oneTheme.AddTheme();
-                ArrayDate(Array1, Array2, i, oneTheme);
+                ArrayDate(ShowTheme, ShowAnswer, i, oneTheme);
             }
-            Show(Array1, Array2);
+            Show(ShowTheme, ShowAnswer);
         }
         /// <summary>
         ///  //调用此方法一次出10题减法题目
         /// </summary>
         public override void SubThemeCount()
         {
-            string[] Array1 = new string[10];
-            string[] Array2 = new string[10];
-            for (int i = 0; i < Array1.Length; i++)
+            for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var oneTheme = new OneTheme();
                 oneTheme.SubTheme();
-                ArrayDate(Array1, Array2, i, oneTheme);
+                ArrayDate(ShowTheme, ShowAnswer, i, oneTheme);
             }
-            Show(Array1, Array2);
+            Show(ShowTheme, ShowTheme);
         }
 
         /// <summary>
