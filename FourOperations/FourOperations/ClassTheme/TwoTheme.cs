@@ -5,9 +5,11 @@ using System.Xml;
 
 namespace ConsoleApp2.Themeup
 {
-    public class TwoTheme: BasicData
+    public class TwoTheme : BasicData
     {
         private readonly Random random = new Random();
+        readonly string[] ShowTheme = new string[10];
+        readonly string[] ShowAnswer = new string[10];
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
@@ -88,30 +90,26 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public override void AddThemeCount()
         {
-            string[] Array1 = new string[10];
-            string[] Array2 = new string[10];
-            for (int i = 0; i < Array1.Length; i++)
+            for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var twoTheme = new TwoTheme();
                 twoTheme.AddTheme();
-                ArrayDate(Array1, Array2, i, twoTheme);
+                ArrayDate(ShowTheme, ShowAnswer, i, twoTheme);
             }
-            Show(Array1, Array2);
+            Show(ShowTheme, ShowTheme);
         }
         /// <summary>
         ///  //调用此方法一次出10题减法题目
         /// </summary>
         public override void SubThemeCount()
         {
-            string[] Array1 = new string[10];
-            string[] Array2 = new string[10];
-            for (int i = 0; i < Array1.Length; i++)
+            for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var twoTheme = new TwoTheme();
                 twoTheme.SubTheme();
-                ArrayDate(Array1, Array2, i, twoTheme);
+                ArrayDate(ShowTheme, ShowTheme, i, twoTheme);
             }
-            Show(Array1, Array2);
+            Show(ShowTheme, ShowTheme);
         }
 
         /// <summary>
@@ -148,7 +146,7 @@ namespace ConsoleApp2.Themeup
         public void AddOutPutTxt()
         {
             string result = @"D:\打印文件Add2.txt";//保存文件路径
-            TwoTheme twoTheme  = new TwoTheme();
+            TwoTheme twoTheme = new TwoTheme();
             OutPutTxt(result, twoTheme);
             AddOutPutXml(twoTheme);
         }
