@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\团队项目\\FourOperations\\UWPApp1\\UWPApp1.csproj": {}
+    "C:\\Users\\CYH\\Desktop\\222\\UWP\\UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\团队项目\\FourOperations\\UWPApp1\\UWPApp1.csproj": {
+    "C:\\Users\\CYH\\Desktop\\222\\UWP\\UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\团队项目\\FourOperations\\UWPApp1\\UWPApp1.csproj",
-        "projectName": "UWPApp1",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\团队项目\\FourOperations\\UWPApp1\\UWPApp1.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\团队项目\\FourOperations\\UWPApp1\\obj\\",
+        "projectUniqueName": "C:\\Users\\CYH\\Desktop\\222\\UWP\\UWP.csproj",
+        "projectName": "UWP",
+        "projectPath": "C:\\Users\\CYH\\Desktop\\222\\UWP\\UWP.csproj",
+        "packagesPath": "C:\\Users\\CYH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CYH\\Desktop\\222\\UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CYH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
