@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "Hebm/0KikkK2HKsdqo6t6Ch4jhnh4f5MDhykT+7v0Qy9nj5NfJr3TNXWddq28NM6GHLzfmC1f+SrfhEHmP5WVw==",
+  "dgSpecHash": "EtlhcLYbzm+et3AWWKK5fxYilpHDhuYdfUyV/nrrvFFs+98ZlK/pYG1eo74GsN9pWMjhon4Kz4s+ASc7ID51QQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\linso\\.nuget\\packages\\microsoft.codedom.providers.dotnetcompilerplatform\\2.0.1\\microsoft.codedom.providers.dotnetcompilerplatform.2.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\linso\\.nuget\\packages\\npoi\\2.5.1\\npoi.2.5.1.nupkg.sha512",
@@ -22,16 +21,5 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8”而不是项目目标框架“.NETStandard,Version=v2.0”还原包“Microsoft.CodeDom.Providers.DotNetCompilerPlatform 2.0.1”。此包可能与项目不完全兼容。",
-      "libraryId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  "logs": []
 }

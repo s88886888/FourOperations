@@ -77,5 +77,4 @@ C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperati
 C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll
 C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll
 C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\System.CodeDom.dll

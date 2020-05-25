@@ -91,9 +91,16 @@ namespace FourOperations
             //twoTheme.AddOutPutTxt();
 
             ThreeTheme threeTheme = new ThreeTheme();
-            threeTheme.MultiplyAndDivision();
-            Console.WriteLine(threeTheme.Theme);
-            Console.WriteLine(threeTheme.Answer);
+            //threeTheme.Division();
+
+
+            //threeTheme.MultiplyAndDivisionTheme();
+            //Console.WriteLine(threeTheme.Theme);
+            //Console.WriteLine(threeTheme.Answer.ToString());
+            //threeTheme.DivisionTheme();
+
+            threeTheme.MultiplyAndDivisionThemeCount();
+
         }
     }
 }

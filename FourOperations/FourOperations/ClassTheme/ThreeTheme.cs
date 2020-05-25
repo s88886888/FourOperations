@@ -24,6 +24,9 @@ namespace ConsoleApp2.Themeup
         {
 
         }
+        /// <summary>
+        /// 生成随机数，为题目赋值
+        /// </summary>
         public override void RandomNumber()
         {
             BasicDataA = random.Next(-10, 100);
@@ -37,7 +40,7 @@ namespace ConsoleApp2.Themeup
         /// 生成一道乘法题目
         /// </summary>
 
-        public void Multiply()
+        public void MultiplyTheme()
         {
 
             try
@@ -55,7 +58,7 @@ namespace ConsoleApp2.Themeup
                     Answer = BasicDataA * BasicDataB;
                     if (Answer > 1000 || Answer < -100)
                     {
-                        Multiply();
+                        MultiplyTheme();
                     }
                 }
             }
@@ -65,24 +68,35 @@ namespace ConsoleApp2.Themeup
             }
         }
 
-        public void Division()
+        /// <summary>
+        /// 生成一道除法题目
+        /// </summary>
+        public void DivisionTheme()
         {
 
             try
             {
                 RandomNumber();
-                if (BasicDataA > 100 && BasicDataB > 100 && BasicDataC > 100 || BasicDataA < -10 && BasicDataB < -10 && BasicDataC < -10)
+                if (BasicDataA > 100 && BasicDataB > 100 && BasicDataC > 100 || BasicDataA < -10 && BasicDataB < -10 && BasicDataC < -10 || BasicDataB == 0)
                 {
-                    throw (new CustomExcepsion("A>100 &&B>100"));
+                    throw (new CustomExcepsion("A>100 &&B>100||分母不能为0 ，B==0"));
                 }
 
                 else
                 {
-                    Theme = $"{BasicDataA}{CCC[3]}{BasicDataB}";
-                    Answer = BasicDataA / BasicDataB;
-                    if (Answer > 100 || Answer < -100)
+                    //分子大于分母
+                    if (BasicDataA > BasicDataB)
                     {
-                        Division();
+                        Theme = $"{BasicDataA}{CCC[3]}{BasicDataB}";
+                        Answer = BasicDataA / BasicDataB;
+                    }
+                    //如果大于，两极反转
+                    {
+                        ChangeNumber();
+                    }
+                    if (Answer < -10 || Answer == 0)
+                    {
+                        DivisionTheme();
                     }
                 }
             }
@@ -92,71 +106,75 @@ namespace ConsoleApp2.Themeup
             }
         }
 
-
-        public void MultiplyAndDivision()
+        /// <summary>
+        /// 生成混合运算一道  A？B？C？ ？号是运算符 
+        /// </summary>
+        public void MultiplyAndDivisionTheme()
         {
-            //try
-            //{
-            //Multiply();
-            //while (Answer >= 10000 || Answer <= -100)
-            //{
-            //    Multiply();
-            //}
-            //string a = Theme;
-            //double Num1 = Answer;
-            //Division();
-            //while (threeTheme.Answer >= 10000 || threeTheme.Answer <= -100)
-            //{
-            //    Division();
-            //}
-            //Themea = a + Theme;
-            //double Num2 = Answer;
-            //Answer = Convert.ToInt32(Num1 + Num2);
-
 
             RandomNumber();
             if (BasicDataA > 100 && BasicDataB > 100)
             {
                 throw (new CustomExcepsion("A>100 &&B>100"));
             }
-
             else
             {
+                bool num = true;
                 DataTable table = new DataTable();
-                Theme = $"{BasicDataA}{CCC[LsitNumA]}({BasicDataB}{CCC[LsitNumB]}{BasicDataC})".ToString();
-                Answer = Convert.ToInt32(table.Compute(Theme, ""));
+                if (BasicDataA % 2 == 0)
+                {
+                    Theme = $"{BasicDataA}{CCC[LsitNumA]}({BasicDataB}{CCC[LsitNumB]}{BasicDataC})".ToString();
+                    Answer = Convert.ToInt32(table.Compute(Theme, ""));
+                    num = false;
+                }
+                if (BasicDataA % 3 == 0 && num == true)
+                {
+                    Theme = $"({BasicDataA}{CCC[LsitNumA]}{BasicDataB}){CCC[LsitNumB]}{BasicDataC}".ToString();
+                    Answer = Convert.ToInt32(table.Compute(Theme, ""));
+                    num = false;
+                }
+                if (num == true)
+                {
+                    Theme = $"{BasicDataA}{CCC[LsitNumA]}{BasicDataB}{CCC[LsitNumB]}{BasicDataC}".ToString();
+                    Answer = Convert.ToInt32(table.Compute(Theme, ""));
+                }
+                //if (Answer > 10000 || Answer < -1000)
+                //{
+                //    MultiplyAndDivisionTheme();
+                //}
             }
-            //}
-            //catch
-            //{
-            //    throw new Exception("混合运算异常");
-            //}
         }
 
-        private void NewMethod()
+        /// <summary>
+        /// 生成十条乘法题目
+        /// </summary>
+        /// 
+        public void MultiplyThemeCount()
         {
-            if (LsitNumA == 0 && LsitNumB == 0)
+            for (int i = 0; i < ShowTheme.Length; i++)
             {
-                Theme = "BasicDataA + BasicDataB +BasicDataC";
-                Answer = BasicDataA + BasicDataB + BasicDataC;
+                var threeTheme = new ThreeTheme();
+                threeTheme.MultiplyTheme();
+                ArrayDate(ShowTheme, ShowAnswer, i, threeTheme);
             }
-            if (LsitNumA == 1 && LsitNumB == 1)
-            {
-                Theme = "BasicDataA - BasicDataB -BasicDataC";
-                Answer = BasicDataA + BasicDataB + BasicDataC;
-            }
-            if (LsitNumA == 2 && LsitNumB == 2)
-            {
-                Theme = "BasicDataA * BasicDataB *BasicDataC";
-                Answer = BasicDataA + BasicDataB + BasicDataC;
-            }
-            if (LsitNumA == 3 && LsitNumB == 3)
-            {
-                Theme = "BasicDataA / BasicDataB /BasicDataC";
-                Answer = BasicDataA / BasicDataB / BasicDataC;
-            }
+            Show(ShowTheme, ShowAnswer);
         }
-
+        /// <summary>
+        /// 生成十条除法题目
+        /// </summary>
+        public void DivisionThemeCount()
+        {
+            for (int i = 0; i < ShowTheme.Length; i++)
+            {
+                var threeTheme = new ThreeTheme();
+                threeTheme.DivisionTheme();
+                ArrayDate(ShowTheme, ShowAnswer, i, threeTheme);
+            }
+            Show(ShowTheme, ShowAnswer);
+        }
+        /// <summary>
+        /// 生成一道加法题目
+        /// </summary>
         public override void AddTheme()
         {
             try
@@ -199,9 +217,7 @@ namespace ConsoleApp2.Themeup
                     }
                     else
                     {
-                        BasicDataA += BasicDataB;
-                        BasicDataB = BasicDataA - BasicDataB;
-                        BasicDataA -= BasicDataB;
+                        ChangeNumber();
                         Theme = BasicDataA + "-" + BasicDataB;
                         Answer = BasicDataA - BasicDataB;
                     }
@@ -212,6 +228,27 @@ namespace ConsoleApp2.Themeup
                 Console.WriteLine(ex.Message);
             }
         }
+        //调用此方法生成10题 混合运算 A？B？C？ ？号是运算符 
+        public void MultiplyAndDivisionThemeCount()
+        {
+            for (int i = 0; i < ShowTheme.Length; i++)
+            {
+                var threeTheme = new ThreeTheme();
+                threeTheme.MultiplyAndDivisionTheme();
+                ArrayDate(ShowTheme, ShowAnswer, i, threeTheme);
+            }
+            Show(ShowTheme, ShowAnswer);
+        }
+        /// <summary>
+        /// 交换变量值
+        /// </summary>
+        private void ChangeNumber()
+        {
+            BasicDataA += BasicDataB;
+            BasicDataB = BasicDataA - BasicDataB;
+            BasicDataA -= BasicDataB;
+        }
+
         /// <summary>
         ///      ///调用此方法一次出10题加法题目
         /// </summary>
@@ -408,6 +445,10 @@ namespace ConsoleApp2.Themeup
             }
         }
 
+        /// <summary>
+        /// 封装 读取xml的数据
+        /// </summary>
+        /// <param name="reader"></param>
         private void ReaderXML(XmlReader reader)
         {
             while (!reader.EOF)

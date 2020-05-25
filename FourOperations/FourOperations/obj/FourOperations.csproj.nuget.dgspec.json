@@ -43,10 +43,6 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": {
-              "target": "Package",
-              "version": "[2.0.1, )"
-            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
