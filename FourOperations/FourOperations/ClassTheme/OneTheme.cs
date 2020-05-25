@@ -1,8 +1,6 @@
 ﻿using ConsoleApp2.Themeup;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Security.Cryptography;
 using System.Xml;
 
 namespace ConsoleApp2.Base
