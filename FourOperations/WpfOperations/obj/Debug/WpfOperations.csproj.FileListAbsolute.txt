@@ -1,0 +1,5 @@
+D:\正道的光\FourOperations\FourOperations\WpfOperations\obj\Debug\MainWindow.g.cs
+D:\正道的光\FourOperations\FourOperations\WpfOperations\obj\Debug\App.g.cs
+D:\正道的光\FourOperations\FourOperations\WpfOperations\obj\Debug\WpfOperations_MarkupCompile.cache
+D:\正道的光\FourOperations\FourOperations\WpfOperations\obj\Debug\WpfOperations_MarkupCompile.lref
+D:\正道的光\FourOperations\FourOperations\WpfOperations\obj\Debug\WpfOperations.csprojAssemblyReference.cache
