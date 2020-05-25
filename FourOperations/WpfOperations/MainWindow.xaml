@@ -21,10 +21,10 @@
             <Label Content="答案" Canvas.Left="218" Canvas.Top="173" Width="65"/>
             <ItemsControl x:Name="ItmCtnJudge" Height="320" Width="68" Canvas.Left="389" Canvas.Top="203" Background="White"/>
             <Label Content="判断" Canvas.Left="400" Canvas.Top="173"/>
-            <Button x:Name="About_Copy" Content="一年级" Canvas.Left="190" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
-            <Button x:Name="About_Copy1" Content="二年级" Canvas.Left="280" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
-            <Button x:Name="About_Copy2" Content="三年级" Canvas.Left="370" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
-            <Button x:Name="About_Copy3" Content="四年级" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Canvas.Left="460" Canvas.Top="60"/>
+            <Button x:Name="btnL1" Content="一年级" Canvas.Left="190" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
+            <Button x:Name="btnL2" Content="二年级" Canvas.Left="280" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
+            <Button x:Name="btnL3" Content="三年级" Canvas.Left="370" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
+            <Button x:Name="btnL4" Content="四年级" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Canvas.Left="460" Canvas.Top="60"/>
             <Image Source="Logo.jpg" VerticalAlignment="Center" Width="140" Height="140" Canvas.Left="678" Canvas.Top="25">
                 <Image.Clip>
                     <!--设置图像如何显示-->
