@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FourOperations", "FourOpera
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FourOperationsDemo", "FourOperationsDemo\FourOperationsDemo.csproj", "{0B971942-1128-4AB1-B838-BAA85EADAA81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSubject", "..\WpfSubject\WpfSubject.csproj", "{DD7E029A-F7FB-495A-A3A4-98F11A2A2A82}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfOperations", "WpfOperations\WpfOperations.csproj", "{D0DEF4E4-2E27-45A7-9876-B86D5DB557D0}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{0B971942-1128-4AB1-B838-BAA85EADAA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B971942-1128-4AB1-B838-BAA85EADAA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B971942-1128-4AB1-B838-BAA85EADAA81}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD7E029A-F7FB-495A-A3A4-98F11A2A2A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD7E029A-F7FB-495A-A3A4-98F11A2A2A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD7E029A-F7FB-495A-A3A4-98F11A2A2A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD7E029A-F7FB-495A-A3A4-98F11A2A2A82}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D0DEF4E4-2E27-45A7-9876-B86D5DB557D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D0DEF4E4-2E27-45A7-9876-B86D5DB557D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0DEF4E4-2E27-45A7-9876-B86D5DB557D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
