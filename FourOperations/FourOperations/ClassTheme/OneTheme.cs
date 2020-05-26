@@ -110,7 +110,7 @@ namespace ConsoleApp2.Base
                 oneTheme.SubTheme();
                 ArrayDate(ShowTheme, ShowAnswer, i, oneTheme);
             }
-            Show(ShowTheme, ShowTheme);
+            Show(ShowTheme, ShowAnswer);
         }
 
         /// <summary>
@@ -146,7 +146,7 @@ namespace ConsoleApp2.Base
         /// </summary>
         public void AddOutPutTxt()
          {
-            string result = @"D:\打印文件Add.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印文件Add.txt";//保存文件路径
             TwoTheme twoTheme = new TwoTheme();
             OutPutTxt(result);
             AddOutPutXml(twoTheme);
@@ -156,7 +156,7 @@ namespace ConsoleApp2.Base
         /// </summary>
         public void SubOutPutTxt()
         {
-            string result = @"D:\打印文件Sub.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印文件Sub.txt";//保存文件路径
             TwoTheme twoTheme = new TwoTheme();
             OutPutTxt(result);
             SubOutPutXml(twoTheme);

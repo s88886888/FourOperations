@@ -90,7 +90,7 @@ namespace FourOperations
             //twoTheme.AddThemeCount();
             //twoTheme.AddOutPutTxt();
 
-            ThreeTheme threeTheme = new ThreeTheme();
+            //ThreeTheme threeTheme = new ThreeTheme();
             //threeTheme.Division();
 
 
@@ -99,7 +99,11 @@ namespace FourOperations
             //Console.WriteLine(threeTheme.Answer.ToString());
             //threeTheme.DivisionTheme();
 
-            threeTheme.MultiplyAndDivisionThemeCount();
+            //threeTheme.MultiplyAndDivisionThemeCount();
+
+            OneTheme oneTheme = new OneTheme();
+            oneTheme.SubThemeCount();
+            oneTheme.SubOutPutTxt();
 
         }
     }
