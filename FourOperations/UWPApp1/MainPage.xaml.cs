@@ -1,4 +1,5 @@
 ﻿using ConsoleApp2.Base;
+using ConsoleApp2.Themeup;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,6 +24,9 @@ namespace UWPApp1
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        ThreeTheme Threes = new ThreeTheme();
+        string[] vslist = new string[10];
+        string[] vslist1 = new string[10];
         public MainPage()
         {
             this.InitializeComponent();
@@ -30,15 +34,13 @@ namespace UWPApp1
 
         private void Addition_Click(object sender, RoutedEventArgs e)
         {
-            OneTheme ones = new OneTheme();
-            ones.AddThemeCount();
-            this.listBox.ItemsSource = ones.ArrayTheme;
+            
         }
 
         private void One_Click(object sender, RoutedEventArgs e)
         {
-            Addition.IsEnabled = true;
-            Subtraction.IsEnabled = true;
+            Add.IsEnabled = true;
+            Subtract.IsEnabled = true;
             Multiplication.IsEnabled = false;
             Division.IsEnabled = false;
             Mixture.IsEnabled = false;
@@ -47,8 +49,8 @@ namespace UWPApp1
 
         private void Two_Click(object sender, RoutedEventArgs e)
         {
-            Addition.IsEnabled = true;
-            Subtraction.IsEnabled = true;
+            Add.IsEnabled = true;
+            Subtract.IsEnabled = true;
             Multiplication.IsEnabled = false;
             Division.IsEnabled = false;
             Mixture.IsEnabled = false;
@@ -59,8 +61,8 @@ namespace UWPApp1
         {
             Multiplication.IsEnabled = true;
             Division.IsEnabled = true;
-            Addition.IsEnabled = true;
-            Subtraction.IsEnabled = true;
+            Add.IsEnabled = true;
+            Subtract.IsEnabled = true;
             Mixture.IsEnabled = false;
             Arithmetic1.IsEnabled = false;
         }
@@ -69,17 +71,149 @@ namespace UWPApp1
         {
             Multiplication.IsEnabled = true;
             Division.IsEnabled = true;
-            Addition.IsEnabled = true;
-            Subtraction.IsEnabled = true;
+            Add.IsEnabled = true;
+            Subtract.IsEnabled = true;
             Mixture.IsEnabled = true;
             Arithmetic1.IsEnabled = true;
         }
 
         private void Subtraction_Click(object sender, RoutedEventArgs e)
         {
-            OneTheme ones = new OneTheme();
-            ones.SubThemeCount();
-            this.listBox.ItemsSource = ones.ArrayTheme;
+           
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            OneTheme oneTheme = new OneTheme();
+            oneTheme.AddThemeCount();
+
+            for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
+            {
+                vslist[i] = oneTheme.ArrayTheme[i];
+                vslist1[i] = oneTheme.ArrayAnswer[i];
+            }
+            listBox.ItemsSource = vslist;
+
+        }
+
+        private void Subtract_Click(object sender, RoutedEventArgs e)
+        {
+            OneTheme oneThemes = new OneTheme();
+            oneThemes.SubThemeCount();
+
+            for (int i = 0; i < oneThemes.ArrayTheme.Count; i++)
+            {
+                vslist[i] = oneThemes.ArrayTheme[i];
+                vslist1[i] = oneThemes.ArrayAnswer[i];
+            }
+            listBox.ItemsSource = vslist;
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if (Text1.Text == vslist1[0])
+            {
+                text1.Text = "√";
+            }
+            if (Text1.Text != vslist1[0])
+            {
+                text1.Text = "×";
+            }
+
+
+            if (Text2.Text == vslist1[1])
+            {
+                text2.Text = "√";
+            }
+            if (Text2.Text != vslist1[1])
+            {
+                text2.Text = "×";
+            }
+
+            if (Text3.Text == vslist1[2])
+            {
+                text3.Text = "√";
+            }
+            if (Text3.Text != vslist1[2])
+            {
+                text3.Text = "×";
+            }
+
+            if (Text4.Text == vslist1[3])
+            {
+                text4.Text = "√";
+            }
+            if (Text4.Text != vslist1[3])
+            {
+                text4.Text = "×";
+            }
+
+            if (Text5.Text == vslist1[4])
+            {
+                text5.Text = "√";
+            }
+            if (Text5.Text != vslist1[4])
+            {
+                text5.Text = "×";
+            }
+
+            if (Text5.Text == vslist1[5])
+            {
+                text6.Text = "√";
+            }
+            if (Text5.Text != vslist1[5])
+            {
+                text6.Text = "×";
+            }
+
+            if (Text7.Text == vslist1[6])
+            {
+                text7.Text = "√";
+            }
+            if (Text7.Text != vslist1[6])
+            {
+                text7.Text = "×";
+            }
+
+            if (Text8.Text == vslist1[7])
+            {
+                text8.Text = "√";
+            }
+            if (Text8.Text != vslist1[7])
+            {
+                text8.Text = "×";
+            }
+
+            if (Text9.Text == vslist1[8])
+            {
+                text9.Text = "√";
+            }
+            if (Text9.Text != vslist1[8])
+            {
+                text9.Text = "×";
+            }
+
+            if (Text10.Text == vslist1[9])
+            {
+                text10.Text = "√";
+            }
+            if (Text10.Text != vslist1[9])
+            {
+                text10.Text = "×";
+            }
+        }
+
+        private void Multiplication_Click(object sender, RoutedEventArgs e)
+        {
+            ThreeTheme Threes = new ThreeTheme();
+            Threes.MultiplyThemeCount();
+
+            for (int i = 0; i < Threes.ArrayTheme.Count; i++)
+            {
+                vslist[i] = Threes.ArrayTheme[i];
+                vslist1[i] = Threes.ArrayAnswer[i];
+            }
+            listBox.ItemsSource = vslist;
         }
     }
 }
