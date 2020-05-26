@@ -538,11 +538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\10570\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectUniqueName": "C:\\Users\\10570\\Desktop\\123132132\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "projectName": "FourOperationsDemo",
-      "projectPath": "C:\\Users\\10570\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectPath": "C:\\Users\\10570\\Desktop\\123132132\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "packagesPath": "C:\\Users\\10570\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\10570\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperationsDemo\\obj\\",
+      "outputPath": "C:\\Users\\10570\\Desktop\\123132132\\FourOperations\\FourOperationsDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\10570\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -558,8 +558,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\10570\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
-              "projectPath": "C:\\Users\\10570\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj"
+            "C:\\Users\\10570\\Desktop\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj": {
+              "projectPath": "C:\\Users\\10570\\Desktop\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj"
             }
           }
         }
