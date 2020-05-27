@@ -9,19 +9,19 @@
     <Grid Background="#7FFFC000">
         <Canvas>
             <Button x:Name="BtnSystem" Content="系统" Canvas.Left="10" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="BtnSystem_Click" />
-            <Button x:Name="Setup" Content="设置" Canvas.Left="100" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
-            <Button x:Name="Help" Content="帮助" Canvas.Left="190" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
-            <Button x:Name="About" Content="关于" Canvas.Left="280" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
+            <Button x:Name="BtnSetup" Content="设置" Canvas.Left="100" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
+            <Button x:Name="BtnHelp" Content="帮助" Canvas.Left="190" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
+            <Button x:Name="BtnAbout" Content="关于" Canvas.Left="280" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
             <Image Height="120" Source="logo.jpg" Stretch="Fill" Width="175" Canvas.Left="10" Canvas.Top="45"/>
-            <ItemsControl x:Name="ItmCtnQuestion" Height="320" Width="175" Canvas.Left="10" Canvas.Top="203" Background="White">
+            <ListBox x:Name="lbxQuestion" Height="320" Width="175" Canvas.Left="10" Canvas.Top="203" Background="White"/>
 
-            </ItemsControl>
+
             <Label Content="题目" Canvas.Left="10" Canvas.Top="173" Width="65"/>
             <TextBox x:Name="tbMultiLine" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Canvas.Left="218" Canvas.Top="203" Height="320" Width="122"/>
             <Label Content="答案" Canvas.Left="218" Canvas.Top="173" Width="65"/>
-            <ItemsControl x:Name="ItmCtnJudge" Height="320" Width="68" Canvas.Left="389" Canvas.Top="203" Background="White"/>
+            <ListBox x:Name="lbxJudge" Height="320" Width="68" Canvas.Left="389" Canvas.Top="203" Background="White"/>
             <Label Content="判断" Canvas.Left="400" Canvas.Top="173"/>
-            <Button x:Name="btnL1" Content="一年级" Canvas.Left="190" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
+            <Button x:Name="btnL1" Content="一年级" Canvas.Left="190" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="btnL1_Click_1"/>
             <Button x:Name="btnL2" Content="二年级" Canvas.Left="280" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
             <Button x:Name="btnL3" Content="三年级" Canvas.Left="370" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
             <Button x:Name="btnL4" Content="四年级" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Canvas.Left="460" Canvas.Top="60"/>
@@ -39,12 +39,12 @@
             <Canvas Height="127" Width="206" Canvas.Left="647" Canvas.Top="279" Background="White">
 
 
-                <Button Content="加法" Canvas.Left="10" Canvas.Top="8" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF"/>
-                <Button Content="减法" Canvas.Left="111" Canvas.Top="8" Width="85" Height="30 " Background="White" BorderBrush="#FFC5BFBF"/>
-                <Button Content="乘法" Canvas.Left="10" Canvas.Top="47" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF"/>
-                <Button Content="除法" Canvas.Left="111" Canvas.Top="47" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF"/>
-                <Button Content="混合运算" Canvas.Left="10" Canvas.Top="87" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF"/>
-                <Button Content="四则远算" Canvas.Left="111" Canvas.Top="87" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF"/>
+                <Button x:Name="btnadd" Content="加法" Canvas.Left="10" Canvas.Top="8" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False" Click="btnadd_Click"/>
+                <Button x:Name="btnsub" Content="减法" Canvas.Left="111" Canvas.Top="8" Width="85" Height="30 " Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False"/>
+                <Button x:Name="btnmul" Content="乘法" Canvas.Left="10" Canvas.Top="47" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False"/>
+                <Button x:Name="btndiv" Content="除法" Canvas.Left="111" Canvas.Top="47" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False"/>
+                <Button x:Name="btnHybrid" Content="混合运算" Canvas.Left="10" Canvas.Top="87" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False"/>
+                <Button x:Name="btnO" Content="四则远算" Canvas.Left="111" Canvas.Top="87" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False"/>
 
 
             </Canvas>

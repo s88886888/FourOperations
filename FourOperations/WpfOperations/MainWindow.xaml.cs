@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp2.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,18 +22,40 @@ namespace WpfOperations
     /// </summary>
     public partial class MainWindow : Window
     {
+        OneTheme oneTheme = new OneTheme();
+        string[] vslist = new string[10];
+        string[] vslist1 = new string[10];
         public MainWindow()
         {
             InitializeComponent();
         }
 
-   
 
        
-    
+
 
         private void BtnSystem_Click(object sender, RoutedEventArgs e)
         {
+
+        }
+
+
+
+        private void btnL1_Click_1(object sender, RoutedEventArgs e)
+        {
+            btnadd.IsEnabled = true;
+            btnsub.IsEnabled = true;
+        }
+
+        private void btnadd_Click(object sender, RoutedEventArgs e)
+        {
+            oneTheme.AddThemeCount();
+            for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
+            {
+                vslist[i] = oneTheme.ArrayTheme[i];
+                vslist1[i] = oneTheme.ArrayAnswer[i];
+            }
+            lbxQuestion.ItemsSource = vslist;
 
         }
     }

@@ -533,33 +533,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\正道的光\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectUniqueName": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "projectName": "FourOperationsDemo",
-      "projectPath": "D:\\正道的光\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\正道的光\\FourOperations\\FourOperations\\FourOperationsDemo\\obj\\",
+      "projectPath": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperationsDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\正道的光\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
-              "projectPath": "D:\\正道的光\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj"
+            "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
+              "projectPath": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj"
             }
           }
         }
@@ -587,7 +586,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
