@@ -318,7 +318,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void AddOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件Add.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印四年级加法题目.txt";//保存文件路径
             FourTheme fourTheme = new FourTheme();
             OutPutTxt(result);
             AddOutPutXml(fourTheme);
@@ -328,7 +328,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void SubOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件Sub.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印四年级减法题目.txt";//保存文件路径
             FourTheme fourTheme = new FourTheme();
             OutPutTxt(result);
             SubOutPutXml(fourTheme);
@@ -336,7 +336,7 @@ namespace ConsoleApp2.Themeup
 
         public void MultiplyAndDivisionThemeOutPutTxt()
         {
-            string result = @"..\\..\\..\\三年级MultiplyAndDivisionThemeOutPutTxt.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印四年级四则运算题目.txt";//保存文件路径
             FourTheme fourTheme = new FourTheme();
             OutPutTxt(result);
             MultiplyAndDivisionThemeOutPutXml(fourTheme);
@@ -367,7 +367,7 @@ namespace ConsoleApp2.Themeup
         {
             try
             {
-                using (StreamReader sr = new StreamReader(@"D:\打印文件Add.txt"))
+                using (StreamReader sr = new StreamReader(@"..\\..\\..\\打印四年级加法题目.txt"))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -388,7 +388,7 @@ namespace ConsoleApp2.Themeup
         {
             try
             {
-                using (StreamReader sr = new StreamReader(@"D:\打印文件Sub.txt"))
+                using (StreamReader sr = new StreamReader(@"..\\..\\..\\打印四年级减法题目.txt"))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -408,7 +408,7 @@ namespace ConsoleApp2.Themeup
         /// <param name="FourTheme"></param>
         public void AddOutPutXml(FourTheme FourTheme)
         {
-            string fileName = "打印文件Add.xml";
+            string fileName = "打印四年级加法题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
@@ -417,7 +417,7 @@ namespace ConsoleApp2.Themeup
         /// <param name="fourTheme"></param>
         public void SubOutPutXml(FourTheme FourTheme)
         {
-            string fileName = "打印文件Sub.xml";
+            string fileName = "打印四年级减法题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
@@ -426,7 +426,7 @@ namespace ConsoleApp2.Themeup
         /// <param name="FourTheme"></param>
         public void MultiplyAndDivisionThemeOutPutXml(FourTheme fourTheme)
         {
-            string fileName = "MultiplyAndDivisionTheme.xml";
+            string fileName = "打印四年级四则运算题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
@@ -456,7 +456,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void AddReaderXML()
         {
-            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Add.xml"))
+            using (XmlReader reader = XmlReader.Create("打印四年级加法题目.xml"))
             {
                 ReaderXML(reader);
             }
@@ -464,7 +464,7 @@ namespace ConsoleApp2.Themeup
         public void SubReaderXML()
         {
 
-            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Sub.xml"))
+            using (XmlReader reader = XmlReader.Create("打印四年级减法题目.xml"))
             {
                 ReaderXML(reader);
             }

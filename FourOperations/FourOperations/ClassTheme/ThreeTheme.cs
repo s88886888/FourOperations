@@ -313,7 +313,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void AddOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件Add.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印文件三年级加法题目.txt";//保存文件路径
             ThreeTheme  threeTheme = new ThreeTheme();
             OutPutTxt(result);
             AddOutPutXml(threeTheme);
@@ -323,7 +323,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void SubOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件Sub.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印文件三年级减法题目.txt";//保存文件路径
             ThreeTheme  threeTheme = new ThreeTheme();
             OutPutTxt(result);
             SubOutPutXml(threeTheme);
@@ -331,7 +331,7 @@ namespace ConsoleApp2.Themeup
 
         public void MultiplyAndDivisionThemeOutPutTxt()
         {
-            string result = @"..\\..\\..\\三年级MultiplyAndDivisionThemeOutPutTxt.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印文件三年级混合运算题目.txt";//保存文件路径
             ThreeTheme threeTheme = new ThreeTheme();
             OutPutTxt(result);
             MultiplyAndDivisionThemeOutPutXml(threeTheme);
@@ -362,7 +362,7 @@ namespace ConsoleApp2.Themeup
         {
             try
             {
-                using (StreamReader sr = new StreamReader(@"D:\打印文件Add.txt"))
+                using (StreamReader sr = new StreamReader(@"..\\..\\..\\打印文三年级减法题目.txt"))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -383,7 +383,7 @@ namespace ConsoleApp2.Themeup
         {
             try
             {
-                using (StreamReader sr = new StreamReader(@"D:\打印文件Sub.txt"))
+                using (StreamReader sr = new StreamReader(@"..\\..\\..\\打印文件三年级加法题目.txt"))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -403,7 +403,7 @@ namespace ConsoleApp2.Themeup
         /// <param name="threeTheme"></param>
         public void AddOutPutXml(ThreeTheme threeTheme)
         {
-            string fileName = "打印文件Add.xml";
+            string fileName = "打印文件三年级加法题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
@@ -412,7 +412,7 @@ namespace ConsoleApp2.Themeup
         /// <param name="oneTheme"></param>
         public void SubOutPutXml(ThreeTheme  threeTheme)
         {
-            string fileName = "打印文件Sub.xml";
+            string fileName = "打印文件三年级减法题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
@@ -421,7 +421,7 @@ namespace ConsoleApp2.Themeup
         /// <param name="threeTheme"></param>
         public void MultiplyAndDivisionThemeOutPutXml(ThreeTheme threeTheme)
         {
-            string fileName = "MultiplyAndDivisionTheme.xml";
+            string fileName = "打印三年级混合运算题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
@@ -451,7 +451,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void AddReaderXML()
         {
-            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Add.xml"))
+            using (XmlReader reader = XmlReader.Create("打印文件三年级加法题目.xml"))
             {
                 ReaderXML(reader);
             }
@@ -459,7 +459,7 @@ namespace ConsoleApp2.Themeup
         public void SubReaderXML()
         {
 
-            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Sub.xml"))
+            using (XmlReader reader = XmlReader.Create("打印文件三年级减法题目.xml"))
             {
                 ReaderXML(reader);
             }
