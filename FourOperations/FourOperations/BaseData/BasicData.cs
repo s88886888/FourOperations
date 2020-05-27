@@ -6,9 +6,11 @@ namespace ConsoleApp2
     {
         public double BasicDataA { get; set; }
         public double BasicDataB { get; set; }
-        public int BasicDataC { get; set; }
+        public double BasicDataC { get; set; }
+        public double BasicDataD { get; set; }
         public int LsitNumA { get; set; }
         public int LsitNumB { get; set; }
+        public int LsitNumC { get; set; }
         public string Theme { get; set; }//题目
         public double Answer { get; set; }//答案
         protected string FFF { get; set; } = "=";

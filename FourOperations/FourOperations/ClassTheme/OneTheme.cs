@@ -151,9 +151,9 @@ namespace ConsoleApp2.Base
         public void AddOutPutTxt()
         {
             string result = @"..\\..\\..\\打印文件Add.txt";//保存文件路径
-            TwoTheme twoTheme = new TwoTheme();
+            FourTheme FourTheme = new FourTheme();
             OutPutTxt(result);
-            AddOutPutXml(twoTheme);
+            AddOutPutXml(FourTheme);
         }
         /// <summary>
         /// 打印生成的10道题目Sub
@@ -161,9 +161,9 @@ namespace ConsoleApp2.Base
         public void SubOutPutTxt()
         {
             string result = @"..\\..\\..\\打印文件Sub.txt";//保存文件路径
-            TwoTheme twoTheme = new TwoTheme();
+            FourTheme FourTheme = new FourTheme();
             OutPutTxt(result);
-            SubOutPutXml(twoTheme);
+            SubOutPutXml(FourTheme);
         }
 
         /// <summary>
@@ -229,8 +229,8 @@ namespace ConsoleApp2.Base
         /// <summary>
         /// 同步Add打印xml
         /// </summary>
-        /// <param name="twoTheme"></param>
-        public void AddOutPutXml(TwoTheme twoTheme)
+        /// <param name="FourTheme"></param>
+        public void AddOutPutXml(FourTheme FourTheme)
         {
             string fileName = "打印文件Add.xml";
             OutPutXml(fileName);
@@ -239,7 +239,7 @@ namespace ConsoleApp2.Base
         /// 同步Sub打印xml
         /// </summary>
         /// <param name="oneTheme"></param>
-        public void SubOutPutXml(TwoTheme twoTheme)
+        public void SubOutPutXml(FourTheme FourTheme)
         {
             string fileName = "打印文件Sub.xml";
             OutPutXml(fileName);
