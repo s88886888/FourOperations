@@ -8,17 +8,17 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid ManipulationMode="System">
-        <Button x:Name="SystemButton" Content="系统" Margin="113,11,0,0" VerticalAlignment="Top" Foreground="Black" Background="#33975F06" FontSize="14" Width="69" Height="31" />
-        <Button x:Name="SettingButton" Content="设置" Margin="20,10,0,0" VerticalAlignment="Top" Width="69" Background="#33975F06"/>
-        <Button x:Name="HelpButton" Content="帮助" Margin="206,10,0,0" VerticalAlignment="Top" Width="69" Height="31" Background="#33975F06"/>
-        <Button x:Name="RegardButton1" Content="关于" Margin="298,11,0,0" VerticalAlignment="Top" Width="69" Height="31" Background="#33975F06"/>
+    <Grid ManipulationMode="System" Background="#87FFD700">
+        <Button x:Name="SystemButton" Content="系统" Margin="113,11,0,0" VerticalAlignment="Top" Foreground="Black" Background="White" FontSize="14" Width="69" Height="31" />
+        <Button x:Name="SettingButton" Content="设置" Margin="20,10,0,0" VerticalAlignment="Top" Width="69" Background="White"/>
+        <Button x:Name="HelpButton" Content="帮助" Margin="206,10,0,0" VerticalAlignment="Top" Width="69" Height="31" Background="White"/>
+        <Button x:Name="RegardButton1" Content="关于" Margin="298,11,0,0" VerticalAlignment="Top" Width="69" Height="31" Background="White"/>
         <TextBlock x:Name="Name" HorizontalAlignment="Left" Margin="484,17,0,0" Text="衡光运算器" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" FocusVisualPrimaryBrush="#FF481919" Foreground="#FFD37828"/>
-        <Button x:Name="One" Content="一年级" Margin="392,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.16,0.573" Click="One_Click"/>
-        <Button x:Name="Two" Content="二年级" Margin="484,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.244,0.596" Click="Two_Click"/>
-        <Button x:Name="Three" Content="三年级" Margin="579,66,0,0" VerticalAlignment="Top" Click="Three_Click"/>
-        <Button x:Name="Four" Content="四年级" Margin="675,66,0,0" VerticalAlignment="Top" Click="Four_Click"/>
-        <ListBox x:Name="listBox" Margin="31,226,649,0" Visibility="Visible" Height="502" VerticalAlignment="Top" SelectionChanged="listBox_SelectionChanged"/>
+        <Button x:Name="One" Content="一年级" Margin="392,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.16,0.573" Click="One_Click" Background="White"/>
+        <Button x:Name="Two" Content="二年级" Margin="484,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.244,0.596" Click="Two_Click" Background="White"/>
+        <Button x:Name="Three" Content="三年级" Margin="579,66,0,0" VerticalAlignment="Top" Click="Three_Click" Background="White"/>
+        <Button x:Name="Four" Content="四年级" Margin="675,66,0,0" VerticalAlignment="Top" Click="Four_Click" Background="White"/>
+        <ListBox x:Name="listBox" Margin="31,226,907,0" Visibility="Visible" Height="393" VerticalAlignment="Top"/>
         <TextBox x:Name="Text1" HorizontalAlignment="Left" Margin="411,238,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="109"/>
         <TextBox x:Name="Text2" HorizontalAlignment="Left" Margin="410,275,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" RenderTransformOrigin="-0.035,0.645"/>
         <TextBox x:Name="Text3" HorizontalAlignment="Left" Margin="410,312,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="109"/>
@@ -33,28 +33,29 @@
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="765,143,0,0" Text="您好【XXX】！" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="135"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="744,202,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="224"/>
         <Rectangle HorizontalAlignment="Left" Height="136" Margin="744,338,0,0" Stroke="Black" VerticalAlignment="Top" Width="224"/>
-        <Button x:Name="Multiplication" Content="乘法" Margin="756,390,0,0" VerticalAlignment="Top" Width="71" Background="#33F6EFEF" BorderBrush="#FF656161" IsEnabled="False" Click="Multiplication_Click"/>
-        <Button x:Name="Division" Content="除法" Margin="878,390,0,0" VerticalAlignment="Top" Width="74" Background="#33F4EBEB" BorderBrush="#FF827D7D" RenderTransformOrigin="-2.334,0.533" IsEnabled="False"/>
-        <Button x:Name="Mixture" Content="混合运算" Margin="756,433,0,0" VerticalAlignment="Top" Width="83" BorderBrush="#FF7D7979" Background="#33F6F5F5" IsEnabled="False"/>
-        <Button x:Name="Arithmetic1" Content="四则运算" Margin="866,433,0,0" VerticalAlignment="Top" Width="86" Background="#33EBE4E4" BorderBrush="#FF7C7878" RenderTransformOrigin="0.001,0.685" IsEnabled="False"/>
+        <Button x:Name="Multiplication" Content="乘法" Margin="756,390,0,0" VerticalAlignment="Top" Width="71" Background="White" BorderBrush="#FF656161" IsEnabled="False" Click="Multiplication_Click"/>
+        <Button x:Name="Division" Content="除法" Margin="878,390,0,0" VerticalAlignment="Top" Width="74" Background="White" BorderBrush="#FF827D7D" RenderTransformOrigin="-2.334,0.533" IsEnabled="False"/>
+        <Button x:Name="Mixture" Content="混合运算" Margin="756,433,0,0" VerticalAlignment="Top" Width="83" BorderBrush="#FF7D7979" Background="White" IsEnabled="False"/>
+        <Button x:Name="Arithmetic1" Content="四则运算" Margin="866,433,0,0" VerticalAlignment="Top" Width="86" Background="White" BorderBrush="#FF7C7878" RenderTransformOrigin="0.001,0.685" IsEnabled="False"/>
         <Rectangle HorizontalAlignment="Left" Height="50" Margin="745,522,0,0" Stroke="Black" VerticalAlignment="Top" Width="223"/>
-        <Button x:Name="Print_" Content="打印题目" Margin="756,531,0,0" VerticalAlignment="Top" Width="83"/>
-        <Button x:Name="Mistakes" Content="错题本" Margin="872,530,0,0" VerticalAlignment="Top" Width="86"/>
+        <Button x:Name="Print_" Content="打印题目" Margin="756,531,0,0" VerticalAlignment="Top" Width="83" Background="White"/>
+        <Button x:Name="Mistakes" Content="错题本" Margin="872,530,0,0" VerticalAlignment="Top" Width="86" Background="White"/>
         <TextBlock x:Name="Time" HorizontalAlignment="Left" Margin="782,582,0,0" Text="已运行了999999.99分钟" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="Date" HorizontalAlignment="Left" Margin="828,606,0,0" Text="当前时间" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="812,641,0,0" Text="当前版本号V1.1" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:Name="Add" Content="加法" Margin="756,349,0,0" VerticalAlignment="Top" Width="71" Click="Add_Click" IsEnabled="False"/>
-        <Button x:Name="Subtract" Content="减法" Margin="878,348,0,0" VerticalAlignment="Top" Width="74" Click="Subtract_Click" IsEnabled="False"/>
-        <Button x:Name="button" Content="提交" Margin="627,368,0,0" VerticalAlignment="Top" Click="button_Click" Height="38" Width="80"/>
-        <TextBlock x:Name="text1" HorizontalAlignment="Left" Margin="539,245,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="text2" HorizontalAlignment="Left" Margin="539,281,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="text3" HorizontalAlignment="Left" Margin="539,318,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="text4" HorizontalAlignment="Left" Margin="539,356,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="text5" HorizontalAlignment="Left" Margin="538,396,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="text6" HorizontalAlignment="Left" Margin="539,432,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="text7" HorizontalAlignment="Left" Margin="539,465,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="text8" HorizontalAlignment="Left" Margin="539,501,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="text9" HorizontalAlignment="Left" Margin="539,538,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="text10" HorizontalAlignment="Left" Margin="539,576,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="Add" Content="加法" Margin="756,349,0,0" VerticalAlignment="Top" Width="71" Click="Add_Click" IsEnabled="False" Background="White"/>
+        <Button x:Name="Subtract" Content="减法" Margin="878,348,0,0" VerticalAlignment="Top" Width="74" Click="Subtract_Click" IsEnabled="False" Background="White"/>
+        <Button x:Name="button" Content="提交" Margin="627,368,0,0" VerticalAlignment="Top" Click="button_Click" Height="38" Width="80" Background="White"/>
+        <TextBlock x:Name="text1" HorizontalAlignment="Left" Margin="539,245,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="text2" HorizontalAlignment="Left" Margin="539,281,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="text3" HorizontalAlignment="Left" Margin="539,318,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="text4" HorizontalAlignment="Left" Margin="539,356,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="text5" HorizontalAlignment="Left" Margin="538,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="text6" HorizontalAlignment="Left" Margin="539,432,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="text7" HorizontalAlignment="Left" Margin="539,465,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="text8" HorizontalAlignment="Left" Margin="539,501,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="text9" HorizontalAlignment="Left" Margin="539,538,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="text10" HorizontalAlignment="Left" Margin="539,576,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="117" Margin="130,83,0,0" VerticalAlignment="Top" Width="152" Source="Assets\lADPBGY15Uv9VprM3Mzc_220_220.jpg_720x720q90g.jpg"/>
     </Grid>
 </Page>

@@ -1,3 +1,5 @@
+WinMetadata\Windows.winmd
+Assets\lADPBGY15Uv9VprM3Mzc_220_220.jpg_720x720q90g.jpg
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -9,4 +11,3 @@ App.xbf
 MainPage.xbf
 UWPApp1.xr.xml
 Properties\Default.rd.xml
-WinMetadata\Windows.winmd

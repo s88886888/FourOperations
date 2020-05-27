@@ -9,6 +9,7 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="ManipulationMode" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -42,7 +43,6 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
-      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -61,6 +61,14 @@
       <RootProperty Name="Stroke" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="UWPApp1.MainPage" />
   </Roots.RootTypes>

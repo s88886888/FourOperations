@@ -533,19 +533,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\CYH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\团队项目\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectUniqueName": "C:\\Users\\CYH\\Desktop\\团队\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "projectName": "FourOperationsDemo",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\团队项目\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\团队项目\\FourOperations\\FourOperationsDemo\\obj\\",
+      "projectPath": "C:\\Users\\CYH\\Desktop\\团队\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "packagesPath": "C:\\Users\\CYH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CYH\\Desktop\\团队\\FourOperations\\FourOperationsDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CYH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -558,8 +558,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Lenovo\\Desktop\\团队项目\\FourOperations\\FourOperations\\FourOperations.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\Desktop\\团队项目\\FourOperations\\FourOperations\\FourOperations.csproj"
+            "C:\\Users\\CYH\\Desktop\\团队\\FourOperations\\FourOperations\\FourOperations.csproj": {
+              "projectPath": "C:\\Users\\CYH\\Desktop\\团队\\FourOperations\\FourOperations\\FourOperations.csproj"
             }
           }
         }
@@ -582,12 +582,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.2, 3.1.2]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
