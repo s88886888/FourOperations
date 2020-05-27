@@ -2,6 +2,7 @@
 using ConsoleApp2.Base;
 using ConsoleApp2.Themeup;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
@@ -102,8 +103,26 @@ namespace FourOperations
             //threeTheme.MultiplyAndDivisionThemeCount();
 
             OneTheme oneTheme = new OneTheme();
-            oneTheme.SubThemeCount();
-            oneTheme.SubOutPutTxt();
+            //oneTheme.SubThemeCount();
+            //oneTheme.SubOutPutTxt();
+            oneTheme.AddThemeCount();
+
+
+
+            List<string> temp = new List<string>();
+            //temp = Console.ReadLine();            
+            temp.Add("19");
+            temp.Add("35");
+            temp.Add("14");
+            temp.Add("55");
+            temp.Add("22");
+            temp.Add("3");
+            temp.Add("25");
+            temp.Add("10");
+            temp.Add("1");
+            temp.Add("25");
+
+            oneTheme.ErrorsText(temp);
 
         }
     }
