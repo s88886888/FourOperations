@@ -1,26 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {}
   },
   "projects": {
-    "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
         "projectName": "FourOperations",
-        "projectPath": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\FourOperations\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

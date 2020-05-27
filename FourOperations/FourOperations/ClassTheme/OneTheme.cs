@@ -1,5 +1,6 @@
 ﻿using ConsoleApp2.Themeup;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Xml;
 
@@ -7,10 +8,13 @@ namespace ConsoleApp2.Base
 {
     public class OneTheme : BasicData
     {
-        
+
         private readonly Random random = new Random();
         readonly string[] ShowTheme = new string[10];
         readonly string[] ShowAnswer = new string[10];
+
+        public readonly List<string> tempAnswer = new List<string>();//用户输出的答案
+        public readonly List<string> tempTheme = new List<string>();//错的题目
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
@@ -90,7 +94,7 @@ namespace ConsoleApp2.Base
         /// </summary>
         public override void AddThemeCount()
         {
-       
+
             for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var oneTheme = new OneTheme();
@@ -110,7 +114,7 @@ namespace ConsoleApp2.Base
                 oneTheme.SubTheme();
                 ArrayDate(ShowTheme, ShowAnswer, i, oneTheme);
             }
-            Show(ShowTheme, ShowTheme);
+            Show(ShowTheme, ShowAnswer);
         }
 
         /// <summary>
@@ -145,8 +149,8 @@ namespace ConsoleApp2.Base
         /// 打印生成的10道题目Add
         /// </summary>
         public void AddOutPutTxt()
-         {
-            string result = @"D:\打印文件Add.txt";//保存文件路径
+        {
+            string result = @"..\\..\\..\\打印文件Add.txt";//保存文件路径
             TwoTheme twoTheme = new TwoTheme();
             OutPutTxt(result);
             AddOutPutXml(twoTheme);
@@ -156,7 +160,7 @@ namespace ConsoleApp2.Base
         /// </summary>
         public void SubOutPutTxt()
         {
-            string result = @"D:\打印文件Sub.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印文件Sub.txt";//保存文件路径
             TwoTheme twoTheme = new TwoTheme();
             OutPutTxt(result);
             SubOutPutXml(twoTheme);
@@ -171,9 +175,9 @@ namespace ConsoleApp2.Base
         {
             FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
             StreamWriter wr = new StreamWriter(fs);
-            for (int i = 0; i <ArrayTheme.Count; i++)
+            for (int i = 0; i < ArrayTheme.Count; i++)
             {
-                wr.WriteLine(ArrayTheme[i] + FFF +ArrayAnswer[i]);
+                wr.WriteLine(ArrayTheme[i] + FFF + ArrayAnswer[i]);
             }
             wr.Flush();
             fs.Close();
@@ -268,8 +272,8 @@ namespace ConsoleApp2.Base
         public void AddReaderXML()
         {
             using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Add.xml"))
-            {                
-                    ReaderXML(reader);               
+            {
+                ReaderXML(reader);
             }
         }
         public void SubReaderXML()
@@ -298,6 +302,39 @@ namespace ConsoleApp2.Base
                     reader.Read();
                 }
             }
+        }
+
+
+        /// <summary>
+        /// 错题打印txt
+        /// </summary>
+        /// <param name="list"></param>
+        public void ErrorsText()
+        {
+
+            for (int i = 0; i < ArrayTheme.Count-1; i++)
+            {
+                if (tempAnswer[i] == ArrayAnswer[i])
+                {
+                    return;
+                }
+                else
+                {
+                    tempAnswer.Add(ArrayAnswer[i]);
+                    tempTheme.Add(ArrayTheme[i]);
+
+                }
+            }
+            string result = "..\\..\\..\\错题打印.txt";
+            FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
+            StreamWriter wr = new StreamWriter(fs);
+            for (int i = 0; i < tempTheme.Count; i++)
+            {
+                wr.WriteLine(tempTheme[i] + FFF + ArrayAnswer[i]);
+            }
+            wr.Flush();
+            fs.Close();
+            Console.WriteLine("打印成功");
         }
     }
 }
