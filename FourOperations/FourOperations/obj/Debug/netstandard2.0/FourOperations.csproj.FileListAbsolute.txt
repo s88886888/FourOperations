@@ -37,7 +37,6 @@ C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperati
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.deps.json
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.dll
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.pdb
-C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfoInputs.cache
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfo.cs
@@ -52,3 +51,4 @@ D:\Git\Clone4\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperati
 D:\Git\Clone4\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfo.cs
 D:\Git\Clone4\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
 D:\Git\Clone4\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb
+C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csprojAssemblyReference.cache

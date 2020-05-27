@@ -73,26 +73,47 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void DivisionTheme()
         {
-
+            double BasicA = 0;
+            double BasicB = 0;
+            RandomNumber();
             try
-            {
-                RandomNumber();
-                if (BasicDataA > 100 && BasicDataB > 100 && BasicDataC > 100 || BasicDataA < -10 && BasicDataB < -10 && BasicDataC < -10 || BasicDataB == 0)
+            {             
+                if (BasicDataA > 100 && BasicDataB > 100)
                 {
                     throw (new CustomExcepsion("A>100 &&B>100||分母不能为0 ，B==0"));
                 }
 
                 else
                 {
+
+                    BasicA = BasicDataA / BasicDataB;
+                    BasicB = BasicA * BasicDataB;
                     //分子大于分母
                     if (BasicDataA > BasicDataB)
                     {
-                        Theme = $"{BasicDataA}{CCC[3]}{BasicDataB}";
-                        Answer = BasicDataA / BasicDataB;
+                        if (BasicDataA == BasicB)
+                        {
+                            Theme = $"{BasicDataA}{CCC[3]}{BasicDataB}";
+                            Answer = BasicDataA / BasicDataB;
+                        }
+                        else
+                        {
+                            DivisionTheme();
+                        }
+
                     }
                     //如果大于，两极反转
                     {
                         ChangeNumber();
+                        if (BasicDataA == BasicB)
+                        {
+                            Theme = $"{BasicDataA}{CCC[3]}{BasicDataB}";
+                            Answer = BasicDataA / BasicDataB;
+                        }
+                        else
+                        {
+                            DivisionTheme();
+                        }
                     }
                     if (Answer < -10 || Answer == 0)
                     {
