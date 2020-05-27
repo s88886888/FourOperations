@@ -52,3 +52,11 @@ D:\Git\Clone4\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperati
 D:\Git\Clone4\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfo.cs
 D:\Git\Clone4\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
 D:\Git\Clone4\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb
+D:\衡光计算器\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.deps.json
+D:\衡光计算器\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.dll
+D:\衡光计算器\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.pdb
+D:\衡光计算器\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csprojAssemblyReference.cache
+D:\衡光计算器\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfoInputs.cache
+D:\衡光计算器\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfo.cs
+D:\衡光计算器\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
+D:\衡光计算器\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb
