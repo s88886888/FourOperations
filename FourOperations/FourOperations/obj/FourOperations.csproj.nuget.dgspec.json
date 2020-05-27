@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {}
+    "G:\\正道的光\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {}
   },
   "projects": {
-    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
+    "G:\\正道的光\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "projectUniqueName": "G:\\正道的光\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
         "projectName": "FourOperations",
-        "projectPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
-        "packagesPath": "C:\\Users\\linso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\obj\\",
+        "projectPath": "G:\\正道的光\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "G:\\正道的光\\FourOperations\\FourOperations\\FourOperations\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\linso\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
