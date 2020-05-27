@@ -313,20 +313,28 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void AddOutPutTxt()
         {
-            string result = @"D:\打印文件Add.txt";//保存文件路径
-            TwoTheme twoTheme = new TwoTheme();
+            string result = @"..\\..\\..\\打印文件Add.txt";//保存文件路径
+            ThreeTheme  threeTheme = new ThreeTheme();
             OutPutTxt(result);
-            AddOutPutXml(twoTheme);
+            AddOutPutXml(threeTheme);
         }
         /// <summary>
         /// 打印生成的10道题目Sub
         /// </summary>
         public void SubOutPutTxt()
         {
-            string result = @"D:\打印文件Sub.txt";//保存文件路径
-            TwoTheme twoTheme = new TwoTheme();
+            string result = @"..\\..\\..\\打印文件Sub.txt";//保存文件路径
+            ThreeTheme  threeTheme = new ThreeTheme();
             OutPutTxt(result);
-            SubOutPutXml(twoTheme);
+            SubOutPutXml(threeTheme);
+        }
+
+        public void MultiplyAndDivisionThemeOutPutTxt()
+        {
+            string result = @"..\\..\\..\\三年级MultiplyAndDivisionThemeOutPutTxt.txt";//保存文件路径
+            ThreeTheme threeTheme = new ThreeTheme();
+            OutPutTxt(result);
+            MultiplyAndDivisionThemeOutPutXml(threeTheme);
         }
 
         /// <summary>
@@ -392,8 +400,8 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         /// 同步Add打印xml
         /// </summary>
-        /// <param name="twoTheme"></param>
-        public void AddOutPutXml(TwoTheme twoTheme)
+        /// <param name="threeTheme"></param>
+        public void AddOutPutXml(ThreeTheme threeTheme)
         {
             string fileName = "打印文件Add.xml";
             OutPutXml(fileName);
@@ -402,9 +410,18 @@ namespace ConsoleApp2.Themeup
         /// 同步Sub打印xml
         /// </summary>
         /// <param name="oneTheme"></param>
-        public void SubOutPutXml(TwoTheme twoTheme)
+        public void SubOutPutXml(ThreeTheme  threeTheme)
         {
             string fileName = "打印文件Sub.xml";
+            OutPutXml(fileName);
+        }
+        /// <summary>
+        /// 打印出混合运算
+        /// </summary>
+        /// <param name="threeTheme"></param>
+        public void MultiplyAndDivisionThemeOutPutXml(ThreeTheme threeTheme)
+        {
+            string fileName = "MultiplyAndDivisionTheme.xml";
             OutPutXml(fileName);
         }
         /// <summary>
