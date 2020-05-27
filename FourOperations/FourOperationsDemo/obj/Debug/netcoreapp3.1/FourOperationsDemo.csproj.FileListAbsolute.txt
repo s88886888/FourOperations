@@ -109,3 +109,4 @@ D:\正道的光\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netco
 D:\正道的光\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.dll
 D:\正道的光\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.pdb
 D:\正道的光\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.genruntimeconfig.cache
+D:\正道的光\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csproj.CoreCompileInputs.cache

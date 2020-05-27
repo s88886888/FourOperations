@@ -8,7 +8,7 @@
         Title="衡光计算器" Height="600" Width="900" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid Background="#7FFFC000">
         <Canvas>
-            <Button x:Name="System" Content="系统" Canvas.Left="10" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="System_Click" />
+            <Button x:Name="BtnSystem" Content="系统" Canvas.Left="10" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="BtnSystem_Click" />
             <Button x:Name="Setup" Content="设置" Canvas.Left="100" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
             <Button x:Name="Help" Content="帮助" Canvas.Left="190" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
             <Button x:Name="About" Content="关于" Canvas.Left="280" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>

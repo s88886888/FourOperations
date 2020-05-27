@@ -26,9 +26,14 @@ namespace WpfOperations
             InitializeComponent();
         }
 
-        private void System_Click(object sender, RoutedEventArgs e)
+   
+
+       
+    
+
+        private void BtnSystem_Click(object sender, RoutedEventArgs e)
         {
-            return;
+
         }
     }
 }
