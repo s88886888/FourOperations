@@ -538,11 +538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CYH\\Desktop\\11\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectUniqueName": "C:\\Users\\CYH\\Desktop\\团队\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "projectName": "FourOperationsDemo",
-      "projectPath": "C:\\Users\\CYH\\Desktop\\11\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectPath": "C:\\Users\\CYH\\Desktop\\团队\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "packagesPath": "C:\\Users\\CYH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CYH\\Desktop\\11\\FourOperations\\FourOperationsDemo\\obj\\",
+      "outputPath": "C:\\Users\\CYH\\Desktop\\团队\\FourOperations\\FourOperationsDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CYH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -558,8 +558,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\CYH\\Desktop\\11\\FourOperations\\FourOperations\\FourOperations.csproj": {
-              "projectPath": "C:\\Users\\CYH\\Desktop\\11\\FourOperations\\FourOperations\\FourOperations.csproj"
+            "C:\\Users\\CYH\\Desktop\\团队\\FourOperations\\FourOperations\\FourOperations.csproj": {
+              "projectPath": "C:\\Users\\CYH\\Desktop\\团队\\FourOperations\\FourOperations\\FourOperations.csproj"
             }
           }
         }
