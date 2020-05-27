@@ -375,7 +375,7 @@
       ]
     },
     "System.Security.AccessControl/4.5.0": {
-      "sha512": "aVjTe36YkO8FzfNhMLoPEzv3gF9rphoW9ngFhG/MH4zzEPLx07sNrgCLwMP4Wx2leI6qarMrGv21OwQXYUKLmw==",
+      "sha512": "vW8Eoq0TMyz5vAG/6ce483x/CP83fgm4SJe5P8Tb1tZaobcvPrbMEL7rhH1DRdrYbbb6F0vq3OlzmK0Pkwks5A==",
       "type": "package",
       "path": "system.security.accesscontrol/4.5.0",
       "files": [
@@ -458,7 +458,7 @@
       ]
     },
     "System.Security.Permissions/4.5.0": {
-      "sha512": "vDQ7q30Soe0a1cPhvxn+7IFmMeTG5IP+hTQrnKQDjTNpD2epqwbZSzMM2Git5TXBr4Kwwhc/0SEtJY0qPoiegA==",
+      "sha512": "9gdyuARhUR7H+p5CjyUB/zPk7/Xut3wUSP8NJQB6iZr8L3XUXTMdoLeVAg9N4rqF8oIpE7MpdqHdDHQ7XgJe0g==",
       "type": "package",
       "path": "system.security.permissions/4.5.0",
       "files": [
@@ -479,7 +479,7 @@
       ]
     },
     "System.Security.Principal.Windows/4.5.0": {
-      "sha512": "WA9ETb/pY3BjnxKjBUHEgO59B7d/nnmjHFsqjJ2eDT780nD769CT1/bw2ia0Z6W7NqlcqokE6sKGKa6uw88XGA==",
+      "sha512": "U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
       "type": "package",
       "path": "system.security.principal.windows/4.5.0",
       "files": [
@@ -534,35 +534,37 @@
   },
   "packageFolders": {
     "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\Clone4\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "projectName": "FourOperationsDemo",
-      "projectPath": "D:\\Git\\Clone4\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\Clone4\\FourOperations\\FourOperationsDemo\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\FourOperationsDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "https://www.nuget.org/api/v2/": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Git\\Clone4\\FourOperations\\FourOperations\\FourOperations.csproj": {
-              "projectPath": "D:\\Git\\Clone4\\FourOperations\\FourOperations\\FourOperations.csproj"
+            "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj"
             }
           }
         }
