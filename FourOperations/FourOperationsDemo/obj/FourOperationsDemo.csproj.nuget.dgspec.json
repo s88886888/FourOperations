@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj": {}
+    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj": {}
   },
   "projects": {
-    "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj": {
+    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+        "projectUniqueName": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
         "projectName": "FourOperationsDemo",
-        "projectPath": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperationsDemo\\obj\\",
+        "projectPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+        "packagesPath": "C:\\Users\\linso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperationsDemo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\linso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
-                "projectPath": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj"
+              "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
+                "projectPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj"
               }
             }
           }
@@ -59,23 +65,29 @@
         }
       }
     },
-    "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
+    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "projectUniqueName": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
         "projectName": "FourOperations",
-        "projectPath": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\衡光计算器\\FourOperations\\FourOperations\\FourOperations\\obj\\",
+        "projectPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "packagesPath": "C:\\Users\\linso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\linso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
