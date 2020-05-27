@@ -215,5 +215,10 @@ namespace UWPApp1
             }
             listBox.ItemsSource = vslist;
         }
+
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

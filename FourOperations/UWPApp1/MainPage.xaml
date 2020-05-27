@@ -18,7 +18,7 @@
         <Button x:Name="Two" Content="二年级" Margin="484,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.244,0.596" Click="Two_Click"/>
         <Button x:Name="Three" Content="三年级" Margin="579,66,0,0" VerticalAlignment="Top" Click="Three_Click"/>
         <Button x:Name="Four" Content="四年级" Margin="675,66,0,0" VerticalAlignment="Top" Click="Four_Click"/>
-        <ListBox x:Name="listBox" Margin="31,226,1035,0" Visibility="Visible" Height="393" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox" Margin="31,226,649,0" Visibility="Visible" Height="502" VerticalAlignment="Top" SelectionChanged="listBox_SelectionChanged"/>
         <TextBox x:Name="Text1" HorizontalAlignment="Left" Margin="411,238,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="109"/>
         <TextBox x:Name="Text2" HorizontalAlignment="Left" Margin="410,275,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" RenderTransformOrigin="-0.035,0.645"/>
         <TextBox x:Name="Text3" HorizontalAlignment="Left" Margin="410,312,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="109"/>
