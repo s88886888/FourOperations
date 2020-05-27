@@ -1,12 +1,6 @@
-﻿
-using FourOperations.ClassTheme;
-using NPOI.SS.Formula.Functions;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
 using System.IO;
-using System.Linq.Expressions;
-using System.Text;
 using System.Xml;
 
 namespace ConsoleApp2.Themeup
@@ -29,13 +23,12 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public override void RandomNumber()
         {
-            BasicDataA = random.Next(-10, 100);
-            BasicDataB = random.Next(-10, 100);
-            BasicDataC = random.Next(-10, 100);
-            LsitNumA = random.Next(0, 3);
-            LsitNumB = random.Next(0, 3);
+            BasicDataA = random.Next(1, 100);
+            BasicDataB = random.Next(1, 100);
+            BasicDataC = random.Next(1, 100);
+            LsitNumA = random.Next(0, 4);
+            LsitNumB = random.Next(0, 4);
         }
-
         /// <summary>
         /// 生成一道乘法题目
         /// </summary>
@@ -54,7 +47,6 @@ namespace ConsoleApp2.Themeup
                 else
                 {
                     Theme = $"{BasicDataA}{CCC[2]}{BasicDataB}";
-
                     Answer = BasicDataA * BasicDataB;
                     if (Answer > 1000 || Answer < -100)
                     {
@@ -78,6 +70,7 @@ namespace ConsoleApp2.Themeup
             {
                 if (BasicDataA > 100 && BasicDataB > 100)
                 {
+
                     throw (new CustomExcepsion("A>100 &&B>100"));
                 }
                 else
@@ -119,31 +112,39 @@ namespace ConsoleApp2.Themeup
             {
                 throw (new CustomExcepsion("A>100 &&B>100"));
             }
+            if (BasicDataB == 0 || BasicDataA == 0)
+            {
+                MultiplyAndDivisionTheme();
+            }
             else
             {
                 bool num = true;
+                string number = "";
                 DataTable table = new DataTable();
-                if (BasicDataA % 2 == 0)
+                if (LsitNumA == 3 || LsitNumA == 4)
                 {
                     Theme = $"{BasicDataA}{CCC[LsitNumA]}({BasicDataB}{CCC[LsitNumB]}{BasicDataC})".ToString();
-                    Answer = Convert.ToInt32(table.Compute(Theme, ""));
+                    number = Convert.ToDouble(table.Compute(Theme, null)).ToString("0.000");
+                    Answer = Convert.ToDouble(number);
                     num = false;
                 }
-                if (BasicDataA % 3 == 0 && num == true)
+                if (LsitNumA == 0 || LsitNumA == 1)
                 {
                     Theme = $"({BasicDataA}{CCC[LsitNumA]}{BasicDataB}){CCC[LsitNumB]}{BasicDataC}".ToString();
-                    Answer = Convert.ToInt32(table.Compute(Theme, ""));
+                    number = Convert.ToDouble(table.Compute(Theme, null)).ToString("0.000"); ;
+                    Answer = Convert.ToDouble(number);
                     num = false;
                 }
                 if (num == true)
                 {
                     Theme = $"{BasicDataA}{CCC[LsitNumA]}{BasicDataB}{CCC[LsitNumB]}{BasicDataC}".ToString();
-                    Answer = Convert.ToInt32(table.Compute(Theme, ""));
+                    number = Convert.ToDouble(table.Compute(Theme, null)).ToString("0.000"); ;
+                    Answer = Convert.ToDouble(number);
                 }
-                //if (Answer > 10000 || Answer < -1000)
-                //{
-                //    MultiplyAndDivisionTheme();
-                //}
+                if (Answer > 10000 || Answer < -100)
+                {
+                    MultiplyAndDivisionTheme();
+                }
             }
         }
 

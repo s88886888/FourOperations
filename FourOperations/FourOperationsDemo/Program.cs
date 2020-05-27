@@ -92,7 +92,7 @@ namespace FourOperations
             //twoTheme.AddOutPutTxt();
 
             ThreeTheme threeTheme = new ThreeTheme();
-            threeTheme.DivisionThemeCount();
+            threeTheme.MultiplyAndDivisionThemeCount();
 
 
             //threeTheme.MultiplyAndDivisionTheme();
