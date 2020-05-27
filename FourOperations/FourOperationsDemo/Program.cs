@@ -102,10 +102,10 @@ namespace FourOperations
 
             //threeTheme.MultiplyAndDivisionThemeCount();
 
-            ThreeTheme three = new ThreeTheme();
+            //ThreeTheme three = new ThreeTheme();
             //oneTheme.SubThemeCount();
             //oneTheme.SubOutPutTxt();
-            three.DivisionThemeCount();
+            //three.DivisionThemeCount();
 
 
 
@@ -124,6 +124,16 @@ namespace FourOperations
 
             //oneTheme.ErrorsText(temp);
 
+
+
+            OneTheme oneTheme = new OneTheme();
+            oneTheme.AddThemeCount();
+            for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
+            {
+                string a = Console.ReadLine();
+                oneTheme.tempAnswer.Add(a);
+            }
+            oneTheme.ErrorsText();
         }
     }
 }
