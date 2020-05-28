@@ -60,7 +60,7 @@ namespace WpfFourOperationsApp
             if (btnL1.IsChecked == true)
             {
 
-                
+
 
                 OneTheme oneTheme = new OneTheme();
                 oneTheme.AddThemeCount();
@@ -84,7 +84,7 @@ namespace WpfFourOperationsApp
                     vslist1[i] = twoTheme.ArrayAnswer[i];
                     lbxQuestion.Items.Add(vslist[i]);
                 }
-                
+
 
             }
             else if (btnL3.IsChecked == true)
@@ -97,7 +97,7 @@ namespace WpfFourOperationsApp
                     vslist1[i] = threeTheme.ArrayAnswer[i];
                     lbxQuestion.Items.Add(vslist[i]);
                 }
-                
+
 
             }
             else if (btnL4.IsChecked == true)
@@ -110,60 +110,66 @@ namespace WpfFourOperationsApp
                     vslist1[i] = fourTheme.ArrayAnswer[i];
                     lbxQuestion.Items.Add(vslist[i]);
                 }
-                
+
             }
 
         }
 
         private void btnsub_Click(object sender, RoutedEventArgs e)
         {
+            lbxQuestion.Items.Clear();
 
             if (btnL1.IsChecked == true)
             {
+                OneTheme oneTheme = new OneTheme();
                 oneTheme.SubThemeCount();
 
                 for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
                 {
                     vslist[i] = oneTheme.ArrayTheme[i];
                     vslist1[i] = oneTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
                 }
 
-                lbxQuestion.ItemsSource = vslist;
+
             }
             else if (btnL2.IsChecked == true)
             {
-
+                TwoTheme twoTheme = new TwoTheme();
                 twoTheme.SubThemeCount();
                 for (int i = 0; i < twoTheme.ArrayTheme.Count; i++)
                 {
                     vslist[i] = twoTheme.ArrayTheme[i];
                     vslist1[i] = twoTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
                 }
-                lbxQuestion.ItemsSource = vslist;
+
 
             }
             else if (btnL3.IsChecked == true)
             {
-
+                ThreeTheme threeTheme = new ThreeTheme();
                 threeTheme.SubThemeCount();
                 for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
                 {
                     vslist[i] = threeTheme.ArrayTheme[i];
                     vslist1[i] = threeTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
                 }
-                lbxQuestion.ItemsSource = vslist;
+
 
             }
             else if (btnL4.IsChecked == true)
             {
-
+                FourTheme fourTheme = new FourTheme();
                 fourTheme.SubThemeCount();
                 for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
                 {
                     vslist[i] = fourTheme.ArrayTheme[i];
                     vslist1[i] = fourTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
                 }
-                lbxQuestion.ItemsSource = vslist;
+
 
             }
         }
@@ -184,6 +190,7 @@ namespace WpfFourOperationsApp
             btnL1.IsChecked = false;
             btnadd.IsEnabled = true;
             btnsub.IsEnabled = true;
+            btnO.IsEnabled = true;
         }
 
         private void btnL3_Checked(object sender, RoutedEventArgs e)
@@ -193,6 +200,9 @@ namespace WpfFourOperationsApp
             btnL4.IsChecked = false;
             btnadd.IsEnabled = true;
             btnsub.IsEnabled = true;
+            btndiv.IsEnabled = true;
+            btnmul.IsEnabled = true;
+            btnHybrid.IsEnabled = true;
         }
 
         private void btnsubmit_Click(object sender, RoutedEventArgs e)
@@ -304,11 +314,51 @@ namespace WpfFourOperationsApp
                     txtJudge10.Text = "正确";
 
                 }
-                else if (txtAnswer10.Text != vslist1[9])
+                else 
+                if (txtAnswer10.Text != vslist1[9])
                 {
                     txtJudge10.Text = "×";
 
                 }
+            }
+        }
+
+        private void btnmul_Click(object sender, RoutedEventArgs e)
+        {
+            lbxQuestion.Items.Clear();
+            FourTheme fourTheme = new FourTheme();
+            fourTheme.MultiplyThemeCount();
+            for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+            {
+                vslist[i] = fourTheme.ArrayTheme[i];
+                vslist1[i] = fourTheme.ArrayAnswer[i];
+                lbxQuestion.Items.Add(vslist[i]);
+            }
+        }
+
+        private void btnO_Click(object sender, RoutedEventArgs e)
+        {
+            lbxQuestion.Items.Clear();
+            FourTheme fourTheme = new FourTheme();
+            fourTheme.FourOperationsThemeCount();
+            for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+            {
+                vslist[i] = fourTheme.ArrayTheme[i];
+                vslist1[i] = fourTheme.ArrayAnswer[i];
+                lbxQuestion.Items.Add(vslist[i]);
+            }
+        }
+
+        private void btnHybrid_Click(object sender, RoutedEventArgs e)
+        {
+            lbxQuestion.Items.Clear();
+            FourTheme fourTheme = new FourTheme();
+            fourTheme.HybridOperationThemeCount();
+            for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+            {
+                vslist[i] = fourTheme.ArrayTheme[i];
+                vslist1[i] = fourTheme.ArrayAnswer[i];
+                lbxQuestion.Items.Add(vslist[i]);
             }
         }
     }

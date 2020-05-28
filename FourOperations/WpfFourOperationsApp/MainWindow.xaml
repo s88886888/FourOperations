@@ -59,10 +59,10 @@
 
                 <Button x:Name="btnadd" Content="加法" Canvas.Left="10" Canvas.Top="8" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False" Click="btnadd_Click"/>
                 <Button x:Name="btnsub" Content="减法" Canvas.Left="111" Canvas.Top="8" Width="85" Height="30 " Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False" Click="btnsub_Click"/>
-                <Button x:Name="btnmul" Content="乘法" Canvas.Left="10" Canvas.Top="47" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False"/>
+                <Button x:Name="btnmul" Content="乘法" Canvas.Left="10" Canvas.Top="47" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False" Click="btnmul_Click"/>
                 <Button x:Name="btndiv" Content="除法" Canvas.Left="111" Canvas.Top="47" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False"/>
-                <Button x:Name="btnHybrid" Content="混合运算" Canvas.Left="10" Canvas.Top="87" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False"/>
-                <Button x:Name="btnO" Content="四则远算" Canvas.Left="111" Canvas.Top="87" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False"/>
+                <Button x:Name="btnHybrid" Content="混合运算" Canvas.Left="10" Canvas.Top="87" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False" Click="btnHybrid_Click"/>
+                <Button x:Name="btnO" Content="四则远算" Canvas.Left="111" Canvas.Top="87" Width="85" Height="30" Background="White" BorderBrush="#FFC5BFBF" IsEnabled="False" Click="btnO_Click"/>
 
 
             </Canvas>
