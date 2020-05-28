@@ -3,6 +3,7 @@ using ConsoleApp2.Base;
 using ConsoleApp2.Themeup;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 
@@ -14,7 +15,7 @@ namespace FourOperations
         static void Main(string[] args)
         {
 
-            FourTheme fourTheme = new FourTheme();
+            //FourTheme fourTheme = new FourTheme();
             //加法
             //fourTheme.AddThemeCount();
             //fourTheme.AddOutPutTxt();
@@ -22,9 +23,30 @@ namespace FourOperations
             //fourTheme.SubThemeCount();
             //fourTheme.SubOutPutTxt();
             //乘法
-            fourTheme.MultiplyThemeCount();
-            fourTheme.MultiplyOutPutTxt();
+            //fourTheme.MultiplyThemeCount();
+            //fourTheme.MultiplyOutPutTxt();
 
+
+
+
+            OneTheme oneTheme = new OneTheme();
+            oneTheme.AddThemeCount();
+            Console.WriteLine("0");
+
+
+            TwoTheme twoTheme = new TwoTheme();
+            twoTheme.AddThemeCount();
+            Console.WriteLine("1");
+
+
+
+            ThreeTheme threeTheme = new ThreeTheme();
+            threeTheme.AddThemeCount();
+            Console.WriteLine("2");
+
+            FourTheme fourTheme = new FourTheme();
+            fourTheme.AddThemeCount();
+            Console.WriteLine("3");
         }
     }
 }

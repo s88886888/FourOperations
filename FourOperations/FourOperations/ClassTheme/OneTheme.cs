@@ -131,20 +131,6 @@ namespace ConsoleApp2.Base
             ArrayTheme.Add(oneTheme.Theme);
             ArrayAnswer.Add(oneTheme.Answer.ToString());
         }
-
-        /// <summary>
-        /// 输出10道题目和答案Date
-        /// </summary>
-        /// <param name="Array1"></param>
-        /// <param name="Array2"></param>
-        private static void Show(string[] Array1, string[] Array2)
-        {
-            for (int i = 0; i < Array1.Length; i++)
-            {
-                Console.Write(Array1[i]);
-                Console.WriteLine("=" + Array2[i]);
-            }
-        }
         /// <summary>
         /// 打印生成的10道题目Add
         /// </summary>
@@ -165,25 +151,6 @@ namespace ConsoleApp2.Base
             OutPutTxt(result);
             SubOutPutXml(FourTheme);
         }
-
-        /// <summary>
-        /// 封装打印数据
-        /// </summary>
-        /// <param name="result"></param>
-        /// <param name="oneTheme"></param>
-        private void OutPutTxt(string result)
-        {
-            FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
-            StreamWriter wr = new StreamWriter(fs);
-            for (int i = 0; i < ArrayTheme.Count; i++)
-            {
-                wr.WriteLine(ArrayTheme[i] + FFF + ArrayAnswer[i]);
-            }
-            wr.Flush();
-            fs.Close();
-        }
-
-
         /// <summary>
         /// 读取打印成txt的加法文件
         /// </summary>
