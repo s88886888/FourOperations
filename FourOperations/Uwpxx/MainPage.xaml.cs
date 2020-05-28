@@ -318,7 +318,7 @@ namespace Uwpxx
 
                 vs1[i] = threeTheme.ArrayAnswer[i];
             }
-            LisBox.ItemsSource = vs;
+            LisBox.ItemsSource = vs;  
         }       
     }
 }
