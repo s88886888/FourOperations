@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FourOperations",
-    "\\FourOperations\\WpfOperations",
-    "\\FourOperations\\WpfOperations\\Logo"
+    "\\FourOperations"
   ],
-  "SelectedNode": "\\FourOperations\\WpfOperations\\Logo\\logo.jpg",
+  "SelectedNode": "\\FourOperations\\FourOperations.sln",
   "PreviewInSolutionExplorer": false
 }
