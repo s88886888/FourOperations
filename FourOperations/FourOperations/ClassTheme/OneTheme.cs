@@ -15,6 +15,7 @@ namespace ConsoleApp2.Base
 
         public readonly List<string> tempAnswer = new List<string>();//用户输出的答案
         public readonly List<string> tempTheme = new List<string>();//错的题目
+        public readonly List<string> tempThemelist = new List<string>();
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
@@ -318,6 +319,7 @@ namespace ConsoleApp2.Base
                 {
                     //return null;
                     tempTheme.Add(ArrayTheme[i]);
+                    tempThemelist.Add(ArrayAnswer[i]);
                 }
             }
             string result = "..\\..\\..\\错题打印.txt";
@@ -325,10 +327,11 @@ namespace ConsoleApp2.Base
             StreamWriter wr = new StreamWriter(fs);
             for (int i = 0; i < tempTheme.Count; i++)
             {
-                wr.WriteLine(tempTheme[i] + FFF + ShowAnswer[i]);
+                wr.WriteLine(tempTheme[i] + FFF + tempThemelist[i]);
             }
             wr.Flush();
             fs.Close();
+
             Console.WriteLine("打印成功");
         }
     }
