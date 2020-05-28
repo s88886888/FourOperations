@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hy9YI784WUeRr4RDTfSdrKIrZNJqwXOKiESdDWkjoHaUJAqS3MAOXYBXpA9OUFTGqfG55S8RxpsRXnDnORYYCA==",
+  "dgSpecHash": "Wr38FiFLo1gTw5TVRThATvSBBRdGim5Ahf37m3l/DgeB0ojg+KmRYBKMzSSY302WfXyruZYlXdA78VyI2R4SBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\10570\\Desktop\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj",
+  "projectFilePath": "F:\\星期五\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\10570\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\10570\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

@@ -6,8 +6,7 @@ using System.Xml;
 namespace ConsoleApp2.Base
 {
     public class OneTheme : BasicData
-    {
-        
+    {        
         private readonly Random random = new Random();
         readonly string[] ShowTheme = new string[10];
         readonly string[] ShowAnswer = new string[10];

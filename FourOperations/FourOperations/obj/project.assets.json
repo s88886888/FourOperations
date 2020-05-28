@@ -781,11 +781,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\10570\\Desktop\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj",
+      "projectUniqueName": "F:\\星期五\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj",
       "projectName": "FourOperations",
-      "projectPath": "C:\\Users\\10570\\Desktop\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj",
+      "projectPath": "F:\\星期五\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj",
       "packagesPath": "C:\\Users\\10570\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\10570\\Desktop\\123132132\\FourOperations\\FourOperations\\obj\\",
+      "outputPath": "F:\\星期五\\123132132\\FourOperations\\FourOperations\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\10570\\AppData\\Roaming\\NuGet\\NuGet.Config",
