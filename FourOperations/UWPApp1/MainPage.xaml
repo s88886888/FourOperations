@@ -35,7 +35,7 @@
         <Button x:Name="Multiplication" Content="乘法" Margin="756,390,0,0" VerticalAlignment="Top" Width="71" Background="White" BorderBrush="#FF656161" IsEnabled="False" Click="Multiplication_Click"/>
         <Button x:Name="Division" Content="除法" Margin="878,390,0,0" VerticalAlignment="Top" Width="74" Background="White" BorderBrush="#FF827D7D" RenderTransformOrigin="-2.334,0.533" IsEnabled="False" Click="Division_Click_1"/>
         <Button x:Name="Mixture" Content="混合运算" Margin="756,433,0,0" VerticalAlignment="Top" Width="83" BorderBrush="#FF7D7979" Background="White" IsEnabled="False" Click="Mixture_Click_1"/>
-        <Button x:Name="Arithmetic1" Content="四则运算" Margin="866,433,0,0" VerticalAlignment="Top" Width="86" Background="White" BorderBrush="#FF7C7878" RenderTransformOrigin="0.001,0.685" IsEnabled="False"/>
+        <Button x:Name="Arithmetic1" Content="四则运算" Margin="866,433,0,0" VerticalAlignment="Top" Width="86" Background="White" BorderBrush="#FF7C7878" RenderTransformOrigin="0.001,0.685" IsEnabled="False" Click="Arithmetic1_Click"/>
         <Rectangle HorizontalAlignment="Left" Height="50" Margin="745,522,0,0" Stroke="Black" VerticalAlignment="Top" Width="223"/>
         <Button x:Name="Print_" Content="打印题目" Margin="756,531,0,0" VerticalAlignment="Top" Width="83" Background="White"/>
         <Button x:Name="Mistakes" Content="错题本" Margin="872,530,0,0" VerticalAlignment="Top" Width="86" Background="White"/>
