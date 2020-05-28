@@ -33,7 +33,6 @@ D:\Git\Clone3\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperati
 D:\Git\Clone3\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
 D:\Git\Clone3\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb
 C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csproj.CoreCompileInputs.cache
-C:\Users\linso\Desktop\新建文件夹\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.deps.json
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.dll
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.pdb
