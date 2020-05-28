@@ -26,7 +26,7 @@ namespace WpfFourOperationsApp
         {
             InitializeComponent();
         }
-        
+
         string[] vslist = new string[10];
         string[] vslist1 = new string[10];
         //public bool? IsChecked { get; set; }
@@ -54,10 +54,10 @@ namespace WpfFourOperationsApp
 
         private void btnadd_Click(object sender, RoutedEventArgs e)
         {
-            lbxQuestion.ItemsSource = "";
+           
             if (btnL1.IsChecked == true)
             {
-                
+
                 oneTheme.AddThemeCount();
                 for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
                 {
@@ -65,10 +65,11 @@ namespace WpfFourOperationsApp
                     vslist1[i] = oneTheme.ArrayAnswer[i];
                 }
                 lbxQuestion.ItemsSource = vslist;
+                return;
             }
-            else if(btnL2.IsChecked == true)
+            else if (btnL2.IsChecked == true)
             {
-                
+
                 twoTheme.AddThemeCount();
                 for (int i = 0; i < twoTheme.ArrayTheme.Count; i++)
                 {
@@ -107,7 +108,7 @@ namespace WpfFourOperationsApp
 
         private void btnsub_Click(object sender, RoutedEventArgs e)
         {
-
+          
             if (btnL1.IsChecked == true)
             {
                 oneTheme.SubThemeCount();
@@ -117,8 +118,8 @@ namespace WpfFourOperationsApp
                     vslist[i] = oneTheme.ArrayTheme[i];
                     vslist1[i] = oneTheme.ArrayAnswer[i];
                 }
-           
-            lbxQuestion.ItemsSource = vslist; 
+
+                lbxQuestion.ItemsSource = vslist;
             }
             else if (btnL2.IsChecked == true)
             {
@@ -187,114 +188,118 @@ namespace WpfFourOperationsApp
 
         private void btnsubmit_Click(object sender, RoutedEventArgs e)
         {
-            if (txtAnswer1.Text == vslist1[0])
+            if (lbxQuestion == null) { return; }
+            else
             {
-                txtJudge1.Text = "正确";
+                if (txtAnswer1.Text == vslist1[0])
+                {
+                    txtJudge1.Text = "正确";
 
-            }
-             else if  (txtAnswer1.Text != vslist1[0])
-            {
-                txtJudge1.Text = "×";
-               
-            }
+                }
+                else if (txtAnswer1.Text != vslist1[0])
+                {
+                    txtJudge1.Text = "×";
 
-            if (txtAnswer2.Text == vslist1[1])
-            {
-                txtJudge2.Text = "正确";
+                }
 
-            }
-            else if (txtAnswer2.Text != vslist1[1])
-            {
-                txtJudge2.Text = "×";
+                if (txtAnswer2.Text == vslist1[1])
+                {
+                    txtJudge2.Text = "正确";
 
-            }
+                }
+                else if (txtAnswer2.Text != vslist1[1])
+                {
+                    txtJudge2.Text = "×";
 
-            if (txtAnswer3.Text == vslist1[2])
-            {
-                txtJudge3.Text = "正确";
+                }
 
-            }
-            else if (txtAnswer3.Text != vslist1[2])
-            {
-                txtJudge3.Text = "×";
+                if (txtAnswer3.Text == vslist1[2])
+                {
+                    txtJudge3.Text = "正确";
 
-            }
+                }
+                else if (txtAnswer3.Text != vslist1[2])
+                {
+                    txtJudge3.Text = "×";
 
-            if (txtAnswer4.Text == vslist1[3])
-            {
-                txtJudge4.Text = "正确";
+                }
 
-            }
-            else if (txtAnswer4.Text != vslist1[3])
-            {
-                txtJudge4.Text = "×";
+                if (txtAnswer4.Text == vslist1[3])
+                {
+                    txtJudge4.Text = "正确";
 
-            }
+                }
+                else if (txtAnswer4.Text != vslist1[3])
+                {
+                    txtJudge4.Text = "×";
 
-            if (txtAnswer5.Text == vslist1[4])
-            {
-                txtJudge5.Text = "正确";
+                }
 
-            }
-            else if (txtAnswer5.Text != vslist1[4])
-            {
-                txtJudge5.Text = "×";
+                if (txtAnswer5.Text == vslist1[4])
+                {
+                    txtJudge5.Text = "正确";
 
-            }
+                }
+                else if (txtAnswer5.Text != vslist1[4])
+                {
+                    txtJudge5.Text = "×";
 
-            if (txtAnswer6.Text == vslist1[5])
-            {
-                txtJudge6.Text = "正确";
+                }
 
-            }
-            else if (txtAnswer6.Text != vslist1[5])
-            {
-                txtJudge6.Text = "×";
+                if (txtAnswer6.Text == vslist1[5])
+                {
+                    txtJudge6.Text = "正确";
 
-            }
+                }
+                else if (txtAnswer6.Text != vslist1[5])
+                {
+                    txtJudge6.Text = "×";
 
-            if (txtAnswer7.Text == vslist1[6])
-            {
-                txtJudge7.Text = "正确";
+                }
 
-            }
-            else if (txtAnswer7.Text != vslist1[6])
-            {
-                txtJudge7.Text = "×";
+                if (txtAnswer7.Text == vslist1[6])
+                {
+                    txtJudge7.Text = "正确";
 
-            }
+                }
+                else if (txtAnswer7.Text != vslist1[6])
+                {
+                    txtJudge7.Text = "×";
 
-            if (txtAnswer8.Text == vslist1[7])
-            {
-                txtJudge8.Text = "正确";
+                }
 
-            }
-            else if (txtAnswer8.Text != vslist1[7])
-            {
-                txtJudge8.Text = "×";
+                if (txtAnswer8.Text == vslist1[7])
+                {
+                    txtJudge8.Text = "正确";
 
-            }
+                }
+                else if (txtAnswer8.Text != vslist1[7])
+                {
+                    txtJudge8.Text = "×";
 
-            if (txtAnswer9.Text == vslist1[8])
-            {
-                txtJudge9.Text = "正确";
+                }
 
-            }
-            else if (txtAnswer9.Text != vslist1[8])
-            {
-                txtJudge9.Text = "×";
+                if (txtAnswer9.Text == vslist1[8])
+                {
+                    txtJudge9.Text = "正确";
 
-            }
+                }
+                else if (txtAnswer9.Text != vslist1[8])
+                {
+                    txtJudge9.Text = "×";
 
-            if (txtAnswer10.Text == vslist1[9])
-            {
-                txtJudge10.Text = "正确";
+                }
 
-            }
-            else if (txtAnswer10.Text != vslist1[9])
-            {
-                txtJudge10.Text = "×";
+                if (txtAnswer10.Text == vslist1[9])
+                {
+                    txtJudge10.Text = "正确";
 
+                }
+                else if (txtAnswer10.Text != vslist1[9])
+                {
+                    txtJudge10.Text = "×";
+
+                }
             }
         }
     }
