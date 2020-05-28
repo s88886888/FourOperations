@@ -1,4 +1,5 @@
 ﻿using ConsoleApp2.Base;
+using ConsoleApp2.Themeup;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -55,6 +56,10 @@ namespace Uwpxx
         {
             Buttonjia.IsEnabled = true;
             Buttonjian.IsEnabled = true;
+            Cheng.IsEnabled = false;
+            chuf.IsEnabled = false;
+            Sz.IsEnabled = false;
+            HZ.IsEnabled = false;
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -140,11 +145,11 @@ namespace Uwpxx
                 text5.Text = "请输入正确答案";
             }
 
-            if (text5.Text == vs1[5])
+            if (text6.Text == vs1[5])
             {
                 text6.Text = "√";
             }
-            if (text5.Text != vs1[5])
+            if (text6.Text != vs1[5])
             {
                 text6.Text = "×";
             }
@@ -209,10 +214,96 @@ namespace Uwpxx
         private void dy_Click(object sender, RoutedEventArgs e)
         {
             OneTheme oneTheme = new OneTheme();
-            oneTheme.SubOutPutTxt();
+            oneTheme.AddThemeCount();
+            oneTheme.AddOutPutTxt();
 
         }
 
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void two_Click(object sender, RoutedEventArgs e)
+        {
+            Buttonjia.IsEnabled = true;
+            Buttonjian.IsEnabled = true;
+            Cheng.IsEnabled = false;
+            chuf.IsEnabled = false;
+            Sz.IsEnabled = false;
+            HZ.IsEnabled = false;
+        }
+
+        private void three_Click(object sender, RoutedEventArgs e)
+        {
+            Buttonjia.IsEnabled = false;
+            Buttonjian.IsEnabled = false;
+            Cheng.IsEnabled = true;
+            chuf.IsEnabled = true;
+            HZ.IsEnabled = true;
+        }
+
+
+
+        private void Cheng_Click_1(object sender, RoutedEventArgs e)
+        {
+            ThreeTheme threeTheme = new ThreeTheme();
+            threeTheme.MultiplyThemeCount();
+            for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+            {
+                vs[i] = threeTheme.ArrayTheme[i];//题目
+
+                vs1[i] = threeTheme.ArrayAnswer[i];
+            }
+            LisBox.ItemsSource = vs;
+        }
+
+        private void chuf_Click(object sender, RoutedEventArgs e)
+        {
+            ThreeTheme threeTheme = new ThreeTheme();
+            threeTheme.DivisionThemeCount();
+            for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+            {
+                vs[i] = threeTheme.ArrayTheme[i];//题目
+
+                vs1[i] = threeTheme.ArrayAnswer[i];
+            }
+            LisBox.ItemsSource = vs;
+        }
+
+        private void HZ_Click(object sender, RoutedEventArgs e)
+        {
+            ThreeTheme threeTheme = new ThreeTheme();
+            threeTheme.HybridOperationCount();
+            for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+            {
+                vs[i] = threeTheme.ArrayTheme[i];//题目
+
+                vs1[i] = threeTheme.ArrayAnswer[i];
+            }
+            LisBox.ItemsSource = vs;
+        }
+
+        private void four_Click(object sender, RoutedEventArgs e)
+        {
+            Cheng.IsEnabled = true;
+            chuf.IsEnabled = true;
+            HZ.IsEnabled = true;
+            Sz.IsEnabled = true;
+        }
+
+        private void Sz_Click(object sender, RoutedEventArgs e)
+        {
+            ThreeTheme threeTheme = new ThreeTheme();
+            threeTheme.HybridOperationCount();
+            for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+            {
+                vs[i] = threeTheme.ArrayTheme[i];//题目
+
+                vs1[i] = threeTheme.ArrayAnswer[i];
+            }
+            LisBox.ItemsSource = vs;
+        }
     }
 
 

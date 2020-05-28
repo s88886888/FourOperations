@@ -34,28 +34,28 @@
             </Button.Background>
         </Button>
         <TextBlock HorizontalAlignment="Left" Margin="461,8,0,0" Text="衡光运算器" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="150" Grid.Row="1" FontSize="25" Grid.Column="1"/>
-        <Button Content="一年级" Margin="354,68,0,0" Grid.Row="1" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFEEE2E2" Height="32" Width="62" Click="Button_Click" Grid.Column="1">
+        <Button Content="一年级" Margin="373,68,0,0" Grid.Row="1" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFEEE2E2" Height="32" Width="62" Click="Button_Click" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
             <Button.Background>
                 <AcrylicBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="two" Content="二年级" Margin="462,68,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="62" Grid.Column="1">
+        <Button x:Name="two" Content="二年级" Margin="484,68,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="62" Grid.Column="1" Click="two_Click">
             <Button.Background>
                 <AcrylicBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="three" Content="三年级" Margin="574,68,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="62" Grid.Column="1">
+        <Button x:Name="three" Content="三年级" Margin="588,68,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="62" Grid.Column="1" Click="three_Click">
             <Button.Background>
                 <AcrylicBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="four" Content="四年级" Grid.Column="2" Margin="10,68,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="62" RenderTransformOrigin="-0.21,0.562">
+        <Button x:Name="four" Content="四年级" Grid.Column="2" Margin="53,68,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="62" RenderTransformOrigin="-0.21,0.562" Click="four_Click">
             <Button.Background>
                 <AcrylicBrush/>
             </Button.Background>
         </Button>
         <TextBox Grid.Column="2" HorizontalAlignment="Left" Margin="220,204,0,0" Grid.Row="1" Text="正确率&#xD;得分&#xD;&#xA;用时&#xD;" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Height="72" TextChanged="TextBox_TextChanged"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Left" Margin="214,329,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="109" Width="175"/>
+        <TextBox x:Name="Chu" Grid.Column="2" HorizontalAlignment="Left" Margin="214,329,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="109" Width="175"/>
         <Button x:Name="Buttonjia" Content="加法" Grid.Column="2" Margin="220,334,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="48" Click="Button_Click_1" IsEnabled="False">
             <Button.Background>
                 <AcrylicBrush/>
@@ -66,7 +66,7 @@
                 <AcrylicBrush/>
             </Button.Background>
         </Button>
-        <Button Content="乘法" Grid.Column="2" Margin="220,369,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.667,-0.375" Height="32" UseLayoutRounding="False" Width="48" d:LayoutRounding="Auto">
+        <Button x:Name="Cheng" Content="乘法" Grid.Column="2" Margin="220,369,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.667,-0.375" Height="32" UseLayoutRounding="False" Width="48" d:LayoutRounding="Auto" IsEnabled="False" Click="Cheng_Click_1">
             <Button.Background>
                 <AcrylicBrush/>
             </Button.Background>
@@ -74,29 +74,27 @@
                 <CompositeTransform Rotation="0.889"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="除法" Grid.Column="2" Margin="327,371,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="1.5,0.781" Height="32" Width="48">
+        <Button x:Name="HZ" Content="混合运算" Grid.Column="2" Margin="218,401,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="76" IsEnabled="False" Click="HZ_Click">
             <Button.Background>
                 <AcrylicBrush/>
             </Button.Background>
         </Button>
-        <Button Content="混合运算" Grid.Column="2" Margin="218,401,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="76">
+        <Button x:Name="Sz" Content="四则运算" Grid.Column="2" Margin="309,403,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.355,-0.781" Height="32" Width="76" IsEnabled="False" Click="Sz_Click">
             <Button.Background>
                 <AcrylicBrush/>
             </Button.Background>
         </Button>
-        <Button Content="四则运算" Grid.Column="2" Margin="309,403,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.355,-0.781" Height="32" Width="76">
-            <Button.Background>
-                <AcrylicBrush/>
-            </Button.Background>
-        </Button>
-        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="235,143,0,0" Grid.Row="1" Text="用户名" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Height="47"/>
         <TextBlock HorizontalAlignment="Left" Margin="186,147,0,0" Grid.Row="1" Text="题目" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Height="19" Width="28" RenderTransformOrigin="-0.339,0.289"/>
         <TextBlock HorizontalAlignment="Left" Margin="448,147,0,0" Grid.Row="1" Text="请输入正确答案" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Height="19" Width="98"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="625,151,0,0" Grid.Row="1" Text="对错题" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="42" Grid.ColumnSpan="2"/>
         <TextBox Grid.Column="2" HorizontalAlignment="Left" Margin="214,526,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Height="32"/>
         <Button x:Name="dy" Content="打印题目" Grid.Column="2" Margin="214,526,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="76" Click="dy_Click"/>
         <Button Content="错题本" Grid.Column="2" Margin="327,526,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="62"/>
-        <Ellipse Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="275,34,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="114"/>
+        <Ellipse HorizontalAlignment="Left" Height="127" Margin="231,24,0,0" Stroke="Black" VerticalAlignment="Top" Width="136" Grid.Column="1" Grid.Row="1">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Assets\zd.jpg"/>
+            </Ellipse.Fill>
+        </Ellipse>
         <ListBox x:Name="LisBox" Grid.Column="1" Grid.Row="1" Margin="175,166,276,298"/>
         <TextBox x:Name="box1" Grid.Column="1" HorizontalAlignment="Left" Margin="505,168,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" Height="41"/>
         <TextBox x:Name="box2" Grid.Column="1" HorizontalAlignment="Left" Margin="505,209,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.358,2.234" Height="41"/>
@@ -119,6 +117,11 @@
         <TextBlock x:Name="text10" Grid.Column="1" HorizontalAlignment="Left" Margin="617,548,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Grid.ColumnSpan="2" RenderTransformOrigin="0.397,0.158"/>
         <TextBlock x:Name="text9" Grid.Column="1" HorizontalAlignment="Left" Margin="617,507,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Grid.ColumnSpan="2" RenderTransformOrigin="0.397,0.158"/>
         <Button Content="提交测试" Grid.Column="2" Margin="39,612,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Click="Button_Click_3"/>
+        <Button x:Name="chuf" Content="除法" Grid.Column="2" Margin="323,368,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.21,0.438" Click="chuf_Click" IsEnabled="False">
+            <Button.Background>
+                <AcrylicBrush/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Page>
 

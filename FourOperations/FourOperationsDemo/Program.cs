@@ -29,24 +29,24 @@ namespace FourOperations
 
 
 
-            OneTheme oneTheme = new OneTheme();
-            oneTheme.AddThemeCount();
-            Console.WriteLine("0");
+            //OneTheme oneTheme = new OneTheme();
+            //oneTheme.AddThemeCount();
+            //Console.WriteLine("0");
 
 
-            TwoTheme twoTheme = new TwoTheme();
-            twoTheme.AddThemeCount();
-            Console.WriteLine("1");
+            //TwoTheme twoTheme = new TwoTheme();
+            //twoTheme.AddThemeCount();
+            //Console.WriteLine("1");
 
 
 
             ThreeTheme threeTheme = new ThreeTheme();
-            threeTheme.AddThemeCount();
-            Console.WriteLine("2");
+            threeTheme.DivisionThemeCount();
 
-            FourTheme fourTheme = new FourTheme();
-            fourTheme.AddThemeCount();
-            Console.WriteLine("3");
+
+            //FourTheme fourTheme = new FourTheme();
+            //fourTheme.AddThemeCount();
+            //Console.WriteLine("3");
         }
     }
 }

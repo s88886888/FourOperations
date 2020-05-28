@@ -8157,11 +8157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\Uwpxx\\Uwpxx.csproj",
+      "projectUniqueName": "C:\\Users\\10570\\Desktop\\firday\\FourOperations\\Uwpxx\\Uwpxx.csproj",
       "projectName": "Uwpxx",
-      "projectPath": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\Uwpxx\\Uwpxx.csproj",
+      "projectPath": "C:\\Users\\10570\\Desktop\\firday\\FourOperations\\Uwpxx\\Uwpxx.csproj",
       "packagesPath": "C:\\Users\\10570\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\Uwpxx\\obj\\",
+      "outputPath": "C:\\Users\\10570\\Desktop\\firday\\FourOperations\\Uwpxx\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

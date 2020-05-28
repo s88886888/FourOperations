@@ -137,8 +137,8 @@ namespace ConsoleApp2.Base
         /// </summary>
         public void AddOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件一年级加法题目.txt";//保存文件路径
-            FourTheme FourTheme = new FourTheme();
+            string result = "..\\..\\..\\Add.txt";//保存文件路径
+            OneTheme FourTheme = new OneTheme();
             OutPutTxt(result);
             AddOutPutXml(FourTheme);
         }
@@ -147,7 +147,7 @@ namespace ConsoleApp2.Base
         /// </summary>
         public void SubOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件一年级减法题目.txt";//保存文件路径
+            string result = "..\\..\\..\\打印文件一年级减法题目.txt";//保存文件路径
             FourTheme FourTheme = new FourTheme();
             OutPutTxt(result);
             SubOutPutXml(FourTheme);
@@ -198,7 +198,7 @@ namespace ConsoleApp2.Base
         /// 同步Add打印xml
         /// </summary>
         /// <param name="FourTheme"></param>
-        public void AddOutPutXml(FourTheme fourTheme)
+        public void AddOutPutXml(OneTheme fourTheme)
         {
             string fileName = "打印文件一年级加法题目.xml";
             OutPutXml(fileName);
@@ -217,7 +217,7 @@ namespace ConsoleApp2.Base
         /// </summary>
         /// <param name="oneTheme"></param>
         /// <param name="fileName"></param>
-      
+
         /// <summary>
         /// 读取加法XML文件
         /// </summary>
