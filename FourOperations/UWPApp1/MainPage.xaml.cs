@@ -23,18 +23,21 @@ namespace UWPApp1
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
     public sealed partial class MainPage : Page
-    {
-        ThreeTheme Threes = new ThreeTheme();
+    { 
         string[] vslist = new string[10];
         string[] vslist1 = new string[10];
+        double num;
+        double judge;
+        private int i;
         public MainPage()
         {
             this.InitializeComponent();
+            
         }
 
         private void Addition_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void One_Click(object sender, RoutedEventArgs e)
@@ -45,6 +48,7 @@ namespace UWPApp1
             Division.IsEnabled = false;
             Mixture.IsEnabled = false;
             Arithmetic1.IsEnabled = false;
+            i = 1;
         }
 
         private void Two_Click(object sender, RoutedEventArgs e)
@@ -55,6 +59,7 @@ namespace UWPApp1
             Division.IsEnabled = false;
             Mixture.IsEnabled = false;
             Arithmetic1.IsEnabled = false;
+            i = 2;
         }
 
         private void Three_Click(object sender, RoutedEventArgs e)
@@ -65,6 +70,7 @@ namespace UWPApp1
             Subtract.IsEnabled = true;
             Mixture.IsEnabled = false;
             Arithmetic1.IsEnabled = false;
+            i = 3;
         }
 
         private void Four_Click(object sender, RoutedEventArgs e)
@@ -75,18 +81,18 @@ namespace UWPApp1
             Subtract.IsEnabled = true;
             Mixture.IsEnabled = true;
             Arithmetic1.IsEnabled = true;
+            i = 4;
         }
 
         private void Subtraction_Click(object sender, RoutedEventArgs e)
         {
-           
+
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             OneTheme oneTheme = new OneTheme();
             oneTheme.AddThemeCount();
-
             for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
             {
                 vslist[i] = oneTheme.ArrayTheme[i];
@@ -114,6 +120,7 @@ namespace UWPApp1
             if (Text1.Text == vslist1[0])
             {
                 text1.Text = "√";
+                num++;
             }
             if (Text1.Text != vslist1[0])
             {
@@ -124,6 +131,7 @@ namespace UWPApp1
             if (Text2.Text == vslist1[1])
             {
                 text2.Text = "√";
+                num++;
             }
             if (Text2.Text != vslist1[1])
             {
@@ -133,6 +141,7 @@ namespace UWPApp1
             if (Text3.Text == vslist1[2])
             {
                 text3.Text = "√";
+                num++;
             }
             if (Text3.Text != vslist1[2])
             {
@@ -142,6 +151,7 @@ namespace UWPApp1
             if (Text4.Text == vslist1[3])
             {
                 text4.Text = "√";
+                num++;
             }
             if (Text4.Text != vslist1[3])
             {
@@ -151,6 +161,7 @@ namespace UWPApp1
             if (Text5.Text == vslist1[4])
             {
                 text5.Text = "√";
+                num++;
             }
             if (Text5.Text != vslist1[4])
             {
@@ -160,6 +171,7 @@ namespace UWPApp1
             if (Text5.Text == vslist1[5])
             {
                 text6.Text = "√";
+                num++;
             }
             if (Text5.Text != vslist1[5])
             {
@@ -169,6 +181,7 @@ namespace UWPApp1
             if (Text7.Text == vslist1[6])
             {
                 text7.Text = "√";
+                num++;
             }
             if (Text7.Text != vslist1[6])
             {
@@ -178,6 +191,7 @@ namespace UWPApp1
             if (Text8.Text == vslist1[7])
             {
                 text8.Text = "√";
+                num++;
             }
             if (Text8.Text != vslist1[7])
             {
@@ -187,6 +201,7 @@ namespace UWPApp1
             if (Text9.Text == vslist1[8])
             {
                 text9.Text = "√";
+                num++;
             }
             if (Text9.Text != vslist1[8])
             {
@@ -196,11 +211,15 @@ namespace UWPApp1
             if (Text10.Text == vslist1[9])
             {
                 text10.Text = "√";
+                num++;
             }
             if (Text10.Text != vslist1[9])
             {
                 text10.Text = "×";
             }
+            judge = num / 10 * 100;
+            textBlock3.Text = judge + "%";
+            textBlock5.Text = judge.ToString();
         }
 
         private void Multiplication_Click(object sender, RoutedEventArgs e)
@@ -217,6 +236,33 @@ namespace UWPApp1
         }
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Print__Click(object sender, RoutedEventArgs e)
+        {
+            if (i == 1)
+            {
+
+            }
+
+        }
+
+        private void Division_Click(object sender, RoutedEventArgs e)
+        {
+            ThreeTheme Threes = new ThreeTheme();
+            Threes.DivisionTheme();
+
+            for (int i = 0; i < Threes.ArrayTheme.Count; i++)
+            {
+                vslist[i] = Threes.ArrayTheme[i];
+                vslist1[i] = Threes.ArrayAnswer[i];
+            }
+            listBox.ItemsSource = vslist;
+        }
+
+        private void Mixture_Click(object sender, RoutedEventArgs e)
         {
 
         }

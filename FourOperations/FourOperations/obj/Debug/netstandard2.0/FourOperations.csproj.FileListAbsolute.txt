@@ -52,3 +52,12 @@ C:\Users\CYH\Desktop\团队\FourOperations\FourOperations\obj\Debug\netstandard2
 C:\Users\CYH\Desktop\团队\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csproj.CoreCompileInputs.cache
 C:\Users\CYH\Desktop\团队\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
 C:\Users\CYH\Desktop\团队\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb
+C:\Users\Lenovo\Desktop\团队项目\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.deps.json
+C:\Users\Lenovo\Desktop\团队项目\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.dll
+C:\Users\Lenovo\Desktop\团队项目\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.pdb
+C:\Users\Lenovo\Desktop\团队项目\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\团队项目\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\团队项目\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\团队项目\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\团队项目\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
+C:\Users\Lenovo\Desktop\团队项目\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb
