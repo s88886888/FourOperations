@@ -27,8 +27,8 @@ namespace WpfFourOperationsApp
             InitializeComponent();
         }
 
-        string[] vslist = new string[10];
-        string[] vslist1 = new string[10];
+        private readonly string[] vslist = new string[10];
+        private readonly string[] vslist1 = new string[10];
         //public bool? IsChecked { get; set; }
         //public void ToggleButton()
         //{
@@ -54,61 +54,70 @@ namespace WpfFourOperationsApp
 
         private void btnadd_Click(object sender, RoutedEventArgs e)
         {
-           
+
+            lbxQuestion.Items.Clear();
+            //Array.Clear(vslist, 0, vslist.Length);
             if (btnL1.IsChecked == true)
             {
 
+                
+
+                OneTheme oneTheme = new OneTheme();
                 oneTheme.AddThemeCount();
                 for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
                 {
                     vslist[i] = oneTheme.ArrayTheme[i];
                     vslist1[i] = oneTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
+
                 }
-                lbxQuestion.ItemsSource = vslist;
-                return;
+
             }
             else if (btnL2.IsChecked == true)
             {
 
+                TwoTheme twoTheme = new TwoTheme();
                 twoTheme.AddThemeCount();
                 for (int i = 0; i < twoTheme.ArrayTheme.Count; i++)
                 {
                     vslist[i] = twoTheme.ArrayTheme[i];
                     vslist1[i] = twoTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
                 }
-                lbxQuestion.ItemsSource = vslist;
+                
 
             }
             else if (btnL3.IsChecked == true)
             {
-
+                ThreeTheme threeTheme = new ThreeTheme();
                 threeTheme.AddThemeCount();
                 for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
                 {
                     vslist[i] = threeTheme.ArrayTheme[i];
                     vslist1[i] = threeTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
                 }
-                lbxQuestion.ItemsSource = vslist;
+                
 
             }
             else if (btnL4.IsChecked == true)
             {
-
+                FourTheme fourTheme = new FourTheme();
                 fourTheme.AddThemeCount();
                 for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
                 {
                     vslist[i] = fourTheme.ArrayTheme[i];
                     vslist1[i] = fourTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
                 }
-                lbxQuestion.ItemsSource = vslist;
-
+                
             }
 
         }
 
         private void btnsub_Click(object sender, RoutedEventArgs e)
         {
-          
+
             if (btnL1.IsChecked == true)
             {
                 oneTheme.SubThemeCount();
