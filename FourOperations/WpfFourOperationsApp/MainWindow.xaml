@@ -17,14 +17,20 @@
 
 
             <Label Content="题目" Canvas.Left="10" Canvas.Top="173" Width="65"/>
-            <TextBox x:Name="tbMultiLine" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Canvas.Left="218" Canvas.Top="203" Height="320" Width="122"/>
+            <TextBox x:Name="txtAnswer1"  Canvas.Left="218" Canvas.Top="203" Height="24" Width="122"/>
+            <TextBox x:Name="txtAnswer2"  Canvas.Left="218" Canvas.Top="227" Height="24" Width="122"/>
+            <TextBox x:Name="txtAnswer3"  Canvas.Left="218" Canvas.Top="251" Height="24" Width="122"/>
+            <TextBox x:Name="txtAnswer4"  Canvas.Left="218" Canvas.Top="275" Height="24" Width="122"/>
+            <TextBox x:Name="txtAnswer5"  Canvas.Left="218" Canvas.Top="299" Height="24" Width="122"/>
+            <TextBox x:Name="txtAnswer6"  Canvas.Left="218" Canvas.Top="323" Height="24" Width="122"/>
+            <TextBox x:Name="txtAnswer7"  Canvas.Left="218" Canvas.Top="347" Height="24" Width="122"/>
             <Label Content="答案" Canvas.Left="218" Canvas.Top="173" Width="65"/>
-            <ListBox x:Name="lbxJudge" Height="320" Width="68" Canvas.Left="389" Canvas.Top="203" Background="White"/>
+            <TextBox x:Name="txtJudge" Height="24" Width="68" Canvas.Left="389" Canvas.Top="203" Background="White"/>
             <Label Content="判断" Canvas.Left="400" Canvas.Top="173"/>
-            <ToggleButton x:Name="btnL1" Content="一年级" Canvas.Left="190" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="btnL1_Click_1"/>
-            <Button x:Name="btnL2" Content="二年级" Canvas.Left="280" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
-            <Button x:Name="btnL3" Content="三年级" Canvas.Left="370" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
-            <Button x:Name="btnL4" Content="四年级" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Canvas.Left="460" Canvas.Top="60"/>
+            <ToggleButton x:Name="btnL1" Content="一年级" Canvas.Left="190" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Checked="btnL1_Checked"/>
+            <ToggleButton x:Name="btnL2" Content="二年级" Canvas.Left="280" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Checked="btnL2_Checked"/>
+            <ToggleButton x:Name="btnL3" Content="三年级" Canvas.Left="370" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Checked="btnL3_Checked"/>
+            <ToggleButton x:Name="btnL4" Content="四年级" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Canvas.Left="460" Canvas.Top="60" Checked="btnL4_Checked"/>
             <Image Source="Logo.jpg" VerticalAlignment="Center" Width="140" Height="140" Canvas.Left="678" Canvas.Top="25">
                 <Image.Clip>
                     <!--设置图像如何显示-->
@@ -54,8 +60,8 @@
                 <Button  Content="打印题目" Width="85" Height="30" Canvas.Top="10" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Canvas.Left="10"/>
                 <Button Content="错题本" Width="85" Height="30" Canvas.Left="111" Canvas.Top="10" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
             </Canvas>
-            <Button x:Name="btnsubmit" Content="提交" Canvas.Left="502" Canvas.Top="328" Height="30" Width="86" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
-
+            <Button x:Name="btnsubmit" Content="提交" Canvas.Left="502" Canvas.Top="328" Height="30" Width="86" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="btnsubmit_Click"/>
+           
 
         </Canvas>
 
