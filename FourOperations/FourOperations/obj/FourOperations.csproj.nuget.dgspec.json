@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj": {}
+    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {}
   },
   "projects": {
-    "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj": {
+    "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "projectUniqueName": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
         "projectName": "FourOperations",
-        "projectPath": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj",
-        "packagesPath": "C:\\Users\\10570\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\obj\\",
+        "projectPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "packagesPath": "C:\\Users\\linso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\linso\\Desktop\\新建文件夹\\FourOperations\\FourOperations\\FourOperations\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\10570\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\linso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -63,7 +68,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
