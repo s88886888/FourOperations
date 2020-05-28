@@ -11,7 +11,7 @@ namespace ConsoleApp2.Themeup
         readonly string[] ShowTheme = new string[10];
         readonly string[] ShowAnswer = new string[10];
         /// <summary>
-        /// 一年级出题范围：20以内加减
+        /// 二年级出题范围：20以内加减
         /// </summary>
         public TwoTheme()
         {
@@ -26,7 +26,7 @@ namespace ConsoleApp2.Themeup
             BasicDataB = random.Next(0, 100);
         }
         /// <summary>
-        /// 调用此方法，生成一道加法题目
+        /// 调用此方法，生成加法题目
         /// </summary>
         /// <returns></returns>
         public override void AddTheme()
@@ -50,7 +50,7 @@ namespace ConsoleApp2.Themeup
             }
         }
         /// <summary>
-        /// 调用此方法，生成一道减法题目
+        /// 调用此方法生成减法题目
         /// </summary>
         /// <returns></returns>
         public override void SubTheme()
@@ -86,7 +86,7 @@ namespace ConsoleApp2.Themeup
             }
         }
         /// <summary>
-        ///      ///调用此方法一次出10题加法题目
+        ///      ///调用此方法出10题加法题目
         /// </summary>
         public override void AddThemeCount()
         {
@@ -99,7 +99,7 @@ namespace ConsoleApp2.Themeup
             Show(ShowTheme, ShowTheme);
         }
         /// <summary>
-        ///  //调用此方法一次出10题减法题目
+        ///  //调用此方法二次出10题减法题目
         /// </summary>
         public override void SubThemeCount()
         {
@@ -145,7 +145,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void AddOutPutTxt()
         {
-            string result = @"D:\打印文件Add2.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印文件二年级加法题目.txt";//保存文件路径
             TwoTheme twoTheme = new TwoTheme();
             OutPutTxt(result, twoTheme);
             AddOutPutXml(twoTheme);
@@ -155,7 +155,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void SubOutPutTxt()
         {
-            string result = @"D:\打印文件Sub2.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印文件二年级减法题目.txt";//保存文件路径
             TwoTheme twoTheme = new TwoTheme();
             OutPutTxt(result, twoTheme);
             SubOutPutXml(twoTheme);
@@ -186,7 +186,7 @@ namespace ConsoleApp2.Themeup
         {
             try
             {
-                using (StreamReader sr = new StreamReader(@"D:\打印文件Add.txt"))
+                using (StreamReader sr = new StreamReader(@"..\\..\\..\\打印文件二年级加法题目.txt"))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -207,7 +207,7 @@ namespace ConsoleApp2.Themeup
         {
             try
             {
-                using (StreamReader sr = new StreamReader(@"D:\打印文件Sub.txt"))
+                using (StreamReader sr = new StreamReader(@"..\\..\\..\\打印文件二年级减法题目.txt"))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -227,7 +227,7 @@ namespace ConsoleApp2.Themeup
         /// <param name="oneTheme"></param>
         public void AddOutPutXml(TwoTheme twoTheme)
         {
-            string fileName = "打印文件Add.xml";
+            string fileName = "打印文件二年级加法题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
@@ -236,7 +236,7 @@ namespace ConsoleApp2.Themeup
         /// <param name="oneTheme"></param>
         public void SubOutPutXml(TwoTheme twoTheme)
         {
-            string fileName = "打印文件Sub.xml";
+            string fileName = "打印文件二年级减法题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
@@ -266,7 +266,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void AddReaderXML()
         {
-            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Add.xml"))
+            using (XmlReader reader = XmlReader.Create("打印文件二年级加法题目.xml"))
             {
                 ReaderXML(reader);
             }
@@ -274,7 +274,7 @@ namespace ConsoleApp2.Themeup
         public void SubReaderXML()
         {
 
-            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Sub.xml"))
+            using (XmlReader reader = XmlReader.Create("打印文件二年级减法题目.xml"))
             {
                 ReaderXML(reader);
             }

@@ -1,12 +1,6 @@
-﻿
-using FourOperations.ClassTheme;
-using NPOI.SS.Formula.Functions;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
 using System.IO;
-using System.Linq.Expressions;
-using System.Text;
 using System.Xml;
 
 namespace ConsoleApp2.Themeup
@@ -29,13 +23,12 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public override void RandomNumber()
         {
-            BasicDataA = random.Next(-10, 100);
-            BasicDataB = random.Next(-10, 100);
-            BasicDataC = random.Next(-10, 100);
-            LsitNumA = random.Next(0, 3);
-            LsitNumB = random.Next(0, 3);
+            BasicDataA = random.Next(1, 100);
+            BasicDataB = random.Next(1, 100);
+            BasicDataC = random.Next(1, 100);
+            LsitNumA = random.Next(0, 4);
+            LsitNumB = random.Next(0, 4);
         }
-
         /// <summary>
         /// 生成一道乘法题目
         /// </summary>
@@ -54,7 +47,6 @@ namespace ConsoleApp2.Themeup
                 else
                 {
                     Theme = $"{BasicDataA}{CCC[2]}{BasicDataB}";
-
                     Answer = BasicDataA * BasicDataB;
                     if (Answer > 1000 || Answer < -100)
                     {
@@ -73,30 +65,33 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void DivisionTheme()
         {
-
+            RandomNumber();
             try
             {
-                RandomNumber();
-                if (BasicDataA > 100 && BasicDataB > 100 && BasicDataC > 100 || BasicDataA < -10 && BasicDataB < -10 && BasicDataC < -10 || BasicDataB == 0)
+                if (BasicDataA > 100 && BasicDataB > 100)
                 {
-                    throw (new CustomExcepsion("A>100 &&B>100||分母不能为0 ，B==0"));
-                }
 
+                    throw (new CustomExcepsion("A>100 &&B>100"));
+                }
                 else
                 {
                     //分子大于分母
                     if (BasicDataA > BasicDataB)
                     {
                         Theme = $"{BasicDataA}{CCC[3]}{BasicDataB}";
-                        Answer = BasicDataA / BasicDataB;
+                        Answer = Math.Round(BasicDataA / BasicDataB, 2);
                     }
-                    //如果大于，两极反转
+                    else
                     {
+                        //如果大于，两极反转                   
                         ChangeNumber();
-                    }
-                    if (Answer < -10 || Answer == 0)
-                    {
-                        DivisionTheme();
+                        Theme = $"{BasicDataA}{CCC[3]}{BasicDataB}";
+                        Answer = Math.Round(BasicDataA / BasicDataB, 2);
+
+                        if (Answer < -10 || Answer == 0)
+                        {
+                            DivisionTheme();
+                        }
                     }
                 }
             }
@@ -109,7 +104,7 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         /// 生成混合运算一道  A？B？C？ ？号是运算符 
         /// </summary>
-        public void MultiplyAndDivisionTheme()
+        public void HybridOperation()
         {
 
             RandomNumber();
@@ -117,31 +112,39 @@ namespace ConsoleApp2.Themeup
             {
                 throw (new CustomExcepsion("A>100 &&B>100"));
             }
+            if (BasicDataB == 0 || BasicDataA == 0)
+            {
+                HybridOperation();
+            }
             else
             {
                 bool num = true;
+                string number = null;
                 DataTable table = new DataTable();
-                if (BasicDataA % 2 == 0)
+                if (LsitNumA == 3 || LsitNumA == 4)
                 {
                     Theme = $"{BasicDataA}{CCC[LsitNumA]}({BasicDataB}{CCC[LsitNumB]}{BasicDataC})".ToString();
-                    Answer = Convert.ToInt32(table.Compute(Theme, ""));
+                    number = Convert.ToDouble(table.Compute(Theme, null)).ToString("0.000");
+                    Answer = Convert.ToDouble(number);
                     num = false;
                 }
-                if (BasicDataA % 3 == 0 && num == true)
+                if (LsitNumA == 0 || LsitNumA == 1)
                 {
                     Theme = $"({BasicDataA}{CCC[LsitNumA]}{BasicDataB}){CCC[LsitNumB]}{BasicDataC}".ToString();
-                    Answer = Convert.ToInt32(table.Compute(Theme, ""));
+                    number = Convert.ToDouble(table.Compute(Theme, null)).ToString("0.000"); ;
+                    Answer = Convert.ToDouble(number);
                     num = false;
                 }
                 if (num == true)
                 {
                     Theme = $"{BasicDataA}{CCC[LsitNumA]}{BasicDataB}{CCC[LsitNumB]}{BasicDataC}".ToString();
-                    Answer = Convert.ToInt32(table.Compute(Theme, ""));
+                    number = Convert.ToDouble(table.Compute(Theme, null)).ToString("0.000"); ;
+                    Answer = Convert.ToDouble(number);
                 }
-                //if (Answer > 10000 || Answer < -1000)
-                //{
-                //    MultiplyAndDivisionTheme();
-                //}
+                if (Answer > 10000 || Answer < -100)
+                {
+                    MultiplyTheme();
+                }
             }
         }
 
@@ -229,12 +232,12 @@ namespace ConsoleApp2.Themeup
             }
         }
         //调用此方法生成10题 混合运算 A？B？C？ ？号是运算符 
-        public void MultiplyAndDivisionThemeCount()
+        public void HybridOperationCount()
         {
             for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var threeTheme = new ThreeTheme();
-                threeTheme.MultiplyAndDivisionTheme();
+                threeTheme.HybridOperation();
                 ArrayDate(ShowTheme, ShowAnswer, i, threeTheme);
             }
             Show(ShowTheme, ShowAnswer);
@@ -310,20 +313,28 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void AddOutPutTxt()
         {
-            string result = @"D:\打印文件Add.txt";//保存文件路径
-            TwoTheme twoTheme = new TwoTheme();
+            string result = @"..\\..\\..\\打印文件三年级加法题目.txt";//保存文件路径
+            ThreeTheme  threeTheme = new ThreeTheme();
             OutPutTxt(result);
-            AddOutPutXml(twoTheme);
+            AddOutPutXml(threeTheme);
         }
         /// <summary>
         /// 打印生成的10道题目Sub
         /// </summary>
         public void SubOutPutTxt()
         {
-            string result = @"D:\打印文件Sub.txt";//保存文件路径
-            TwoTheme twoTheme = new TwoTheme();
+            string result = @"..\\..\\..\\打印文件三年级减法题目.txt";//保存文件路径
+            ThreeTheme  threeTheme = new ThreeTheme();
             OutPutTxt(result);
-            SubOutPutXml(twoTheme);
+            SubOutPutXml(threeTheme);
+        }
+
+        public void MultiplyAndDivisionThemeOutPutTxt()
+        {
+            string result = @"..\\..\\..\\打印文件三年级混合运算题目.txt";//保存文件路径
+            ThreeTheme threeTheme = new ThreeTheme();
+            OutPutTxt(result);
+            MultiplyAndDivisionThemeOutPutXml(threeTheme);
         }
 
         /// <summary>
@@ -351,7 +362,7 @@ namespace ConsoleApp2.Themeup
         {
             try
             {
-                using (StreamReader sr = new StreamReader(@"D:\打印文件Add.txt"))
+                using (StreamReader sr = new StreamReader(@"..\\..\\..\\打印文三年级减法题目.txt"))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -372,7 +383,7 @@ namespace ConsoleApp2.Themeup
         {
             try
             {
-                using (StreamReader sr = new StreamReader(@"D:\打印文件Sub.txt"))
+                using (StreamReader sr = new StreamReader(@"..\\..\\..\\打印文件三年级加法题目.txt"))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -389,19 +400,28 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         /// 同步Add打印xml
         /// </summary>
-        /// <param name="twoTheme"></param>
-        public void AddOutPutXml(TwoTheme twoTheme)
+        /// <param name="threeTheme"></param>
+        public void AddOutPutXml(ThreeTheme threeTheme)
         {
-            string fileName = "打印文件Add.xml";
+            string fileName = "打印文件三年级加法题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
         /// 同步Sub打印xml
         /// </summary>
         /// <param name="oneTheme"></param>
-        public void SubOutPutXml(TwoTheme twoTheme)
+        public void SubOutPutXml(ThreeTheme  threeTheme)
         {
-            string fileName = "打印文件Sub.xml";
+            string fileName = "打印文件三年级减法题目.xml";
+            OutPutXml(fileName);
+        }
+        /// <summary>
+        /// 打印出混合运算
+        /// </summary>
+        /// <param name="threeTheme"></param>
+        public void MultiplyAndDivisionThemeOutPutXml(ThreeTheme threeTheme)
+        {
+            string fileName = "打印三年级混合运算题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
@@ -411,8 +431,10 @@ namespace ConsoleApp2.Themeup
         /// <param name="fileName"></param>
         private void OutPutXml(string fileName)
         {
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true;
+            XmlWriterSettings settings = new XmlWriterSettings
+            {
+                Indent = true
+            };
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
                 writer.WriteStartElement("Create");
@@ -431,7 +453,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void AddReaderXML()
         {
-            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Add.xml"))
+            using (XmlReader reader = XmlReader.Create("打印文件三年级加法题目.xml"))
             {
                 ReaderXML(reader);
             }
@@ -439,7 +461,7 @@ namespace ConsoleApp2.Themeup
         public void SubReaderXML()
         {
 
-            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Sub.xml"))
+            using (XmlReader reader = XmlReader.Create("打印文件三年级减法题目.xml"))
             {
                 ReaderXML(reader);
             }

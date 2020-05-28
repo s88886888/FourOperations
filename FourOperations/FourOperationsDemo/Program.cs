@@ -92,7 +92,8 @@ namespace FourOperations
             //twoTheme.AddOutPutTxt();
 
             //ThreeTheme threeTheme = new ThreeTheme();
-            //threeTheme.Division();
+            //threeTheme.MultiplyThemeCount();
+            //threeTheme.MultiplyAndDivisionThemeOutPutTxt();
 
 
             //threeTheme.MultiplyAndDivisionTheme();
@@ -126,14 +127,28 @@ namespace FourOperations
 
 
 
-            OneTheme oneTheme = new OneTheme();
-            oneTheme.AddThemeCount();
-            for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
-            {
-                string a = Console.ReadLine();
-                oneTheme.tempAnswer.Add(a);
-            }
-            oneTheme.ErrorsText();
+            //OneTheme oneTheme = new OneTheme();
+            //oneTheme.AddThemeCount();
+            //for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
+            //{
+            //    string a = Console.ReadLine();
+            //    oneTheme.tempAnswer.Add(a);
+            //}
+            //oneTheme.ErrorsText();
+
+
+
+            FourTheme fourTheme = new FourTheme();
+            fourTheme.FourOperationsCount();
+            //Console.WriteLine(fourTheme.Theme);
+            //Console.WriteLine(fourTheme.Answer);
+             
+
+
+
+            //double a = 8 / 4;
+            //double b = 4 / 4;
+            //Console.WriteLine(a - b);
         }
     }
 }
