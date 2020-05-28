@@ -38,11 +38,7 @@ namespace WpfFourOperationsApp
         TwoTheme twoTheme = new TwoTheme();
         ThreeTheme threeTheme = new ThreeTheme();
         FourTheme fourTheme = new FourTheme();
-        private void BtnSystem_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
+    
         private void btnL1_Checked(object sender, RoutedEventArgs e)
         {
             btnL2.IsChecked = false;
@@ -50,6 +46,7 @@ namespace WpfFourOperationsApp
             btnL4.IsChecked = false;
             btnadd.IsEnabled = true;
             btnsub.IsEnabled = true;
+            BtnClose();
         }
 
         private void btnadd_Click(object sender, RoutedEventArgs e)
@@ -176,33 +173,52 @@ namespace WpfFourOperationsApp
 
         private void btnL2_Checked(object sender, RoutedEventArgs e)
         {
+
             btnL3.IsChecked = false;
             btnL4.IsChecked = false;
             btnL1.IsChecked = false;
             btnadd.IsEnabled = true;
             btnsub.IsEnabled = true;
+            BtnClose();
+
+        }
+
+        private void BtnClose()
+        {
+            lbxQuestion.Items.Clear();
+            btnO.IsEnabled = false;
+            btndiv.IsEnabled = false;
+            btnmul.IsEnabled = false;
+            btnHybrid.IsEnabled = false;
         }
 
         private void btnL4_Checked(object sender, RoutedEventArgs e)
         {
+            lbxQuestion.Items.Clear();
             btnL2.IsChecked = false;
             btnL3.IsChecked = false;
             btnL1.IsChecked = false;
             btnadd.IsEnabled = true;
             btnsub.IsEnabled = true;
             btnO.IsEnabled = true;
+            btndiv.IsEnabled = true;
+            btnmul.IsEnabled = true;
+            btnHybrid.IsEnabled = true;
         }
 
         private void btnL3_Checked(object sender, RoutedEventArgs e)
         {
+            lbxQuestion.Items.Clear();
             btnL2.IsChecked = false;
             btnL1.IsChecked = false;
             btnL4.IsChecked = false;
+            btnO.IsEnabled = false;
             btnadd.IsEnabled = true;
             btnsub.IsEnabled = true;
             btndiv.IsEnabled = true;
             btnmul.IsEnabled = true;
             btnHybrid.IsEnabled = true;
+            
         }
 
         private void btnsubmit_Click(object sender, RoutedEventArgs e)
@@ -327,13 +343,32 @@ namespace WpfFourOperationsApp
         private void btnmul_Click(object sender, RoutedEventArgs e)
         {
             lbxQuestion.Items.Clear();
-            FourTheme fourTheme = new FourTheme();
-            fourTheme.MultiplyThemeCount();
-            for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+
+             if (btnL3.IsChecked == true)
             {
-                vslist[i] = fourTheme.ArrayTheme[i];
-                vslist1[i] = fourTheme.ArrayAnswer[i];
-                lbxQuestion.Items.Add(vslist[i]);
+                ThreeTheme threeTheme = new ThreeTheme();
+                threeTheme.MultiplyThemeCount();
+                for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = threeTheme.ArrayTheme[i];
+                    vslist1[i] = threeTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
+                }
+
+
+            }
+            else if (btnL4.IsChecked == true)
+            {
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.MultiplyThemeCount();
+                for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = fourTheme.ArrayTheme[i];
+                    vslist1[i] = fourTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
+                }
+
+
             }
         }
 
@@ -353,13 +388,77 @@ namespace WpfFourOperationsApp
         private void btnHybrid_Click(object sender, RoutedEventArgs e)
         {
             lbxQuestion.Items.Clear();
-            FourTheme fourTheme = new FourTheme();
-            fourTheme.HybridOperationThemeCount();
-            for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+            
+            if (btnL3.IsChecked == true)
             {
-                vslist[i] = fourTheme.ArrayTheme[i];
-                vslist1[i] = fourTheme.ArrayAnswer[i];
-                lbxQuestion.Items.Add(vslist[i]);
+                ThreeTheme threeTheme = new ThreeTheme();
+                threeTheme.HybridOperationCount();
+                for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = threeTheme.ArrayTheme[i];
+                    vslist1[i] = threeTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
+                }
+
+
+            }
+            else if (btnL4.IsChecked == true)
+            {
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.HybridOperationThemeCount();
+                for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = fourTheme.ArrayTheme[i];
+                    vslist1[i] = fourTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
+                }
+
+
+            }
+        }
+
+        private void BtnAbout_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("阿宽出品，必属精品", "正道的光");
+        }
+
+        private void BtnAgain_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = new MainWindow();
+            window.Show();
+            this.Close();
+           
+        }
+
+        private void btndiv_Click(object sender, RoutedEventArgs e)
+        {
+            lbxQuestion.Items.Clear();
+
+            if (btnL3.IsChecked == true)
+            {
+                ThreeTheme threeTheme = new ThreeTheme();
+                threeTheme.DivisionThemeCount();
+                for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = threeTheme.ArrayTheme[i];
+                    vslist1[i] = threeTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
+                }
+
+
+            }
+            else if (btnL4.IsChecked == true)
+            {
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.DivisionThemeCount();
+                for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = fourTheme.ArrayTheme[i];
+                    vslist1[i] = fourTheme.ArrayAnswer[i];
+                    lbxQuestion.Items.Add(vslist[i]);
+                }
+
+
             }
         }
     }

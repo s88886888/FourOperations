@@ -66,4 +66,3 @@ C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOpera
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\LoginWindow1.g.cs
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\LoginWindoTest.baml
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\LoginWindow1.baml
-C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\WpfFourOperationsApp.csprojAssemblyReference.cache

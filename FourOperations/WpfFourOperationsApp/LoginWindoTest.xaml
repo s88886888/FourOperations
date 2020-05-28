@@ -12,7 +12,7 @@
         <Canvas Grid.ColumnSpan="2" >
             <Button x:Name="BtnClose" Content="×" Canvas.Left="280" Width="20" Height="20" Background="Transparent" BorderBrush="Transparent" Margin="1" Click="BtnClose_Click"/>
             <Label Content="请输入题目中的正确答案" Canvas.Left="68" Canvas.Top="39" Width="164" HorizontalContentAlignment="Center" />
-            <TextBox  x:Name="txtTest" Canvas.Left="47" Canvas.Top="92" Text="点击获取" TextWrapping="Wrap" Width="120" Background="#FFAAA6A6" Height="27" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsEnabled="False" MouseDown="TextBox_MouseDown"/>
+            <TextBox  x:Name="txtTest" Canvas.Left="47" Canvas.Top="92" Text="点击获取" TextWrapping="Wrap" Width="120" Background="#FFAAA6A6" Height="27" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsEnabled="False" />
             <TextBox x:Name="txtTestAnswer"  Canvas.Left="183" Canvas.Top="92" Text="" TextWrapping="Wrap" Width="38" Height="27" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Button x:Name="txtTestNext" Content="获取" Canvas.Left="238" Canvas.Top="92" Width="43" Height="27" Click="txtTestNext_Click"/>
             <Button x:Name="BtnTrue" Content="确认" Canvas.Left="47" Canvas.Top="145" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="BtnTrue_Click" />
