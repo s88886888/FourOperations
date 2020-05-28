@@ -22,14 +22,14 @@ namespace WpfFourOperationsApp
             InitializeComponent();
         }
         string a = "123456";
-        string b = "123";
+        //string b = "123";
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (text1.Text == a)
+            if (text1.Text == a )
             {
-                MainWindow mainWin = new MainWindow();
+                LoginWindoTest login = new LoginWindoTest();
                 log.Close();
-                mainWin.Show();
+                login.Show();
             }
             else
             {

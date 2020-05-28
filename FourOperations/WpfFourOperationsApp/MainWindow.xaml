@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfFourOperationsApp"
         mc:Ignorable="d"
-        Title="衡光计算器" Height="600" Width="900"  ResizeMode="NoResize">
+        Title="衡光计算器" Height="600" Width="900"  ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#7FFFC000">
         <Canvas>
             <Button x:Name="BtnSystem" Content="系统" Canvas.Left="10" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="BtnSystem_Click" />

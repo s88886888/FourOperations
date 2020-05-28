@@ -48,7 +48,6 @@ C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOpera
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\bin\Debug\netcoreapp3.1\WpfFourOperationsApp.pdb
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\bin\Debug\netcoreapp3.1\FourOperations.dll
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\bin\Debug\netcoreapp3.1\FourOperations.pdb
-C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\WpfFourOperationsApp.csprojAssemblyReference.cache
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\WpfFourOperationsApp_MarkupCompile.cache
@@ -61,3 +60,10 @@ C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOpera
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\WpfFourOperationsApp.dll
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\WpfFourOperationsApp.pdb
 C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\WpfFourOperationsApp.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\LoginWindoTest.g.cs
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\LoginWindow1.g.cs
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\LoginWindoTest.baml
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\LoginWindow1.baml
+C:\Users\ASUS\Desktop\新建文件夹\FourOperations\FourOperations\WpfFourOperationsApp\obj\Debug\netcoreapp3.1\WpfFourOperationsApp.csprojAssemblyReference.cache

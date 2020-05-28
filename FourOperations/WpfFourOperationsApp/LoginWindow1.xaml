@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfFourOperationsApp"
         mc:Ignorable="d"
-        Title="LoginWindow1" Height="400" Width="300" Name="log">
+        Title="LoginWindow1" Height="400" Width="300" Name="log" WindowStartupLocation="CenterScreen">
     <Grid Background="White">
         <Grid Width="300" Height="400">
             <Border CornerRadius="3" HorizontalAlignment="Center" Width="300" Height="360" VerticalAlignment="Center" Background="White" >
@@ -28,7 +28,7 @@
                     </Grid>
                     <Grid>
                         <Label Height="30" Width="40" HorizontalAlignment="Left" Content="密码:"></Label>
-                        <PasswordBox Margin="50 10" Name="text2"  ></PasswordBox>
+                        <PasswordBox Margin="50 10" Name="text2" ></PasswordBox>
                     </Grid>
                     <Grid Margin="20 0">
                         <CheckBox Content="记住密码" HorizontalAlignment="Left"/>
