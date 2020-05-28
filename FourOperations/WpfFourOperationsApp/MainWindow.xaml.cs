@@ -461,5 +461,10 @@ namespace WpfFourOperationsApp
 
             }
         }
+
+        private void BtnHelp_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe","http://www.baidu.com");
+        }
     }
 }

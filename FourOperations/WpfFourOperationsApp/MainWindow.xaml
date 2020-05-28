@@ -10,7 +10,7 @@
         <Canvas>
             <Button x:Name="BtnAgain" Content="重新" Canvas.Left="10" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="BtnAgain_Click" />
             <Button x:Name="BtnSetup" Content="统计" Canvas.Left="100" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
-            <Button x:Name="BtnHelp" Content="帮助" Canvas.Left="190" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
+            <Button x:Name="BtnHelp" Content="帮助" Canvas.Left="190" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="BtnHelp_Click"/>
             <Button x:Name="BtnAbout" Content="关于" Canvas.Left="280" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="BtnAbout_Click"/>
             <Image Height="120" Source="logo.jpg" Stretch="Fill" Width="175" Canvas.Left="10" Canvas.Top="45"/>
             <ListBox x:Name="lbxQuestion" Height="240" Width="175" Canvas.Left="10" Canvas.Top="203" Background="White" ScrollViewer.VerticalScrollBarVisibility="Visible" />
