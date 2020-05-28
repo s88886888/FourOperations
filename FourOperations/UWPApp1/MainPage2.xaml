@@ -14,11 +14,13 @@
                 <CompositeTransform Rotation="0.621"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBox HorizontalAlignment="Left" Margin="336,394,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="420" FontSize="48"/>
-        <TextBox HorizontalAlignment="Left" Margin="842,394,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="114" FontSize="48"/>
-        <Button Content="换一个" Margin="1068,394,0,0" VerticalAlignment="Top" Height="100" Width="164" FontSize="48" Background="White"/>
-        <Button Content="确定" Margin="491,627,0,0" VerticalAlignment="Top" Height="85" Width="160" FontSize="48" Background="White"/>
+        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Margin="331,394,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="420" FontSize="48"/>
+        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="842,394,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="114" FontSize="48"/>
+        <Button Content="换一个" Margin="1068,394,0,0" VerticalAlignment="Top" Height="100" Width="164" FontSize="48" Background="White" Click="Button_Click_1"/>
+        <Button Content="确定" Margin="491,627,0,0" VerticalAlignment="Top" Height="85" Width="160" FontSize="48" Background="White" Click="Button_Click"/>
         <Button Content="取消" Margin="842,627,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.698,2.176" Height="85" Width="160" FontSize="48" Background="White"/>
+        <TextBlock x:Name="Text1" HorizontalAlignment="Left" Margin="218,306,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Foreground="#FFE71818"/>
+
 
     </Grid>
 </Page>

@@ -31,11 +31,10 @@
         <TextBox x:Name="Text10" HorizontalAlignment="Left" Margin="410,569,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
         <TextBlock x:Name="Hint" HorizontalAlignment="Left" Margin="410,203,0,0" Text="请按顺序答题哦~" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="765,143,0,0" Text="您好【XXX】！" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="135"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="744,202,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="224"/>
         <Rectangle HorizontalAlignment="Left" Height="136" Margin="744,338,0,0" Stroke="Black" VerticalAlignment="Top" Width="224"/>
         <Button x:Name="Multiplication" Content="乘法" Margin="756,390,0,0" VerticalAlignment="Top" Width="71" Background="White" BorderBrush="#FF656161" IsEnabled="False" Click="Multiplication_Click"/>
-        <Button x:Name="Division" Content="除法" Margin="878,390,0,0" VerticalAlignment="Top" Width="74" Background="White" BorderBrush="#FF827D7D" RenderTransformOrigin="-2.334,0.533" IsEnabled="False"/>
-        <Button x:Name="Mixture" Content="混合运算" Margin="756,433,0,0" VerticalAlignment="Top" Width="83" BorderBrush="#FF7D7979" Background="White" IsEnabled="False"/>
+        <Button x:Name="Division" Content="除法" Margin="878,390,0,0" VerticalAlignment="Top" Width="74" Background="White" BorderBrush="#FF827D7D" RenderTransformOrigin="-2.334,0.533" IsEnabled="False" Click="Division_Click_1"/>
+        <Button x:Name="Mixture" Content="混合运算" Margin="756,433,0,0" VerticalAlignment="Top" Width="83" BorderBrush="#FF7D7979" Background="White" IsEnabled="False" Click="Mixture_Click_1"/>
         <Button x:Name="Arithmetic1" Content="四则运算" Margin="866,433,0,0" VerticalAlignment="Top" Width="86" Background="White" BorderBrush="#FF7C7878" RenderTransformOrigin="0.001,0.685" IsEnabled="False"/>
         <Rectangle HorizontalAlignment="Left" Height="50" Margin="745,522,0,0" Stroke="Black" VerticalAlignment="Top" Width="223"/>
         <Button x:Name="Print_" Content="打印题目" Margin="756,531,0,0" VerticalAlignment="Top" Width="83" Background="White"/>
@@ -56,6 +55,13 @@
         <TextBlock x:Name="text8" HorizontalAlignment="Left" Margin="539,501,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="text9" HorizontalAlignment="Left" Margin="539,538,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="text10" HorizontalAlignment="Left" Margin="539,576,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Image HorizontalAlignment="Left" Height="117" Margin="130,83,0,0" VerticalAlignment="Top" Width="152" Source="Assets\lADPBGY15Uv9VprM3Mzc_220_220.jpg_720x720q90g.jpg"/>
+        <Ellipse HorizontalAlignment="Left" Height="144" Margin="88,68,0,0" Stroke="Black" VerticalAlignment="Top" Width="153">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Assets\lADPBGY15Uv9VprM3Mzc_220_220.jpg_720x720q90g.jpg"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Rectangle HorizontalAlignment="Left" Height="109" Margin="744,203,0,0" Stroke="Black" VerticalAlignment="Top" Width="224"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="756,245,0,0" Text="得分：" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="803,239,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Foreground="#FFE82929"/>
     </Grid>
 </Page>

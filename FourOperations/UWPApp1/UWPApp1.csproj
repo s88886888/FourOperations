@@ -122,6 +122,12 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainPage2.xaml.cs">
+      <DependentUpon>MainPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage3.xaml.cs">
+      <DependentUpon>MainPage3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +156,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MainPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -217,9 +217,8 @@ namespace UWPApp1
             {
                 text10.Text = "×";
             }
-            judge = num / 10 * 100;
-            textBlock3.Text = judge + "%";
-            textBlock5.Text = judge.ToString();
+            judge = num / 10;
+            textBlock3.Text = judge + "分";
         }
 
         private void Multiplication_Click(object sender, RoutedEventArgs e)
@@ -265,6 +264,31 @@ namespace UWPApp1
         private void Mixture_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Division_Click_1(object sender, RoutedEventArgs e)
+        {
+            ThreeTheme Threes = new ThreeTheme();
+            Threes.DivisionTheme();
+
+            for (int i = 0; i < Threes.ArrayTheme.Count; i++)
+            {
+                vslist[i] = Threes.ArrayTheme[i];
+                vslist1[i] = Threes.ArrayAnswer[i];
+            }
+            listBox.ItemsSource = vslist;
+        }
+
+        private void Mixture_Click_1(object sender, RoutedEventArgs e)
+        {
+            ThreeTheme Threes = new ThreeTheme();
+
+            for (int i = 0; i < Threes.ArrayTheme.Count; i++)
+            {
+                vslist[i] = Threes.ArrayTheme[i];
+                vslist1[i] = Threes.ArrayAnswer[i];
+            }
+            listBox.ItemsSource = vslist;
         }
     }
 }
