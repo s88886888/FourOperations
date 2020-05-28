@@ -44,7 +44,7 @@ namespace ConsoleApp2.Themeup
             try
             {
                 RandomNumber();
-                if (BasicDataA > 100 && BasicDataB > 100 && BasicDataC > 100 || BasicDataA < -10 && BasicDataB < -10 && BasicDataC < -10)
+                if (BasicDataA > 200 && BasicDataB > 200)
                 {
                     throw (new CustomExcepsion("A>100 &&B>100"));
                 }
@@ -73,7 +73,7 @@ namespace ConsoleApp2.Themeup
             RandomNumber();
             try
             {
-                if (BasicDataA > 100 && BasicDataB > 100)
+                if (BasicDataA > 200 && BasicDataB > 100)
                 {
 
                     throw (new CustomExcepsion("A>100 &&B>100"));
@@ -239,9 +239,9 @@ namespace ConsoleApp2.Themeup
             try
             {
                 RandomNumber();
-                if (BasicDataA > 20 && BasicDataB > 20)
+                if (BasicDataA > 200 && BasicDataB > 200)
                 {
-                    throw new Exception("A>20 并且 B>20");
+                    throw new Exception("A>200 并且 B>200");
                 }
                 else
                 {
@@ -263,9 +263,9 @@ namespace ConsoleApp2.Themeup
             RandomNumber();
             try
             {
-                if (BasicDataA > 20 && BasicDataB > 20)
+                if (BasicDataA > 200 && BasicDataB > 200)
                 {
-                    throw new Exception("A>20 并且 B>20");
+                    throw new Exception("A>200 并且 B>200");
                 }
                 else
                 {
@@ -287,6 +287,9 @@ namespace ConsoleApp2.Themeup
                 Console.WriteLine(ex.Message);
             }
         }
+        /// <summary>
+        /// 调用此方法生成10道四则运算
+        /// </summary>
         public void FourOperationsCount()
         {
             for (int i = 0; i < ShowTheme.Length; i++)
