@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ejX45poMo4AU9qCU5pV/NodFULEY43u53XrrCE2bYLBA3sxEw/IVfPKPbEpYA0VCOpon6Z+81nWpzfRDCi0XAA==",
+  "dgSpecHash": "PFKr0Nmk/UkfYB9CnX1hM2mO18YH35uHW9WP3xNUP/HUtB+xge1453bWPvXXoriowceYPiFVq1uvrpbNG6lqWg==",
   "success": true,
-  "projectFilePath": "D:\\正道的光\\FourOperations\\FourOperations\\WpfFourOperationsApp\\WpfFourOperationsApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\18309\\Source\\Repos\\FourOperations\\FourOperations\\WpfFourOperationsApp\\WpfFourOperationsApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\18309\\.nuget\\packages\\materialdesigncolors\\1.2.6\\materialdesigncolors.1.2.6.nupkg.sha512",
+    "C:\\Users\\18309\\.nuget\\packages\\materialdesignthemes\\3.1.3\\materialdesignthemes.3.1.3.nupkg.sha512"
+  ],
   "logs": []
 }
