@@ -25,11 +25,13 @@ namespace WpfFourOperationsApp
         //string b = "123";
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (text1.Text == a )
+            if (text1.Text == a)
             {
+
                 LoginWindoTest login = new LoginWindoTest();
                 log.Close();
                 login.Show();
+                
             }
             else
             {
