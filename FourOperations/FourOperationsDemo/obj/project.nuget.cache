@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Am3cFmu/hmf9J7oAQjSkKNCffxTiKusK3ZUaEfDK4QHdbdR9n4aTxPrtPBu3jZUKuIn2zgn8x3mt9VBw8d4vg==",
+  "dgSpecHash": "Fu8rvOdfu9zpY+H4JA9aj+UIrJQEa1D50ykp7lGiENlWWgEhJgaWgwlk/4Ndnryy3E68DEie+q6iW5LQq2OCzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\10570\\Desktop\\新建文件夹 (2)\\FourOperations\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+  "projectFilePath": "C:\\Users\\10570\\Desktop\\firday\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\10570\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\10570\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
