@@ -1,11 +1,13 @@
-﻿using System;
+﻿using ConsoleApp2.Themeup;
+using NPOI.SS.Formula.Functions;
+using System;
 
 namespace ConsoleApp2
 {
      interface IBasicData
     {
-         int BasicDataA { get; }
-         int BasicDataB { get; }
+        double BasicDataA { get; }
+        double BasicDataB { get; }
 
         void AddThemeCount();
 
@@ -13,7 +15,6 @@ namespace ConsoleApp2
         void AddTheme();
 
         void SubTheme();
-
-
+        void OutPutTxt(string result);
     }
 }
