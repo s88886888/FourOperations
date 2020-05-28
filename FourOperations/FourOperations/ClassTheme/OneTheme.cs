@@ -131,59 +131,26 @@ namespace ConsoleApp2.Base
             ArrayTheme.Add(oneTheme.Theme);
             ArrayAnswer.Add(oneTheme.Answer.ToString());
         }
-
-        /// <summary>
-        /// 输出10道题目和答案Date
-        /// </summary>
-        /// <param name="Array1"></param>
-        /// <param name="Array2"></param>
-        private static void Show(string[] Array1, string[] Array2)
-        {
-            for (int i = 0; i < Array1.Length; i++)
-            {
-                Console.Write(Array1[i]);
-                Console.WriteLine("=" + Array2[i]);
-            }
-        }
         /// <summary>
         /// 打印生成的10道题目Add
         /// </summary>
         public void AddOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件Add.txt";//保存文件路径
-            TwoTheme twoTheme = new TwoTheme();
+            string result = @"..\\..\\..\\打印文件一年级加法题目.txt";//保存文件路径
+            FourTheme FourTheme = new FourTheme();
             OutPutTxt(result);
-            AddOutPutXml(twoTheme);
+            AddOutPutXml(FourTheme);
         }
         /// <summary>
         /// 打印生成的10道题目Sub
         /// </summary>
         public void SubOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件Sub.txt";//保存文件路径
-            TwoTheme twoTheme = new TwoTheme();
+            string result = @"..\\..\\..\\打印文件一年级减法题目.txt";//保存文件路径
+            FourTheme FourTheme = new FourTheme();
             OutPutTxt(result);
-            SubOutPutXml(twoTheme);
+            SubOutPutXml(FourTheme);
         }
-
-        /// <summary>
-        /// 封装打印数据
-        /// </summary>
-        /// <param name="result"></param>
-        /// <param name="oneTheme"></param>
-        private void OutPutTxt(string result)
-        {
-            FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
-            StreamWriter wr = new StreamWriter(fs);
-            for (int i = 0; i < ArrayTheme.Count; i++)
-            {
-                wr.WriteLine(ArrayTheme[i] + FFF + ArrayAnswer[i]);
-            }
-            wr.Flush();
-            fs.Close();
-        }
-
-
         /// <summary>
         /// 读取打印成txt的加法文件
         /// </summary>
@@ -191,7 +158,7 @@ namespace ConsoleApp2.Base
         {
             try
             {
-                using (StreamReader sr = new StreamReader(@"D:\打印文件Add.txt"))
+                using (StreamReader sr = new StreamReader(@"..\\..\\..\\打印文件一年级加法题目.txt"))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -212,7 +179,7 @@ namespace ConsoleApp2.Base
         {
             try
             {
-                using (StreamReader sr = new StreamReader(@"D:\打印文件Sub.txt"))
+                using (StreamReader sr = new StreamReader(@"..\\..\\..\\打印文件一年级减法题目.txt"))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -229,19 +196,19 @@ namespace ConsoleApp2.Base
         /// <summary>
         /// 同步Add打印xml
         /// </summary>
-        /// <param name="twoTheme"></param>
-        public void AddOutPutXml(TwoTheme twoTheme)
+        /// <param name="FourTheme"></param>
+        public void AddOutPutXml(FourTheme fourTheme)
         {
-            string fileName = "打印文件Add.xml";
+            string fileName = "打印文件一年级加法题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
         /// 同步Sub打印xml
         /// </summary>
         /// <param name="oneTheme"></param>
-        public void SubOutPutXml(TwoTheme twoTheme)
+        public void SubOutPutXml(FourTheme FourTheme)
         {
-            string fileName = "打印文件Sub.xml";
+            string fileName = "打印文件一年级减法题目.xml";
             OutPutXml(fileName);
         }
         /// <summary>
@@ -251,8 +218,10 @@ namespace ConsoleApp2.Base
         /// <param name="fileName"></param>
         private void OutPutXml(string fileName)
         {
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true;
+            XmlWriterSettings settings = new XmlWriterSettings
+            {
+                Indent = true
+            };
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
                 writer.WriteStartElement("Create");
@@ -271,7 +240,7 @@ namespace ConsoleApp2.Base
         /// </summary>
         public void AddReaderXML()
         {
-            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Add.xml"))
+            using (XmlReader reader = XmlReader.Create("打印文件一年级加法题目.xml"))
             {
                 ReaderXML(reader);
             }
@@ -279,7 +248,7 @@ namespace ConsoleApp2.Base
         public void SubReaderXML()
         {
 
-            using (XmlReader reader = XmlReader.Create("..\\..\\..\\打印文件Sub.xml"))
+            using (XmlReader reader = XmlReader.Create("打印文件一年级减法题目.xml"))
             {
                 ReaderXML(reader);
             }
