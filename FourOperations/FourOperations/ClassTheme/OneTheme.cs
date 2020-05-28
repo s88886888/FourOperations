@@ -230,7 +230,7 @@ namespace ConsoleApp2.Base
         /// 同步Add打印xml
         /// </summary>
         /// <param name="FourTheme"></param>
-        public void AddOutPutXml(FourTheme FourTheme)
+        public void AddOutPutXml(FourTheme fourTheme)
         {
             string fileName = "打印文件一年级加法题目.xml";
             OutPutXml(fileName);
@@ -251,8 +251,10 @@ namespace ConsoleApp2.Base
         /// <param name="fileName"></param>
         private void OutPutXml(string fileName)
         {
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true;
+            XmlWriterSettings settings = new XmlWriterSettings
+            {
+                Indent = true
+            };
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
                 writer.WriteStartElement("Create");

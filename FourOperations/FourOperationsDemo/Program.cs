@@ -91,10 +91,10 @@ namespace FourOperations
             //twoTheme.AddThemeCount();
             //twoTheme.AddOutPutTxt();
 
-            ThreeTheme threeTheme = new ThreeTheme();
-            threeTheme.MultiplyAndDivisionThemeCount();
-            threeTheme.MultiplyAndDivisionThemeOutPutTxt();
-            
+            //ThreeTheme threeTheme = new ThreeTheme();
+            //threeTheme.MultiplyThemeCount();
+            //threeTheme.MultiplyAndDivisionThemeOutPutTxt();
+
 
             //threeTheme.MultiplyAndDivisionTheme();
             //Console.WriteLine(threeTheme.Theme);
@@ -135,6 +135,20 @@ namespace FourOperations
             //    oneTheme.tempAnswer.Add(a);
             //}
             //oneTheme.ErrorsText();
+
+
+
+            FourTheme fourTheme = new FourTheme();
+            fourTheme.FourOperationsCount();
+            //Console.WriteLine(fourTheme.Theme);
+            //Console.WriteLine(fourTheme.Answer);
+             
+
+
+
+            //double a = 8 / 4;
+            //double b = 4 / 4;
+            //Console.WriteLine(a - b);
         }
     }
 }

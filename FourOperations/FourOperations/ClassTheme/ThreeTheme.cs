@@ -104,7 +104,7 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         /// 生成混合运算一道  A？B？C？ ？号是运算符 
         /// </summary>
-        public void MultiplyAndDivisionTheme()
+        public void HybridOperation()
         {
 
             RandomNumber();
@@ -114,12 +114,12 @@ namespace ConsoleApp2.Themeup
             }
             if (BasicDataB == 0 || BasicDataA == 0)
             {
-                MultiplyAndDivisionTheme();
+                HybridOperation();
             }
             else
             {
                 bool num = true;
-                string number = "";
+                string number = null;
                 DataTable table = new DataTable();
                 if (LsitNumA == 3 || LsitNumA == 4)
                 {
@@ -143,7 +143,7 @@ namespace ConsoleApp2.Themeup
                 }
                 if (Answer > 10000 || Answer < -100)
                 {
-                    MultiplyAndDivisionTheme();
+                    MultiplyTheme();
                 }
             }
         }
@@ -232,12 +232,12 @@ namespace ConsoleApp2.Themeup
             }
         }
         //调用此方法生成10题 混合运算 A？B？C？ ？号是运算符 
-        public void MultiplyAndDivisionThemeCount()
+        public void HybridOperationCount()
         {
             for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var threeTheme = new ThreeTheme();
-                threeTheme.MultiplyAndDivisionTheme();
+                threeTheme.HybridOperation();
                 ArrayDate(ShowTheme, ShowAnswer, i, threeTheme);
             }
             Show(ShowTheme, ShowAnswer);
@@ -431,8 +431,10 @@ namespace ConsoleApp2.Themeup
         /// <param name="fileName"></param>
         private void OutPutXml(string fileName)
         {
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true;
+            XmlWriterSettings settings = new XmlWriterSettings
+            {
+                Indent = true
+            };
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
                 writer.WriteStartElement("Create");

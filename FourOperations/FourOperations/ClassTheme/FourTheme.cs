@@ -8,7 +8,7 @@ using System.Xml;
 
 namespace ConsoleApp2.Themeup
 {
-    public class FourTheme: BasicData
+    public class FourTheme : BasicData
     {
         readonly Random random = new Random();
         readonly string[] ShowTheme = new string[10];
@@ -107,13 +107,13 @@ namespace ConsoleApp2.Themeup
         }
 
         /// <summary>
-        /// 生成四则运算  A？B？C？D 号是运算符 
+        /// 生成混合运算  A？B？C？
         /// </summary>
         public void MultiplyAndDivisionTheme()
         {
 
             RandomNumber();
-            if (BasicDataA > 100 && BasicDataB > 100)
+            if (BasicDataA > 200 && BasicDataB > 100)
             {
                 throw (new CustomExcepsion("A>100 &&B>100"));
             }
@@ -124,7 +124,7 @@ namespace ConsoleApp2.Themeup
             else
             {
                 bool num = true;
-                string number = "";
+                string number = null;
                 DataTable table = new DataTable();
                 if (LsitNumA == 3 || LsitNumA == 4)
                 {
@@ -153,6 +153,57 @@ namespace ConsoleApp2.Themeup
             }
         }
 
+        /// <summary>
+        /// 核心代码：生成一道四则运算题目
+        /// </summary>
+        public void FourOperations()
+        {
+            RandomNumber();
+            if (BasicDataA > 200 && BasicDataB > 200)
+            {
+                throw (new CustomExcepsion("A>100 &&B>100"));
+            }
+            if (BasicDataB == 0 || BasicDataA == 0)
+            {
+                FourOperations();
+            }
+            else
+            {
+                bool num = true;
+                string number = null;
+                DataTable table = new DataTable();
+                if (LsitNumB == 3 || LsitNumB == 4)
+                {
+                    Theme = $"({BasicDataA}{CCC[LsitNumA]}{BasicDataB}){CCC[LsitNumB]}({BasicDataC}{CCC[LsitNumC]}{BasicDataD})".ToString();
+                    number = Convert.ToDouble(table.Compute(Theme, null)).ToString("0.000");
+                    Answer = Convert.ToDouble(number);
+                    num = false;
+                }
+                if (LsitNumA == 4 || LsitNumA == 3 && num == true)
+                {
+                    Theme = $"{BasicDataA}{CCC[LsitNumA]}({BasicDataB}{CCC[LsitNumB]}{BasicDataC}){CCC[LsitNumC]}{BasicDataD}".ToString();
+                    number = Convert.ToDouble(table.Compute(Theme, null)).ToString("0.000"); ;
+                    Answer = Convert.ToDouble(number);
+                    num = false;
+                }
+                if (LsitNumC == 4 || LsitNumA == 3 && num == true)
+                {
+                    Theme = $"{BasicDataA}{CCC[LsitNumA]}({BasicDataB}{CCC[LsitNumB]}({BasicDataC}{CCC[LsitNumC]}{BasicDataD})".ToString();
+                    number = Convert.ToDouble(table.Compute(Theme, null)).ToString("0.000"); ;
+                    Answer = Convert.ToDouble(number);
+                }
+                if (num == true)
+                {
+                    Theme = $"{BasicDataA}{CCC[LsitNumA]}{BasicDataB}{CCC[LsitNumB]}{BasicDataC}{CCC[LsitNumC]}{BasicDataD}".ToString();
+                    number = Convert.ToDouble(table.Compute(Theme, null)).ToString("0.000"); ;
+                    Answer = Convert.ToDouble(number);
+                }
+                if (Answer > 10000 || Answer < -100)
+                {
+                    FourOperations();
+                }
+            }
+        }
         /// <summary>
         /// 生成十条乘法题目
         /// </summary>
@@ -236,7 +287,19 @@ namespace ConsoleApp2.Themeup
                 Console.WriteLine(ex.Message);
             }
         }
-        //调用此方法生成10题 混合运算 A？B？C？ ？号是运算符 
+        public void FourOperationsCount()
+        {
+            for (int i = 0; i < ShowTheme.Length; i++)
+            {
+                var fourTheme = new FourTheme();
+                fourTheme.FourOperations();
+                ArrayDate(ShowTheme, ShowAnswer, i, fourTheme);
+            }
+            Show(ShowTheme, ShowAnswer);
+        }
+        /// <summary>
+        ///调用此方法生成10题 混合运算 A？B？C？ ？号是运算符 
+        /// </summary>
         public void MultiplyAndDivisionThemeCount()
         {
             for (int i = 0; i < ShowTheme.Length; i++)
@@ -250,6 +313,7 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         /// 交换变量值
         /// </summary>
+        /// 
         private void ChangeNumber()
         {
             BasicDataA += BasicDataB;
@@ -406,7 +470,7 @@ namespace ConsoleApp2.Themeup
         /// 同步Add打印xml
         /// </summary>
         /// <param name="FourTheme"></param>
-        public void AddOutPutXml(FourTheme FourTheme)
+        public void AddOutPutXml(FourTheme fourTheme)
         {
             string fileName = "打印四年级加法题目.xml";
             OutPutXml(fileName);
@@ -415,7 +479,7 @@ namespace ConsoleApp2.Themeup
         /// 同步Sub打印xml
         /// </summary>
         /// <param name="fourTheme"></param>
-        public void SubOutPutXml(FourTheme FourTheme)
+        public void SubOutPutXml(FourTheme fourTheme)
         {
             string fileName = "打印四年级减法题目.xml";
             OutPutXml(fileName);
@@ -436,8 +500,10 @@ namespace ConsoleApp2.Themeup
         /// <param name="fileName"></param>
         private void OutPutXml(string fileName)
         {
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true;
+            XmlWriterSettings settings = new XmlWriterSettings
+            {
+                Indent = true
+            };
             using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
             {
                 writer.WriteStartElement("Create");
