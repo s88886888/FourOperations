@@ -38,7 +38,7 @@
         <Button x:Name="Arithmetic1" Content="四则运算" Margin="866,433,0,0" VerticalAlignment="Top" Width="86" Background="White" BorderBrush="#FF7C7878" RenderTransformOrigin="0.001,0.685" IsEnabled="False" Click="Arithmetic1_Click"/>
         <Rectangle HorizontalAlignment="Left" Height="50" Margin="745,522,0,0" Stroke="Black" VerticalAlignment="Top" Width="223"/>
         <Button x:Name="Print_" Content="打印题目" Margin="756,531,0,0" VerticalAlignment="Top" Width="83" Background="White"/>
-        <Button x:Name="Mistakes" Content="错题本" Margin="872,530,0,0" VerticalAlignment="Top" Width="86" Background="White"/>
+        <Button x:Name="Mistakes" Content="错题本" Margin="872,530,0,0" VerticalAlignment="Top" Width="86" Background="White" Click="Mistakes_Click"/>
         <TextBlock x:Name="Time" HorizontalAlignment="Left" Margin="782,582,0,0" Text="已运行了999999.99分钟" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="Date" HorizontalAlignment="Left" Margin="828,606,0,0" Text="当前时间" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="812,641,0,0" Text="当前版本号V1.1" TextWrapping="Wrap" VerticalAlignment="Top"/>

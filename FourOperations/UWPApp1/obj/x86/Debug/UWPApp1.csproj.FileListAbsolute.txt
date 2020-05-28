@@ -101,3 +101,4 @@ C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\obj\x86\Debug\MainPa
 C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\obj\x86\Debug\MainPage3.xbf
 C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\MainPage2.xbf
 C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\MainPage3.xbf
+C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\obj\x86\Debug\UWPApp1.csprojAssemblyReference.cache

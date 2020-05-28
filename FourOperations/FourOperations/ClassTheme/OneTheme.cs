@@ -13,8 +13,8 @@ namespace ConsoleApp2.Base
         readonly string[] ShowTheme = new string[10];
         readonly string[] ShowAnswer = new string[10];
 
-        public readonly List<string> tempAnswer = new List<string>();//用户输出的答案
-        public readonly List<string> tempTheme = new List<string>();//错的题目
+        //public readonly List<string> tempAnswer = new List<string>();//用户输出的答案
+        //public readonly List<string> tempTheme = new List<string>();//错的题目
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
