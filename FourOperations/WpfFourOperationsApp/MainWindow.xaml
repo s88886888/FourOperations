@@ -24,8 +24,20 @@
             <TextBox x:Name="txtAnswer5"  Canvas.Left="218" Canvas.Top="299" Height="24" Width="122"/>
             <TextBox x:Name="txtAnswer6"  Canvas.Left="218" Canvas.Top="323" Height="24" Width="122"/>
             <TextBox x:Name="txtAnswer7"  Canvas.Left="218" Canvas.Top="347" Height="24" Width="122"/>
+            <TextBox x:Name="txtAnswer8"  Canvas.Left="218" Canvas.Top="371" Height="24" Width="122"/>
+            <TextBox x:Name="txtAnswer9"  Canvas.Left="218" Canvas.Top="395" Height="24" Width="122"/>
+            <TextBox x:Name="txtAnswer10"  Canvas.Left="218" Canvas.Top="419" Height="24" Width="122"/>
             <Label Content="答案" Canvas.Left="218" Canvas.Top="173" Width="65"/>
-            <TextBox x:Name="txtJudge" Height="24" Width="68" Canvas.Left="389" Canvas.Top="203" Background="White"/>
+            <TextBox x:Name="txtJudge1" Height="24" Width="68" Canvas.Left="389" Canvas.Top="203" Background="White"/>
+            <TextBox x:Name="txtJudge2" Height="24" Width="68" Canvas.Left="389" Canvas.Top="227" Background="White"/>
+            <TextBox x:Name="txtJudge3" Height="24" Width="68" Canvas.Left="389" Canvas.Top="251" Background="White"/>
+            <TextBox x:Name="txtJudge4" Height="24" Width="68" Canvas.Left="389" Canvas.Top="275" Background="White"/>
+            <TextBox x:Name="txtJudge5" Height="24" Width="68" Canvas.Left="389" Canvas.Top="299" Background="White"/>
+            <TextBox x:Name="txtJudge6" Height="24" Width="68" Canvas.Left="389" Canvas.Top="323" Background="White"/>
+            <TextBox x:Name="txtJudge7" Height="24" Width="68" Canvas.Left="389" Canvas.Top="347" Background="White"/>
+            <TextBox x:Name="txtJudge8" Height="24" Width="68" Canvas.Left="389" Canvas.Top="371" Background="White"/>
+            <TextBox x:Name="txtJudge9" Height="24" Width="68" Canvas.Left="389" Canvas.Top="395" Background="White"/>
+            <TextBox x:Name="txtJudge10" Height="24" Width="68" Canvas.Left="389" Canvas.Top="419" Background="White"/>
             <Label Content="判断" Canvas.Left="400" Canvas.Top="173"/>
             <ToggleButton x:Name="btnL1" Content="一年级" Canvas.Left="190" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Checked="btnL1_Checked"/>
             <ToggleButton x:Name="btnL2" Content="二年级" Canvas.Left="280" Canvas.Top="60" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Checked="btnL2_Checked"/>
@@ -62,6 +74,8 @@
             </Canvas>
             <Button x:Name="btnsubmit" Content="提交" Canvas.Left="502" Canvas.Top="328" Height="30" Width="86" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="btnsubmit_Click"/>
            
+            
+
 
         </Canvas>
 
