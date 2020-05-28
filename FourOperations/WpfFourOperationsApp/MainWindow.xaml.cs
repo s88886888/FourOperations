@@ -206,7 +206,8 @@ namespace WpfFourOperationsApp
         }
 
         private void btnsubmit_Click(object sender, RoutedEventArgs e)
-        {
+        { 
+
             if (lbxQuestion == null) { return; }
             else
             {
