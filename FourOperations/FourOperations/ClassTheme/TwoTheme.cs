@@ -36,7 +36,7 @@ namespace ConsoleApp2.Themeup
                 RandomNumber();
                 if (BasicDataA > 100 && BasicDataB > 100)
                 {
-                    throw new Exception("A>20 并且 B>20");
+                    throw new Exception("A>100 并且 B>100");
                 }
                 else
                 {
@@ -58,9 +58,9 @@ namespace ConsoleApp2.Themeup
             RandomNumber();
             try
             {
-                if (BasicDataA > 20 && BasicDataB > 20)
+                if (BasicDataA > 100 && BasicDataB > 100)
                 {
-                    throw new Exception("A>20 并且 B>20");
+                    throw new Exception("A>100 并且 B>100");
                 }
                 else
                 {

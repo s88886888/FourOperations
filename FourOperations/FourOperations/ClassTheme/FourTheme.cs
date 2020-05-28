@@ -46,7 +46,7 @@ namespace ConsoleApp2.Themeup
                 RandomNumber();
                 if (BasicDataA > 200 && BasicDataB > 200)
                 {
-                    throw (new CustomExcepsion("A>100 &&B>100"));
+                    throw (new CustomExcepsion("A>200 &&B>200"));
                 }
 
                 else
@@ -76,7 +76,7 @@ namespace ConsoleApp2.Themeup
                 if (BasicDataA > 200 && BasicDataB > 100)
                 {
 
-                    throw (new CustomExcepsion("A>100 &&B>100"));
+                    throw (new CustomExcepsion("A>200 &&B>200"));
                 }
                 else
                 {
@@ -115,7 +115,7 @@ namespace ConsoleApp2.Themeup
             RandomNumber();
             if (BasicDataA > 200 && BasicDataB > 100)
             {
-                throw (new CustomExcepsion("A>100 &&B>100"));
+                throw (new CustomExcepsion("A>200 &&B>200"));
             }
             if (BasicDataB == 0 || BasicDataA == 0)
             {
@@ -161,7 +161,7 @@ namespace ConsoleApp2.Themeup
             RandomNumber();
             if (BasicDataA > 200 && BasicDataB > 200)
             {
-                throw (new CustomExcepsion("A>100 &&B>100"));
+                throw (new CustomExcepsion("A>200 &&B>200"));
             }
             if (BasicDataB == 0 || BasicDataA == 0)
             {

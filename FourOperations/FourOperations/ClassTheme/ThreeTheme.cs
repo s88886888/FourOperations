@@ -23,11 +23,12 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public override void RandomNumber()
         {
-            BasicDataA = random.Next(1, 100);
-            BasicDataB = random.Next(1, 100);
-            BasicDataC = random.Next(1, 100);
+            BasicDataA = random.Next(1, 150);
+            BasicDataB = random.Next(1, 150);
+            BasicDataC = random.Next(1, 150);
             LsitNumA = random.Next(0, 4);
             LsitNumB = random.Next(0, 4);
+            
         }
         /// <summary>
         /// 生成一道乘法题目
@@ -39,7 +40,7 @@ namespace ConsoleApp2.Themeup
             try
             {
                 RandomNumber();
-                if (BasicDataA > 100 && BasicDataB > 100 && BasicDataC > 100 || BasicDataA < -10 && BasicDataB < -10 && BasicDataC < -10)
+                if (BasicDataA > 150 && BasicDataB > 150)
                 {
                     throw (new CustomExcepsion("A>100 &&B>100"));
                 }
@@ -68,10 +69,10 @@ namespace ConsoleApp2.Themeup
             RandomNumber();
             try
             {
-                if (BasicDataA > 100 && BasicDataB > 100)
+                if (BasicDataA > 150 && BasicDataB > 150)
                 {
 
-                    throw (new CustomExcepsion("A>100 &&B>100"));
+                    throw (new CustomExcepsion("A>150 &&B>150"));
                 }
                 else
                 {
@@ -106,11 +107,10 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         public void HybridOperation()
         {
-
             RandomNumber();
-            if (BasicDataA > 100 && BasicDataB > 100)
+            if (BasicDataA > 150 && BasicDataB > 150 && BasicDataC > 150)
             {
-                throw (new CustomExcepsion("A>100 &&B>100"));
+                throw (new CustomExcepsion("A>150 &&B>150&&C > 150"));
             }
             if (BasicDataB == 0 || BasicDataA == 0)
             {
@@ -183,9 +183,9 @@ namespace ConsoleApp2.Themeup
             try
             {
                 RandomNumber();
-                if (BasicDataA > 20 && BasicDataB > 20)
+                if (BasicDataA > 150 && BasicDataB > 150)
                 {
-                    throw new Exception("A>20 并且 B>20");
+                    throw new Exception("A>150 并且 B>150");
                 }
                 else
                 {
@@ -207,9 +207,9 @@ namespace ConsoleApp2.Themeup
             RandomNumber();
             try
             {
-                if (BasicDataA > 20 && BasicDataB > 20)
+                if (BasicDataA > 150 && BasicDataB > 150)
                 {
-                    throw new Exception("A>20 并且 B>20");
+                    throw new Exception("A>150 并且 B>150");
                 }
                 else
                 {
