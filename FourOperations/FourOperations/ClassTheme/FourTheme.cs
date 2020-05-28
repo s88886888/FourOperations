@@ -109,7 +109,7 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         /// 生成混合运算  A？B？C？
         /// </summary>
-        public void MultiplyAndDivisionTheme()
+        public void HybridOperationTheme()
         {
 
             RandomNumber();
@@ -119,7 +119,7 @@ namespace ConsoleApp2.Themeup
             }
             if (BasicDataB == 0 || BasicDataA == 0)
             {
-                MultiplyAndDivisionTheme();
+                HybridOperationTheme();
             }
             else
             {
@@ -148,7 +148,7 @@ namespace ConsoleApp2.Themeup
                 }
                 if (Answer > 10000 || Answer < -100)
                 {
-                    MultiplyAndDivisionTheme();
+                    HybridOperationTheme();
                 }
             }
         }
@@ -156,7 +156,7 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         /// 核心代码：生成一道四则运算题目
         /// </summary>
-        public void FourOperations()
+        public void FourOperationsTheme()
         {
             RandomNumber();
             if (BasicDataA > 200 && BasicDataB > 200)
@@ -165,7 +165,7 @@ namespace ConsoleApp2.Themeup
             }
             if (BasicDataB == 0 || BasicDataA == 0)
             {
-                FourOperations();
+                FourOperationsTheme();
             }
             else
             {
@@ -200,7 +200,7 @@ namespace ConsoleApp2.Themeup
                 }
                 if (Answer > 10000 || Answer < -100)
                 {
-                    FourOperations();
+                    FourOperationsTheme();
                 }
             }
         }
@@ -290,12 +290,12 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         /// 调用此方法生成10道四则运算
         /// </summary>
-        public void FourOperationsCount()
+        public void FourOperationsThemeCount()
         {
             for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var fourTheme = new FourTheme();
-                fourTheme.FourOperations();
+                fourTheme.FourOperationsTheme();
                 ArrayDate(ShowTheme, ShowAnswer, i, fourTheme);
             }
             Show(ShowTheme, ShowAnswer);
@@ -303,12 +303,12 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         ///调用此方法生成10题 混合运算 A？B？C？ ？号是运算符 
         /// </summary>
-        public void MultiplyAndDivisionThemeCount()
+        public void HybridOperationThemeCount()
         {
             for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var fourTheme = new FourTheme();
-                fourTheme.MultiplyAndDivisionTheme();
+                fourTheme.HybridOperationTheme();
                 ArrayDate(ShowTheme, ShowAnswer, i, fourTheme);
             }
             Show(ShowTheme, ShowAnswer);
@@ -349,7 +349,7 @@ namespace ConsoleApp2.Themeup
                 fourTheme.SubTheme();
                 ArrayDate(ShowTheme, ShowAnswer, i, fourTheme);
             }
-            Show(ShowTheme, ShowTheme);
+            Show(ShowTheme, ShowAnswer);
         }
 
         /// <summary>
@@ -390,6 +390,22 @@ namespace ConsoleApp2.Themeup
             OutPutTxt(result);
             AddOutPutXml(fourTheme);
         }
+
+
+        public void MultiplyOutPutTxt()
+        {
+            string result = @"..\\..\\..\\打印四年级乘法题目.txt";//保存文件路径
+            FourTheme fourTheme = new FourTheme();
+            OutPutTxt(result);
+            MultiplyOutPutXml(fourTheme);
+        }
+        public void DivisionOutPutTxt()
+        {
+            string result = @"..\\..\\..\\打印四年级除法题目.txt";//保存文件路径
+            FourTheme fourTheme = new FourTheme();
+            OutPutTxt(result);
+            DivisionOutPutXml(fourTheme);
+        }
         /// <summary>
         /// 打印生成的10道题目Sub
         /// </summary>
@@ -401,12 +417,19 @@ namespace ConsoleApp2.Themeup
             SubOutPutXml(fourTheme);
         }
 
-        public void MultiplyAndDivisionThemeOutPutTxt()
+        public void HybridOperationThemeOutPutTxt()
+        {
+            string result = @"..\\..\\..\\打印四年级混合运算题目.txt";//保存文件路径
+            FourTheme fourTheme = new FourTheme();
+            OutPutTxt(result);
+            HybridOperationThemeOutPutXml(fourTheme);
+        }
+        public void FourOperationsThemeOutPutTxt()
         {
             string result = @"..\\..\\..\\打印四年级四则运算题目.txt";//保存文件路径
             FourTheme fourTheme = new FourTheme();
             OutPutTxt(result);
-            MultiplyAndDivisionThemeOutPutXml(fourTheme);
+            HybridOperationThemeOutPutXml(fourTheme);
         }
 
         /// <summary>
@@ -482,6 +505,18 @@ namespace ConsoleApp2.Themeup
         /// 同步Sub打印xml
         /// </summary>
         /// <param name="fourTheme"></param>
+        /// 
+
+        public void MultiplyOutPutXml(FourTheme fourTheme)
+        {
+            string fileName = "打印四年级乘法题目.xml";
+            OutPutXml(fileName);
+        }
+        public void DivisionOutPutXml(FourTheme fourTheme)
+        {
+            string fileName = "打印四年级除法题目.xml";
+            OutPutXml(fileName);
+        }
         public void SubOutPutXml(FourTheme fourTheme)
         {
             string fileName = "打印四年级减法题目.xml";
@@ -491,7 +526,13 @@ namespace ConsoleApp2.Themeup
         /// 打印出混合运算
         /// </summary>
         /// <param name="FourTheme"></param>
-        public void MultiplyAndDivisionThemeOutPutXml(FourTheme fourTheme)
+        public void HybridOperationThemeOutPutXml(FourTheme fourTheme)
+        {
+            string fileName = "打印四年级混合运算题目.xml";
+            OutPutXml(fileName);
+        }
+
+        public void FourOperationsThemeOutPutXml(FourTheme fourTheme)
         {
             string fileName = "打印四年级四则运算题目.xml";
             OutPutXml(fileName);

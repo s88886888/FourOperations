@@ -15,8 +15,15 @@ namespace FourOperations
         {
 
             FourTheme fourTheme = new FourTheme();
-            fourTheme.AddThemeCount();
-            fourTheme.AddOutPutTxt();
+            //加法
+            //fourTheme.AddThemeCount();
+            //fourTheme.AddOutPutTxt();
+            //减法
+            //fourTheme.SubThemeCount();
+            //fourTheme.SubOutPutTxt();
+            //乘法
+            fourTheme.MultiplyThemeCount();
+            fourTheme.MultiplyOutPutTxt();
 
         }
     }
