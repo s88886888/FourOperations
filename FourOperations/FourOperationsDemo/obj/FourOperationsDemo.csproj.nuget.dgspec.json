@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj": {}
+    "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj": {
+    "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+        "projectUniqueName": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
         "projectName": "FourOperationsDemo",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperationsDemo\\obj\\",
+        "projectPath": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+        "packagesPath": "C:\\Users\\10570\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperationsDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\10570\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj"
+              "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj": {
+                "projectPath": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj"
               }
             }
           }
@@ -56,21 +56,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj": {
+    "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "projectUniqueName": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj",
         "projectName": "FourOperations",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\星期五\\FourOperations\\FourOperations\\obj\\",
+        "projectPath": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\FourOperations.csproj",
+        "packagesPath": "C:\\Users\\10570\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\10570\\Desktop\\星期五\\FourOperations\\FourOperations\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\10570\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -119,7 +119,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
