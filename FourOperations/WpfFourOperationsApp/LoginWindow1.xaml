@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfFourOperationsApp"
         mc:Ignorable="d"
-        Title="LoginWindow1" Height="450" Width="450" Name="log">
-    <Grid Background="Yellow">
+        Title="LoginWindow1" Height="400" Width="300" Name="log">
+    <Grid Background="White">
         <Grid Width="300" Height="400">
-            <Border CornerRadius="3" HorizontalAlignment="Center" Width="300" Height="360" VerticalAlignment="Center" Background="White" Margin="0 35 0 0">
+            <Border CornerRadius="3" HorizontalAlignment="Center" Width="300" Height="360" VerticalAlignment="Center" Background="White" >
                 <StackPanel Margin="0 50 0 0">
                     <Image Source="/logo.jpg" Width="102" Height="77" RenderTransformOrigin="0.5,0.5"  >
                         <Image.RenderTransform>
