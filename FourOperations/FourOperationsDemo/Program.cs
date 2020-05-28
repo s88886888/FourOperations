@@ -92,7 +92,8 @@ namespace FourOperations
             //twoTheme.AddOutPutTxt();
 
             //ThreeTheme threeTheme = new ThreeTheme();
-            //threeTheme.Division();
+            //threeTheme.MultiplyAndDivisionThemeCount();
+            //threeTheme.MultiplyAndDivisionThemeOutPutTxt();
 
 
             //threeTheme.MultiplyAndDivisionTheme();
@@ -102,28 +103,38 @@ namespace FourOperations
 
             //threeTheme.MultiplyAndDivisionThemeCount();
 
-            OneTheme oneTheme = new OneTheme();
+            //ThreeTheme three = new ThreeTheme();
             //oneTheme.SubThemeCount();
             //oneTheme.SubOutPutTxt();
+            //three.DivisionThemeCount();
+
+
+
+            //List<string> temp = new List<string>();
+            ////temp = Console.ReadLine();            
+            //temp.Add("19");
+            //temp.Add("35");
+            //temp.Add("14");
+            //temp.Add("55");
+            //temp.Add("22");
+            //temp.Add("3");
+            //temp.Add("25");
+            //temp.Add("10");
+            //temp.Add("1");
+            //temp.Add("25");
+
+            //oneTheme.ErrorsText(temp);
+
+
+
+            OneTheme oneTheme = new OneTheme();
             oneTheme.AddThemeCount();
-
-
-
-            List<string> temp = new List<string>();
-            //temp = Console.ReadLine();            
-            temp.Add("19");
-            temp.Add("35");
-            temp.Add("14");
-            temp.Add("55");
-            temp.Add("22");
-            temp.Add("3");
-            temp.Add("25");
-            temp.Add("10");
-            temp.Add("1");
-            temp.Add("25");
-
-            oneTheme.ErrorsText(temp);
-
+            for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
+            {
+                string a = Console.ReadLine();
+                oneTheme.tempAnswer.Add(a);
+            }
+            oneTheme.ErrorsText();
         }
     }
 }

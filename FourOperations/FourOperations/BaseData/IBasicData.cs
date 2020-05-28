@@ -4,8 +4,8 @@ namespace ConsoleApp2
 {
      interface IBasicData
     {
-         int BasicDataA { get; }
-         int BasicDataB { get; }
+        double BasicDataA { get; }
+        double BasicDataB { get; }
 
         void AddThemeCount();
 
