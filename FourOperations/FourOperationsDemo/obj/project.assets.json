@@ -533,19 +533,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\10570\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\星期五\\123132132\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\123132132\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
       "projectName": "FourOperationsDemo",
-      "projectPath": "F:\\星期五\\123132132\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
-      "packagesPath": "C:\\Users\\10570\\.nuget\\packages\\",
-      "outputPath": "F:\\星期五\\123132132\\FourOperations\\FourOperationsDemo\\obj\\",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\123132132\\FourOperations\\FourOperationsDemo\\FourOperationsDemo.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\123132132\\FourOperations\\FourOperationsDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\10570\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -558,8 +558,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "F:\\星期五\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj": {
-              "projectPath": "F:\\星期五\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj"
+            "C:\\Users\\Administrator\\Desktop\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\123132132\\FourOperations\\FourOperations\\FourOperations.csproj"
             }
           }
         }
@@ -587,7 +587,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
