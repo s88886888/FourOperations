@@ -60,3 +60,11 @@ D:\衡光计算器\FourOperations\FourOperations\FourOperations\obj\Debug\netsta
 D:\衡光计算器\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfo.cs
 D:\衡光计算器\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
 D:\衡光计算器\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb
+G:\正道的光\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.deps.json
+G:\正道的光\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.dll
+G:\正道的光\FourOperations\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.pdb
+G:\正道的光\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.csprojAssemblyReference.cache
+G:\正道的光\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfoInputs.cache
+G:\正道的光\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.AssemblyInfo.cs
+G:\正道的光\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.dll
+G:\正道的光\FourOperations\FourOperations\FourOperations\obj\Debug\netstandard2.0\FourOperations.pdb

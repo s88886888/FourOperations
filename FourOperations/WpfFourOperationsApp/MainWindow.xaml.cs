@@ -28,7 +28,7 @@ namespace WpfFourOperationsApp
         OneTheme oneTheme = new OneTheme();
         string[] vslist = new string[10];
         string[] vslist1 = new string[10];
-
+        public bool? IsChecked { get; set; }
         private void BtnSystem_Click(object sender, RoutedEventArgs e)
         {
 
@@ -36,13 +36,30 @@ namespace WpfFourOperationsApp
 
         private void btnL1_Click_1(object sender, RoutedEventArgs e)
         {
+            //btnL1.IsChecked
+            
             btnadd.IsEnabled = true;
             btnsub.IsEnabled = true;
         }
 
         private void btnadd_Click(object sender, RoutedEventArgs e)
         {
+            
+           
             oneTheme.AddThemeCount();
+            for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
+            {
+                vslist[i] = oneTheme.ArrayTheme[i];
+                vslist1[i] = oneTheme.ArrayAnswer[i];
+            }
+            lbxQuestion.ItemsSource = vslist;
+        }
+
+        private void btnsub_Click(object sender, RoutedEventArgs e)
+        {
+
+            oneTheme.SubThemeCount();
+
             for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
             {
                 vslist[i] = oneTheme.ArrayTheme[i];
