@@ -27,7 +27,8 @@ namespace Uwpxx
         string[] vs = new string[10];
         string[] vs1 = new string[10];
         string[] vslist1 = new string[10];
-
+        double  zql;
+        double a;
         public MainPage()
         {
             this.InitializeComponent();
@@ -79,9 +80,12 @@ namespace Uwpxx
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
+            OneTheme oneTheme = new OneTheme();
+
             if (box1.Text == vs1[0])
             {
                 text1.Text = "√";
+                zql++;
             }
             if (box1.Text != vs1[0])
             {
@@ -96,6 +100,7 @@ namespace Uwpxx
             if (box2.Text == vs1[1])
             {
                 text2.Text = "√";
+                zql++;
             }
             if (box2.Text != vs1[1])
             {
@@ -109,6 +114,7 @@ namespace Uwpxx
             if (box3.Text == vs1[2])
             {
                 text3.Text = "√";
+                zql++;
             }
             if (box3.Text != vs1[2])
             {
@@ -122,6 +128,7 @@ namespace Uwpxx
             if (box4.Text == vs1[3])
             {
                 text4.Text = "√";
+                zql++;
             }
             if (box4.Text != vs1[3])
             {
@@ -132,11 +139,12 @@ namespace Uwpxx
                 text4.Text = "请输入正确答案";
             }
 
-            if (text5.Text == vs1[4])
+            if (box5.Text == vs1[4])
             {
-                text5.Text = "√";
+                text5.Text = "√"; 
+                zql++;
             }
-            if (text5.Text != vs1[4])
+            if (box5.Text != vs1[4])
             {
                 text5.Text = "×";
             }
@@ -145,11 +153,12 @@ namespace Uwpxx
                 text5.Text = "请输入正确答案";
             }
 
-            if (text6.Text == vs1[5])
+            if (box6.Text == vs1[5])
             {
-                text6.Text = "√";
+                text6.Text = "√"; 
+                zql++;
             }
-            if (text6.Text != vs1[5])
+            if (box6.Text != vs1[5])
             {
                 text6.Text = "×";
             }
@@ -160,7 +169,8 @@ namespace Uwpxx
 
             if (box7.Text == vs1[6])
             {
-                text7.Text = "√";
+                text7.Text = "√"; 
+                zql++;
             }
             if (box7.Text != vs1[6])
             {
@@ -174,6 +184,7 @@ namespace Uwpxx
             if (box8.Text == vs1[7])
             {
                 text8.Text = "√";
+                zql++;
             }
             if (box8.Text != vs1[7])
             {
@@ -186,7 +197,8 @@ namespace Uwpxx
 
             if (box9.Text == vs1[8])
             {
-                text9.Text = "√";
+                text9.Text = "√"; 
+                zql++;
             }
             if (box9.Text != vs1[8])
             {
@@ -200,6 +212,7 @@ namespace Uwpxx
             if (box10.Text == vs1[9])
             {
                 text10.Text = "√";
+                zql++;
             }
             if (box10.Text != vs1[9])
             {
@@ -209,6 +222,9 @@ namespace Uwpxx
             {
                 text10.Text = "请输入正确答案";
             }
+            a = zql / 10*100;
+            Zq.Text = Convert.ToString(a)+"%";
+            
         }
 
         private void dy_Click(object sender, RoutedEventArgs e)
@@ -303,9 +319,6 @@ namespace Uwpxx
                 vs1[i] = threeTheme.ArrayAnswer[i];
             }
             LisBox.ItemsSource = vs;
-        }
+        }       
     }
-
-
-
 }
