@@ -100,9 +100,6 @@ C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperationsD
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperations.dll
-C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperationsDemo\bin\Debug\netcoreapp3.1\FourOperations.pdb
-C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.AssemblyInfoInputs.cache
 C:\Users\Administrator\Desktop\QAQ\FourOperations\FourOperations\FourOperationsDemo\obj\Debug\netcoreapp3.1\FourOperationsDemo.AssemblyInfo.cs
