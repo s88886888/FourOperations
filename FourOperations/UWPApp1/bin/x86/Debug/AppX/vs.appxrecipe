@@ -1,182 +1,182 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP-22MI3J83</Machine>
-    <WindowsUser>Lenovo</WindowsUser>
+    <Machine>LAPTOP-KQGTD8B3</Machine>
+    <WindowsUser>CYH</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>d4295453-483e-41e4-9ce5-3c3fe6b3e14b</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Lenovo</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\obj\x86\Debug\</IntermediateOutputPath>
+    <PackageIdentityPublisher>CN=CYH</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
-    <WindowsSdkPath>F:\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>C805171BE60CEEBEA1C2BD1F2E9EE18755942DB1988B6BCB32917AA2CD48E96D</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>d4295453-483e-41e4-9ce5-3c3fe6b3e14b_1.0.0.0_x86__pthpn8nb9xcaa</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>d4295453-483e-41e4-9ce5-3c3fe6b3e14b_pthpn8nb9xcaa!App</RegisteredUserModeAppID>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>96C6F445C5403C1B7886076C4FA5B7CBFB96481850039AE6A218C133101C0D64</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>d4295453-483e-41e4-9ce5-3c3fe6b3e14b_1.0.0.0_x86__anfhpg9d0y64a</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>d4295453-483e-41e4-9ce5-3c3fe6b3e14b_anfhpg9d0y64a!App</RegisteredUserModeAppID>
     <RegisteredPackageID>d4295453-483e-41e4-9ce5-3c3fe6b3e14b</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Lenovo</RegisteredPackagePublisher>
+    <RegisteredPackagePublisher>CN=CYH</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-28T19:15:50.273</Modified>
+      <Modified>2020-05-29T04:13:50.235</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\UWPApp1.exe">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\UWPApp1.exe">
       <PackagePath>entrypoint\UWPApp1.exe</PackagePath>
-      <Modified>2020-05-28T19:15:49.881</Modified>
+      <Modified>2020-05-29T04:09:55.810</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\CYH\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-07-22T06:01:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.dll">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\FourOperations\bin\Debug\netstandard2.0\FourOperations.dll">
       <PackagePath>FourOperations.dll</PackagePath>
-      <Modified>2020-05-28T18:02:08.856</Modified>
+      <Modified>2020-05-29T03:28:29.892</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T10:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\Assets\lADPBGY15Uv9VprM3Mzc_220_220.jpg_720x720q90g.jpg">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\Assets\lADPBGY15Uv9VprM3Mzc_220_220.jpg_720x720q90g.jpg">
       <PackagePath>Assets\lADPBGY15Uv9VprM3Mzc_220_220.jpg_720x720q90g.jpg</PackagePath>
-      <Modified>2020-05-28T17:54:25.442</Modified>
+      <Modified>2020-05-29T03:22:07.482</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-05-28T17:54:25.448</Modified>
+      <Modified>2020-05-29T03:22:07.503</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-05-28T17:54:25.438</Modified>
+      <Modified>2020-05-29T03:22:07.474</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-28T17:54:25.438</Modified>
+      <Modified>2020-05-29T03:22:07.475</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-28T17:54:25.439</Modified>
+      <Modified>2020-05-29T03:22:07.476</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-28T17:54:25.440</Modified>
+      <Modified>2020-05-29T03:22:07.478</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-28T17:54:25.440</Modified>
+      <Modified>2020-05-29T03:22:07.478</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-28T17:54:25.440</Modified>
+      <Modified>2020-05-29T03:22:07.480</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-28T17:54:25.441</Modified>
+      <Modified>2020-05-29T03:22:07.481</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\UWPApp1.xr.xml">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\UWPApp1.xr.xml">
       <PackagePath>UWPApp1.xr.xml</PackagePath>
-      <Modified>2020-05-28T17:54:25.554</Modified>
+      <Modified>2020-05-29T03:28:58.696</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-28T19:12:49.579</Modified>
+      <Modified>2020-05-29T04:13:49.156</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-05-28T19:12:49.575</Modified>
+      <Modified>2020-05-29T04:13:49.153</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\MainPage2.xbf">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\MainPage2.xbf">
       <PackagePath>MainPage2.xbf</PackagePath>
-      <Modified>2020-05-28T19:12:49.579</Modified>
+      <Modified>2020-05-29T04:13:49.157</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\MainPage3.xbf">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\MainPage3.xbf">
       <PackagePath>MainPage3.xbf</PackagePath>
-      <Modified>2020-05-28T19:12:49.579</Modified>
+      <Modified>2020-05-29T04:13:49.157</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T09:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-05-28T18:02:49.847</Modified>
+      <Modified>2020-05-29T04:13:49.713</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\bin\x86\Debug\Core\UWPApp1.exe">
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\Core\UWPApp1.exe">
       <PackagePath>UWPApp1.exe</PackagePath>
-      <Modified>2020-05-28T19:15:50.268</Modified>
+      <Modified>2020-05-29T04:13:50.227</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\CYH\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\CYH\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\CYH\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\CYH\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\CYH\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\CYH\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\CYH\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27909.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\CYH\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\CYH\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27909.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\CYH\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\CYH\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27909.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\CYH\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>

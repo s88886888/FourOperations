@@ -8,7 +8,7 @@
 
   <Identity
     Name="d4295453-483e-41e4-9ce5-3c3fe6b3e14b"
-    Publisher="CN=Lenovo"
+    Publisher="CN=CYH"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="d4295453-483e-41e4-9ce5-3c3fe6b3e14b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>

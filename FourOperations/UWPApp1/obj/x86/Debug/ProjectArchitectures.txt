@@ -1,1 +1,1 @@
-C:\Users\Lenovo\Desktop\团队项目\FourOperations\UWPApp1\UWPApp1.csproj;x86
+C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\UWPApp1.csproj;x86

@@ -7,7 +7,7 @@
 
   有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
  -->
-  <Identity Name="d4295453-483e-41e4-9ce5-3c3fe6b3e14b" Publisher="CN=Lenovo" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="d4295453-483e-41e4-9ce5-3c3fe6b3e14b" Publisher="CN=CYH" Version="1.0.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="d4295453-483e-41e4-9ce5-3c3fe6b3e14b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>UWPApp1</DisplayName>
@@ -45,9 +45,9 @@
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="16.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2019" />
     <build:Item Name="OperatingSystem" Version="10.0.18362.836 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.30009.100" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.30023.189" />
     <build:Item Name="ProjectGUID" Value="{541069F9-4EC4-4267-AF8B-D16B7764CF5B}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />

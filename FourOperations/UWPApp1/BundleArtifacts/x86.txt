@@ -1,0 +1,2 @@
+MainPackage=C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\UWPApp1_1.0.0.0_x86_Debug.msix
+SymbolPackage=C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\obj\x86\Debug\Symbols\UWPApp1_1.0.0.0_x86_Debug.appxsym
