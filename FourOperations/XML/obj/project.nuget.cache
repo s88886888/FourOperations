@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wkzb0+O7fc5+PwRO6Ox3oojJO95qW6weTc2jY4PZRQI4E2n8Q01L1umKnqerPD8ZrkLrI+Ribtf087pHLngsdg==",
+  "dgSpecHash": "FJg2T33ZfYMCOSwuprVBhT1sJqFr3oLgc83A4Gm+w+V7M1etd2IQw0NkusJEdHKXjj66mV688PHZA7ZfJfKS5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\Uwpxx\\Uwpxx.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\QAQ\\FourOperations\\FourOperations\\XML\\XML.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.net.native.compiler\\2.2.7-rel-27913-00\\microsoft.net.native.compiler.2.2.7-rel-27913-00.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.net.uwpcoreruntimesdk\\2.2.9\\microsoft.net.uwpcoreruntimesdk.2.2.9.nupkg.sha512",
