@@ -36,7 +36,7 @@ namespace ConsoleApp2.Themeup
                 RandomNumber();
                 if (BasicDataA > 100 && BasicDataB > 100)
                 {
-                    throw new Exception("A>20 并且 B>20");
+                    throw new Exception("A>100 并且 B>100");
                 }
                 else
                 {
@@ -58,9 +58,9 @@ namespace ConsoleApp2.Themeup
             RandomNumber();
             try
             {
-                if (BasicDataA > 20 && BasicDataB > 20)
+                if (BasicDataA > 100 && BasicDataB > 100)
                 {
-                    throw new Exception("A>20 并且 B>20");
+                    throw new Exception("A>100 并且 B>100");
                 }
                 else
                 {
@@ -125,20 +125,6 @@ namespace ConsoleApp2.Themeup
             ShowAnswer[i] = twoTheme.Answer.ToString();
             ArrayTheme.Add(twoTheme.Theme);
             ArrayAnswer.Add(twoTheme.Answer.ToString());
-        }
-
-        /// <summary>
-        /// 输出10道题目和答案Date
-        /// </summary>
-        /// <param name="Array1"></param>
-        /// <param name="Array2"></param>
-        private static void Show(string[] Array1, string[] Array2)
-        {
-            for (int i = 0; i < Array1.Length; i++)
-            {
-                Console.Write(Array1[i]);
-                Console.WriteLine("=" + Array2[i]);
-            }
         }
         /// <summary>
         /// 打印生成的10道题目Add
@@ -244,23 +230,6 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         /// <param name="oneTheme"></param>
         /// <param name="fileName"></param>
-        private void OutPutXml(string fileName)
-        {
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true;
-            using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
-            {
-                writer.WriteStartElement("Create");
-                for (int i = 0; i < ArrayTheme.Count; i++)
-                {
-                    writer.WriteElementString("Theme", ArrayTheme[i]);
-                    writer.WriteElementString("Answer", ArrayAnswer[i]);
-                }
-                writer.WriteEndElement();
-            }
-            Console.WriteLine("xml同步写入成功");
-        }
-
         /// <summary>
         /// 读取加法XML文件
         /// </summary>
@@ -279,7 +248,7 @@ namespace ConsoleApp2.Themeup
                 ReaderXML(reader);
             }
         }
-
+        
         private void ReaderXML(XmlReader reader)
         {
             while (!reader.EOF)

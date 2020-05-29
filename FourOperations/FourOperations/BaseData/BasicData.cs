@@ -1,4 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using ConsoleApp2.Themeup;
+using NPOI.SS.Formula.Functions;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Xml;
 
 namespace ConsoleApp2
 {
@@ -34,5 +40,68 @@ namespace ConsoleApp2
         public abstract void AddTheme();
 
         public abstract void SubTheme();
+
+        /// <summary>
+        /// 封装打印数据
+        /// </summary>
+        /// <param name="result"></param>
+        /// <param name="oneTheme"></param>
+        public void OutPutTxt(string result)
+        {
+            FileStream fs = new FileStream(result, FileMode.OpenOrCreate);            
+            StreamWriter wr = new StreamWriter(fs);
+            for (int i = 0; i < ArrayTheme.Count; i++)
+            {
+                wr.WriteLine(ArrayTheme[i] + FFF + ArrayAnswer[i]);
+            }
+            wr.Flush();
+            fs.Close();
+        }
+
+        /// <summary>
+        /// 输出10道题目和答案Date
+        /// </summary>
+        /// <param name="Array1"></param>
+        /// <param name="Array2"></param>
+        public static void Show(string[] Array1, string[] Array2)
+        {
+            for (int i = 0; i < Array1.Length; i++)
+            {
+                Console.Write(Array1[i]);
+                Console.WriteLine("=" + Array2[i]);
+            }
+        }
+        /// <summary>
+        /// 打印Xml的数据
+        /// </summary>
+        /// <param name="oneTheme"></param>
+        /// <param name="fileName"></param>
+        public void OutPutXml(string fileName)
+        {
+            XmlWriterSettings settings = new XmlWriterSettings
+            {
+                Indent = true
+            };
+            using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
+            {
+                writer.WriteStartElement("Create");
+                for (int i = 0; i < ArrayTheme.Count; i++)
+                {
+                    writer.WriteElementString("Theme", ArrayTheme[i]);
+                    writer.WriteElementString("Answer", ArrayAnswer[i]);
+                }
+                writer.WriteEndElement();
+            }
+            Console.WriteLine("xml同步写入成功");
+        }
+
+        /// <summary>
+        /// 用来装10道题目Data
+        /// </summary>
+        /// <param name="ShowTheme"></param>
+        /// <param name="ShowAnswer"></param>
+        /// <param name="i"></param>
+        /// <param name="fourTheme"></param>的数据
+
     }
 }

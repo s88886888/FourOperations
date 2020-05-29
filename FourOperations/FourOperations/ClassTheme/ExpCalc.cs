@@ -13,7 +13,7 @@
         //        for (int i = 1; i <= length; i++)
         //        {
         //            rndstr += CharList.Substring(rnd.Next(0, CharList.Length), 1);
-        //        }
+        //        }      
         //        return rndstr;
         //    }
 

@@ -15,6 +15,7 @@ namespace ConsoleApp2.Base
 
         public readonly List<string> tempAnswer = new List<string>();//用户输出的答案
         public readonly List<string> tempTheme = new List<string>();//错的题目
+        public readonly List<string> tempThemelist = new List<string>();
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
@@ -131,27 +132,13 @@ namespace ConsoleApp2.Base
             ArrayTheme.Add(oneTheme.Theme);
             ArrayAnswer.Add(oneTheme.Answer.ToString());
         }
-
-        /// <summary>
-        /// 输出10道题目和答案Date
-        /// </summary>
-        /// <param name="Array1"></param>
-        /// <param name="Array2"></param>
-        private static void Show(string[] Array1, string[] Array2)
-        {
-            for (int i = 0; i < Array1.Length; i++)
-            {
-                Console.Write(Array1[i]);
-                Console.WriteLine("=" + Array2[i]);
-            }
-        }
         /// <summary>
         /// 打印生成的10道题目Add
         /// </summary>
         public void AddOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件一年级加法题目.txt";//保存文件路径
-            FourTheme FourTheme = new FourTheme();
+            string result = "..\\..\\..\\Add.txt";//保存文件路径
+            OneTheme FourTheme = new OneTheme();
             OutPutTxt(result);
             AddOutPutXml(FourTheme);
         }
@@ -160,30 +147,11 @@ namespace ConsoleApp2.Base
         /// </summary>
         public void SubOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件一年级减法题目.txt";//保存文件路径
+            string result = "..\\..\\..\\打印文件一年级减法题目.txt";//保存文件路径
             FourTheme FourTheme = new FourTheme();
             OutPutTxt(result);
             SubOutPutXml(FourTheme);
         }
-
-        /// <summary>
-        /// 封装打印数据
-        /// </summary>
-        /// <param name="result"></param>
-        /// <param name="oneTheme"></param>
-        private void OutPutTxt(string result)
-        {
-            FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
-            StreamWriter wr = new StreamWriter(fs);
-            for (int i = 0; i < ArrayTheme.Count; i++)
-            {
-                wr.WriteLine(ArrayTheme[i] + FFF + ArrayAnswer[i]);
-            }
-            wr.Flush();
-            fs.Close();
-        }
-
-
         /// <summary>
         /// 读取打印成txt的加法文件
         /// </summary>
@@ -230,7 +198,7 @@ namespace ConsoleApp2.Base
         /// 同步Add打印xml
         /// </summary>
         /// <param name="FourTheme"></param>
-        public void AddOutPutXml(FourTheme fourTheme)
+        public void AddOutPutXml(OneTheme fourTheme)
         {
             string fileName = "打印文件一年级加法题目.xml";
             OutPutXml(fileName);
@@ -249,24 +217,6 @@ namespace ConsoleApp2.Base
         /// </summary>
         /// <param name="oneTheme"></param>
         /// <param name="fileName"></param>
-        private void OutPutXml(string fileName)
-        {
-            XmlWriterSettings settings = new XmlWriterSettings
-            {
-                Indent = true
-            };
-            using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
-            {
-                writer.WriteStartElement("Create");
-                for (int i = 0; i < ArrayTheme.Count; i++)
-                {
-                    writer.WriteElementString("Theme", ArrayTheme[i]);
-                    writer.WriteElementString("Answer", ArrayAnswer[i]);
-                }
-                writer.WriteEndElement();
-            }
-            Console.WriteLine("xml同步写入成功");
-        }
 
         /// <summary>
         /// 读取加法XML文件
@@ -314,17 +264,13 @@ namespace ConsoleApp2.Base
         public void ErrorsText()
         {
 
-            for (int i = 0; i < ArrayTheme.Count-1; i++)
+            for (int i = 0; i < ArrayTheme.Count - 1; i++)
             {
-                if (tempAnswer[i] == ArrayAnswer[i])
+                if (tempAnswer[i] != ArrayAnswer[i])
                 {
-                    return;
-                }
-                else
-                {
-                    tempAnswer.Add(ArrayAnswer[i]);
+                    //return null;
                     tempTheme.Add(ArrayTheme[i]);
-
+                    tempThemelist.Add(ArrayAnswer[i]);
                 }
             }
             string result = "..\\..\\..\\错题打印.txt";
@@ -332,10 +278,11 @@ namespace ConsoleApp2.Base
             StreamWriter wr = new StreamWriter(fs);
             for (int i = 0; i < tempTheme.Count; i++)
             {
-                wr.WriteLine(tempTheme[i] + FFF + ArrayAnswer[i]);
+                wr.WriteLine(tempTheme[i] + FFF + tempThemelist[i]);
             }
             wr.Flush();
             fs.Close();
+
             Console.WriteLine("打印成功");
         }
     }

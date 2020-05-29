@@ -1,5 +1,5 @@
 ﻿using ConsoleApp2.Base;
-
+using NPOI.SS.Formula.Functions;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -44,9 +44,9 @@ namespace ConsoleApp2.Themeup
             try
             {
                 RandomNumber();
-                if (BasicDataA > 100 && BasicDataB > 100 && BasicDataC > 100 || BasicDataA < -10 && BasicDataB < -10 && BasicDataC < -10)
+                if (BasicDataA > 200 && BasicDataB > 200)
                 {
-                    throw (new CustomExcepsion("A>100 &&B>100"));
+                    throw (new CustomExcepsion("A>200 &&B>200"));
                 }
 
                 else
@@ -73,10 +73,10 @@ namespace ConsoleApp2.Themeup
             RandomNumber();
             try
             {
-                if (BasicDataA > 100 && BasicDataB > 100)
+                if (BasicDataA > 200 && BasicDataB > 100)
                 {
 
-                    throw (new CustomExcepsion("A>100 &&B>100"));
+                    throw (new CustomExcepsion("A>200 &&B>200"));
                 }
                 else
                 {
@@ -109,17 +109,17 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         /// 生成混合运算  A？B？C？
         /// </summary>
-        public void MultiplyAndDivisionTheme()
+        public void HybridOperationTheme()
         {
 
             RandomNumber();
             if (BasicDataA > 200 && BasicDataB > 100)
             {
-                throw (new CustomExcepsion("A>100 &&B>100"));
+                throw (new CustomExcepsion("A>200 &&B>200"));
             }
             if (BasicDataB == 0 || BasicDataA == 0)
             {
-                MultiplyAndDivisionTheme();
+                HybridOperationTheme();
             }
             else
             {
@@ -148,7 +148,7 @@ namespace ConsoleApp2.Themeup
                 }
                 if (Answer > 10000 || Answer < -100)
                 {
-                    MultiplyAndDivisionTheme();
+                    HybridOperationTheme();
                 }
             }
         }
@@ -156,16 +156,16 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         /// 核心代码：生成一道四则运算题目
         /// </summary>
-        public void FourOperations()
+        public void FourOperationsTheme()
         {
             RandomNumber();
             if (BasicDataA > 200 && BasicDataB > 200)
             {
-                throw (new CustomExcepsion("A>100 &&B>100"));
+                throw (new CustomExcepsion("A>200 &&B>200"));
             }
             if (BasicDataB == 0 || BasicDataA == 0)
             {
-                FourOperations();
+                FourOperationsTheme();
             }
             else
             {
@@ -200,7 +200,7 @@ namespace ConsoleApp2.Themeup
                 }
                 if (Answer > 10000 || Answer < -100)
                 {
-                    FourOperations();
+                    FourOperationsTheme();
                 }
             }
         }
@@ -239,9 +239,9 @@ namespace ConsoleApp2.Themeup
             try
             {
                 RandomNumber();
-                if (BasicDataA > 20 && BasicDataB > 20)
+                if (BasicDataA > 200 && BasicDataB > 200)
                 {
-                    throw new Exception("A>20 并且 B>20");
+                    throw new Exception("A>200 并且 B>200");
                 }
                 else
                 {
@@ -263,9 +263,9 @@ namespace ConsoleApp2.Themeup
             RandomNumber();
             try
             {
-                if (BasicDataA > 20 && BasicDataB > 20)
+                if (BasicDataA > 200 && BasicDataB > 200)
                 {
-                    throw new Exception("A>20 并且 B>20");
+                    throw new Exception("A>200 并且 B>200");
                 }
                 else
                 {
@@ -287,12 +287,15 @@ namespace ConsoleApp2.Themeup
                 Console.WriteLine(ex.Message);
             }
         }
-        public void FourOperationsCount()
+        /// <summary>
+        /// 调用此方法生成10道四则运算
+        /// </summary>
+        public void FourOperationsThemeCount()
         {
             for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var fourTheme = new FourTheme();
-                fourTheme.FourOperations();
+                fourTheme.FourOperationsTheme();
                 ArrayDate(ShowTheme, ShowAnswer, i, fourTheme);
             }
             Show(ShowTheme, ShowAnswer);
@@ -300,12 +303,12 @@ namespace ConsoleApp2.Themeup
         /// <summary>
         ///调用此方法生成10题 混合运算 A？B？C？ ？号是运算符 
         /// </summary>
-        public void MultiplyAndDivisionThemeCount()
+        public void HybridOperationThemeCount()
         {
             for (int i = 0; i < ShowTheme.Length; i++)
             {
                 var fourTheme = new FourTheme();
-                fourTheme.MultiplyAndDivisionTheme();
+                fourTheme.HybridOperationTheme();
                 ArrayDate(ShowTheme, ShowAnswer, i, fourTheme);
             }
             Show(ShowTheme, ShowAnswer);
@@ -346,37 +349,9 @@ namespace ConsoleApp2.Themeup
                 fourTheme.SubTheme();
                 ArrayDate(ShowTheme, ShowAnswer, i, fourTheme);
             }
-            Show(ShowTheme, ShowTheme);
+            Show(ShowTheme, ShowAnswer);
         }
 
-        /// <summary>
-        /// 用来装10道题目Data
-        /// </summary>
-        /// <param name="ShowTheme"></param>
-        /// <param name="ShowAnswer"></param>
-        /// <param name="i"></param>
-        /// <param name="fourTheme"></param>的数据
-        private void ArrayDate(string[] ShowTheme, string[] ShowAnswer, int i, FourTheme fourTheme)
-        {
-            ShowTheme[i] = fourTheme.Theme;
-            ShowAnswer[i] = fourTheme.Answer.ToString();
-            ArrayTheme.Add(fourTheme.Theme);
-            ArrayAnswer.Add(fourTheme.Answer.ToString());
-        }
-
-        /// <summary>
-        /// 输出10道题目和答案Date
-        /// </summary>
-        /// <param name="Array1"></param>
-        /// <param name="Array2"></param>
-        private static void Show(string[] Array1, string[] Array2)
-        {
-            for (int i = 0; i < Array1.Length; i++)
-            {
-                Console.Write(Array1[i]);
-                Console.WriteLine("=" + Array2[i]);
-            }
-        }
         /// <summary>
         /// 打印生成的10道题目Add
         /// </summary>
@@ -386,6 +361,20 @@ namespace ConsoleApp2.Themeup
             FourTheme fourTheme = new FourTheme();
             OutPutTxt(result);
             AddOutPutXml(fourTheme);
+        }
+        public void MultiplyOutPutTxt()
+        {
+            string result = @"..\\..\\..\\打印四年级乘法题目.txt";//保存文件路径
+            FourTheme fourTheme = new FourTheme();
+            OutPutTxt(result);
+            MultiplyOutPutXml(fourTheme);
+        }
+        public void DivisionOutPutTxt()
+        {
+            string result = @"..\\..\\..\\打印四年级除法题目.txt";//保存文件路径
+            FourTheme fourTheme = new FourTheme();
+            OutPutTxt(result);
+            DivisionOutPutXml(fourTheme);
         }
         /// <summary>
         /// 打印生成的10道题目Sub
@@ -398,29 +387,19 @@ namespace ConsoleApp2.Themeup
             SubOutPutXml(fourTheme);
         }
 
-        public void MultiplyAndDivisionThemeOutPutTxt()
+        public void HybridOperationThemeOutPutTxt()
+        {
+            string result = @"..\\..\\..\\打印四年级混合运算题目.txt";//保存文件路径
+            FourTheme fourTheme = new FourTheme();
+            OutPutTxt(result);
+            HybridOperationThemeOutPutXml(fourTheme);
+        }
+        public void FourOperationsThemeOutPutTxt()
         {
             string result = @"..\\..\\..\\打印四年级四则运算题目.txt";//保存文件路径
             FourTheme fourTheme = new FourTheme();
             OutPutTxt(result);
-            MultiplyAndDivisionThemeOutPutXml(fourTheme);
-        }
-
-        /// <summary>
-        /// 封装打印数据
-        /// </summary>
-        /// <param name="result"></param>
-        /// <param name="oneTheme"></param>
-        private void OutPutTxt(string result)
-        {
-            FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
-            StreamWriter wr = new StreamWriter(fs);
-            for (int i = 0; i < ArrayTheme.Count; i++)
-            {
-                wr.WriteLine(ArrayTheme[i] + FFF + ArrayAnswer[i]);
-            }
-            wr.Flush();
-            fs.Close();
+            HybridOperationThemeOutPutXml(fourTheme);
         }
 
 
@@ -479,6 +458,18 @@ namespace ConsoleApp2.Themeup
         /// 同步Sub打印xml
         /// </summary>
         /// <param name="fourTheme"></param>
+        /// 
+
+        public void MultiplyOutPutXml(FourTheme fourTheme)
+        {
+            string fileName = "打印四年级乘法题目.xml";
+            OutPutXml(fileName);
+        }
+        public void DivisionOutPutXml(FourTheme fourTheme)
+        {
+            string fileName = "打印四年级除法题目.xml";
+            OutPutXml(fileName);
+        }
         public void SubOutPutXml(FourTheme fourTheme)
         {
             string fileName = "打印四年级减法题目.xml";
@@ -488,33 +479,16 @@ namespace ConsoleApp2.Themeup
         /// 打印出混合运算
         /// </summary>
         /// <param name="FourTheme"></param>
-        public void MultiplyAndDivisionThemeOutPutXml(FourTheme fourTheme)
+        public void HybridOperationThemeOutPutXml(FourTheme fourTheme)
+        {
+            string fileName = "打印四年级混合运算题目.xml";
+            OutPutXml(fileName);
+        }
+
+        public void FourOperationsThemeOutPutXml(FourTheme fourTheme)
         {
             string fileName = "打印四年级四则运算题目.xml";
             OutPutXml(fileName);
-        }
-        /// <summary>
-        /// 打印Xml的数据
-        /// </summary>
-        /// <param name="oneTheme"></param>
-        /// <param name="fileName"></param>
-        private void OutPutXml(string fileName)
-        {
-            XmlWriterSettings settings = new XmlWriterSettings
-            {
-                Indent = true
-            };
-            using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
-            {
-                writer.WriteStartElement("Create");
-                for (int i = 0; i < ArrayTheme.Count; i++)
-                {
-                    writer.WriteElementString("Theme", ArrayTheme[i]);
-                    writer.WriteElementString("Answer", ArrayAnswer[i]);
-                }
-                writer.WriteEndElement();
-            }
-            Console.WriteLine("xml同步写入成功");
         }
 
         /// <summary>
@@ -557,6 +531,14 @@ namespace ConsoleApp2.Themeup
                     reader.Read();
                 }
             }
+        }
+
+        public  void ArrayDate(string[] ShowTheme, string[] ShowAnswer, int i, FourTheme fourTheme)
+        {
+            ShowTheme[i] = fourTheme.Theme;
+            ShowAnswer[i] = fourTheme.Answer.ToString();
+            ArrayTheme.Add(fourTheme.Theme);
+            ArrayAnswer.Add(fourTheme.Answer.ToString());
         }
     }
 }
