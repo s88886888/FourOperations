@@ -15,8 +15,8 @@ namespace ConsoleApp2.Base
 
         public List<string> tempAnswer = new List<string>();//用户输出的答案
         public List<string> tempTheme = new List<string>();//错的题目
+        public readonly List<string> tempThemelist = new List<string>();//错题答案
 
-        public readonly List<string> tempThemelist = new List<string>();
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
@@ -263,18 +263,12 @@ namespace ConsoleApp2.Base
         /// <param name="list"></param>
         public void ErrorsText()
         {
-
             for (int i = 0; i < ArrayTheme.Count - 1; i++)
             {
-                if (tempAnswer[i] == ArrayAnswer[i])
-                {
-                    return;
-                }
-                else
+                if (tempAnswer[i] != ArrayAnswer[i])
                 {
                     tempTheme.Add(ArrayTheme[i]);
                     tempThemelist.Add(ArrayAnswer[i]);
-
                 }
             }
             string result = "..\\..\\..\\错题打印.txt";

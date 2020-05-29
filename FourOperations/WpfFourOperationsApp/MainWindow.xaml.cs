@@ -580,18 +580,20 @@ namespace WpfFourOperationsApp
 
         private void Wrongbook_Click(object sender, RoutedEventArgs e)
         {
+            //oneTheme.AddThemeCount();
             List<string> list = new List<string>();
-            list.Add(Convert.ToString(txtJudge1));
-            list.Add(Convert.ToString(txtJudge2));
-            list.Add(Convert.ToString(txtJudge3));
-            list.Add(Convert.ToString(txtJudge4));
-            list.Add(Convert.ToString(txtJudge5));
-            list.Add(Convert.ToString(txtJudge6));
-            list.Add(Convert.ToString(txtJudge7));
-            list.Add(Convert.ToString(txtJudge8));
-            list.Add(Convert.ToString(txtJudge9));
-            list.Add(Convert.ToString(txtJudge10));
+            list.Add(Convert.ToString(txtAnswer1));
+            list.Add(Convert.ToString(txtAnswer2));
+            list.Add(Convert.ToString(txtAnswer3));
+            list.Add(Convert.ToString(txtAnswer4));
+            list.Add(Convert.ToString(txtAnswer5));
+            list.Add(Convert.ToString(txtAnswer6));
+            list.Add(Convert.ToString(txtAnswer7));
+            list.Add(Convert.ToString(txtAnswer8));
+            list.Add(Convert.ToString(txtAnswer9));
+            list.Add(Convert.ToString(txtAnswer10));
             oneTheme.tempAnswer = list;
+            //oneTheme.AddThemeCount();
             oneTheme.ErrorsText();
         }
     }
