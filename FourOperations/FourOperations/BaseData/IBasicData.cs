@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ConsoleApp2.Themeup;
+using NPOI.SS.Formula.Functions;
+using System;
 
 namespace ConsoleApp2
 {
@@ -13,7 +15,6 @@ namespace ConsoleApp2
         void AddTheme();
 
         void SubTheme();
-
-
+        void OutPutTxt(string result);
     }
 }
