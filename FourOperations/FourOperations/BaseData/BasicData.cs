@@ -48,7 +48,7 @@ namespace ConsoleApp2
         /// <param name="oneTheme"></param>
         public void OutPutTxt(string result)
         {
-            FileStream fs = new FileStream(result, FileMode.OpenOrCreate);
+            FileStream fs = new FileStream(result, FileMode.OpenOrCreate);            
             StreamWriter wr = new StreamWriter(fs);
             for (int i = 0; i < ArrayTheme.Count; i++)
             {
