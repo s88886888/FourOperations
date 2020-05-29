@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "FourOperationsDemo/1.0.0": {
         "dependencies": {
-          "FourOperations": "1.0.0"
+          "FourOperations": "1.0.0",
+          "FourOperations.Reference": "1.0.0.0"
         },
         "runtime": {
           "FourOperationsDemo.dll": {}
@@ -160,13 +161,12 @@
           "Microsoft.NETCore.Platforms": "2.0.0"
         }
       },
-      "FourOperations/1.0.0": {
-        "dependencies": {
-          "NPOI": "2.5.1",
-          "System.CodeDom": "4.7.0"
-        },
+      "FourOperations.Reference/1.0.0.0": {
         "runtime": {
-          "FourOperations.dll": {}
+          "FourOperations.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -261,8 +261,8 @@
       "path": "system.security.principal.windows/4.5.0",
       "hashPath": "system.security.principal.windows.4.5.0.nupkg.sha512"
     },
-    "FourOperations/1.0.0": {
-      "type": "project",
+    "FourOperations.Reference/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

@@ -1,12 +1,4 @@
-﻿
-using ConsoleApp2.Base;
-using ConsoleApp2.Themeup;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-
-namespace FourOperations
+﻿namespace FourOperations
 {
     class Program
     {
@@ -138,8 +130,8 @@ namespace FourOperations
 
 
 
-            FourTheme fourTheme = new FourTheme();
-            fourTheme.FourOperationsCount();
+            //FourTheme fourTheme = new FourTheme();
+            //fourTheme.FourOperationsCount();
             //Console.WriteLine(fourTheme.Theme);
             //Console.WriteLine(fourTheme.Answer);
              

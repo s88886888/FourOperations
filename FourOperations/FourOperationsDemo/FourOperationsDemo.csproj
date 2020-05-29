@@ -9,4 +9,10 @@
     <ProjectReference Include="..\FourOperations\FourOperations.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="FourOperations">
+      <HintPath>..\FourOperations\bin\Debug\netstandard2.0\FourOperations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
