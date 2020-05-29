@@ -1,1 +1,1 @@
-C:\Users\10570\Desktop\firday\FourOperations\Uwpxx\Uwpxx.csproj;x86
+C:\Users\17803\Desktop\ches\FourOperations\Uwpxx\Uwpxx.csproj;x86

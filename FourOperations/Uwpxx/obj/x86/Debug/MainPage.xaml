@@ -54,7 +54,7 @@
                 <AcrylicBrush/>
             </Button.Background>
         </Button>
-        <TextBox x:ConnectionId='6' Grid.Column="2" HorizontalAlignment="Left" Margin="220,204,0,0" Grid.Row="1" Text="正确率&#xD;得分&#xD;&#xA;用时&#xD;" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Height="72"                                  />
+        <TextBox x:ConnectionId='6' Grid.Column="2" HorizontalAlignment="Left" Margin="220,204,0,0" Grid.Row="1" Text="正确率:" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Height="35"                                  />
         <TextBox x:ConnectionId='7' x:Name="Chu" Grid.Column="2" HorizontalAlignment="Left" Margin="214,329,0,0" Grid.Row="1" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="109" Width="175"/>
         <Button x:ConnectionId='8' x:Name="Buttonjia" Content="加法" Grid.Column="2" Margin="220,334,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32" Width="48"                        IsEnabled="False">
             <Button.Background>
@@ -122,6 +122,7 @@
                 <AcrylicBrush/>
             </Button.Background>
         </Button>
+        <TextBlock x:ConnectionId='37' x:Name="Zq" Grid.Column="2" HorizontalAlignment="Left" Margin="284,209,0,0" Grid.Row="1" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.19,0.684"/>
     </Grid>
 </Page>
 
