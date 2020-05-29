@@ -13,7 +13,7 @@
             <Button x:Name="BtnHelp" Content="帮助" Canvas.Left="190" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="BtnHelp_Click"/>
             <Button x:Name="BtnAbout" Content="关于" Canvas.Left="280" Canvas.Top="10" Width="85" Height="30" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="BtnAbout_Click"/>
             <Image Height="120" Source="logo.jpg" Stretch="Fill" Width="175" Canvas.Left="10" Canvas.Top="45"/>
-            <ListBox x:Name="lbxQuestion" Height="240" Width="175" Canvas.Left="10" Canvas.Top="203" Background="White" ScrollViewer.VerticalScrollBarVisibility="Visible" />
+            <ListBox x:Name="lbxQuestion" Height="248" Width="175" Canvas.Left="10" Canvas.Top="203" Background="White"  FontSize="16" />
 
 
             <Label Content="题目" Canvas.Left="10" Canvas.Top="173" Width="65"/>
@@ -50,7 +50,7 @@
                 </Image.Clip>
             </Image>
             <Label x:Name="lblName" Content="用户名：阿罗" Canvas.Left="678" Canvas.Top="173" Width="140"/>
-            <TextBox x:Name="txt" TextWrapping="Wrap" AcceptsReturn="True"  Canvas.Left="658" Canvas.Top="198" Height="58" Width="185"/>
+            <TextBox x:Name="txt" TextWrapping="Wrap" AcceptsReturn="True"  Canvas.Left="729" Canvas.Top="198" Height="29" Width="72" FontSize="18"/>
 
 
 
@@ -69,12 +69,13 @@
 
 
             <Canvas Height="53" Canvas.Left="647" Canvas.Top="411" Width="206" Background="White">
-                <Button  Content="打印题目" Width="85" Height="30" Canvas.Top="10" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Canvas.Left="10"/>
-                <Button Content="错题本" Width="85" Height="30" Canvas.Left="111" Canvas.Top="10" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF"/>
+                <Button x:Name="btnPrinting"  Content="打印题目" Width="85" Height="30" Canvas.Top="10" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Canvas.Left="10" Click="btnPrinting_Click"/>
+                <Button x:Name="Wrongbook" Content="错题本" Width="85" Height="30" Canvas.Left="111" Canvas.Top="10" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="Wrongbook_Click"/>
             </Canvas>
             <Button x:Name="btnsubmit" Content="提交" Canvas.Left="502" Canvas.Top="328" Height="30" Width="86" Background="#FFFBFBFB" BorderBrush="#FFC5BFBF" Click="btnsubmit_Click"/>
-           
-            
+            <Label Content="正确率" Canvas.Left="679" Canvas.Top="198" Width="50" Height="29"/>
+
+
 
 
         </Canvas>

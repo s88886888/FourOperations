@@ -13,8 +13,10 @@ namespace ConsoleApp2.Base
         readonly string[] ShowTheme = new string[10];
         readonly string[] ShowAnswer = new string[10];
 
-        public readonly List<string> tempAnswer = new List<string>();//用户输出的答案
-        public readonly List<string> tempTheme = new List<string>();//错的题目
+        public List<string> tempAnswer = new List<string>();//用户输出的答案
+        public List<string> tempTheme = new List<string>();//错的题目
+
+        public readonly List<string> tempThemelist = new List<string>();
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
@@ -136,7 +138,7 @@ namespace ConsoleApp2.Base
         /// </summary>
         public void AddOutPutTxt()
         {
-            string result = @"..\\..\\..\\打印文件一年级加法题目.txt";//保存文件路径
+            string result = @"..\\..\\..\\打印文件一年级减法题目.txt";//保存文件路径
             FourTheme FourTheme = new FourTheme();
             OutPutTxt(result);
             AddOutPutXml(FourTheme);
@@ -216,25 +218,6 @@ namespace ConsoleApp2.Base
         /// </summary>
         /// <param name="oneTheme"></param>
         /// <param name="fileName"></param>
-        private void OutPutXml(string fileName)
-        {
-            XmlWriterSettings settings = new XmlWriterSettings
-            {
-                Indent = true
-            };
-            using (XmlWriter writer = XmlWriter.Create("..\\..\\..\\" + fileName, settings))
-            {
-                writer.WriteStartElement("Create");
-                for (int i = 0; i < ArrayTheme.Count; i++)
-                {
-                    writer.WriteElementString("Theme", ArrayTheme[i]);
-                    writer.WriteElementString("Answer", ArrayAnswer[i]);
-                }
-                writer.WriteEndElement();
-            }
-            Console.WriteLine("xml同步写入成功");
-        }
-
         /// <summary>
         /// 读取加法XML文件
         /// </summary>
@@ -281,7 +264,7 @@ namespace ConsoleApp2.Base
         public void ErrorsText()
         {
 
-            for (int i = 0; i < ArrayTheme.Count-1; i++)
+            for (int i = 0; i < ArrayTheme.Count - 1; i++)
             {
                 if (tempAnswer[i] == ArrayAnswer[i])
                 {
@@ -289,8 +272,8 @@ namespace ConsoleApp2.Base
                 }
                 else
                 {
-                    tempAnswer.Add(ArrayAnswer[i]);
                     tempTheme.Add(ArrayTheme[i]);
+                    tempThemelist.Add(ArrayAnswer[i]);
 
                 }
             }
@@ -299,7 +282,7 @@ namespace ConsoleApp2.Base
             StreamWriter wr = new StreamWriter(fs);
             for (int i = 0; i < tempTheme.Count; i++)
             {
-                wr.WriteLine(tempTheme[i] + FFF + ArrayAnswer[i]);
+                wr.WriteLine(tempTheme[i] + FFF + tempThemelist[i]);
             }
             wr.Flush();
             fs.Close();

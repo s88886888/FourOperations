@@ -28,7 +28,7 @@ namespace ConsoleApp2.Themeup
             BasicDataC = random.Next(1, 150);
             LsitNumA = random.Next(0, 4);
             LsitNumB = random.Next(0, 4);
-            
+
         }
         /// <summary>
         /// 生成一道乘法题目
@@ -300,7 +300,7 @@ namespace ConsoleApp2.Themeup
         public void AddOutPutTxt()
         {
             string result = @"..\\..\\..\\打印文件三年级加法题目.txt";//保存文件路径
-            ThreeTheme  threeTheme = new ThreeTheme();
+            ThreeTheme threeTheme = new ThreeTheme();
             OutPutTxt(result);
             AddOutPutXml(threeTheme);
         }
@@ -310,7 +310,7 @@ namespace ConsoleApp2.Themeup
         public void SubOutPutTxt()
         {
             string result = @"..\\..\\..\\打印文件三年级减法题目.txt";//保存文件路径
-            ThreeTheme  threeTheme = new ThreeTheme();
+            ThreeTheme threeTheme = new ThreeTheme();
             OutPutTxt(result);
             SubOutPutXml(threeTheme);
         }
@@ -383,7 +383,7 @@ namespace ConsoleApp2.Themeup
         /// 同步Sub打印xml
         /// </summary>
         /// <param name="oneTheme"></param>
-        public void SubOutPutXml(ThreeTheme  threeTheme)
+        public void SubOutPutXml(ThreeTheme threeTheme)
         {
             string fileName = "打印文件三年级减法题目.xml";
             OutPutXml(fileName);
@@ -402,6 +402,7 @@ namespace ConsoleApp2.Themeup
         /// </summary>
         /// <param name="oneTheme"></param>
         /// <param name="fileName"></param>
+
         private void OutPutXml(string fileName)
         {
             XmlWriterSettings settings = new XmlWriterSettings

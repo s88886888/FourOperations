@@ -27,6 +27,10 @@ namespace WpfFourOperationsApp
             InitializeComponent();
         }
 
+        private double R;
+        private double S;
+        private int J;
+        private int w;
         private readonly string[] vslist = new string[10];
         private readonly string[] vslist1 = new string[10];
         //public bool? IsChecked { get; set; }
@@ -38,9 +42,10 @@ namespace WpfFourOperationsApp
         TwoTheme twoTheme = new TwoTheme();
         ThreeTheme threeTheme = new ThreeTheme();
         FourTheme fourTheme = new FourTheme();
-    
+
         private void btnL1_Checked(object sender, RoutedEventArgs e)
         {
+            J = 1;
             btnL2.IsChecked = false;
             btnL3.IsChecked = false;
             btnL4.IsChecked = false;
@@ -51,14 +56,11 @@ namespace WpfFourOperationsApp
 
         private void btnadd_Click(object sender, RoutedEventArgs e)
         {
-
+            w = 1;
             lbxQuestion.Items.Clear();
-            //Array.Clear(vslist, 0, vslist.Length);
+            Array.Clear(vslist, 0, vslist.Length);
             if (btnL1.IsChecked == true)
             {
-
-
-
                 OneTheme oneTheme = new OneTheme();
                 oneTheme.AddThemeCount();
                 for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
@@ -68,6 +70,7 @@ namespace WpfFourOperationsApp
                     lbxQuestion.Items.Add(vslist[i]);
 
                 }
+
 
             }
             else if (btnL2.IsChecked == true)
@@ -82,10 +85,11 @@ namespace WpfFourOperationsApp
                     lbxQuestion.Items.Add(vslist[i]);
                 }
 
-
+                twoTheme.AddOutPutTxt();
             }
             else if (btnL3.IsChecked == true)
             {
+
                 ThreeTheme threeTheme = new ThreeTheme();
                 threeTheme.AddThemeCount();
                 for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
@@ -95,10 +99,11 @@ namespace WpfFourOperationsApp
                     lbxQuestion.Items.Add(vslist[i]);
                 }
 
-
+                threeTheme.AddOutPutTxt();
             }
             else if (btnL4.IsChecked == true)
             {
+
                 FourTheme fourTheme = new FourTheme();
                 fourTheme.AddThemeCount();
                 for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
@@ -107,17 +112,19 @@ namespace WpfFourOperationsApp
                     vslist1[i] = fourTheme.ArrayAnswer[i];
                     lbxQuestion.Items.Add(vslist[i]);
                 }
-
+                fourTheme.AddOutPutTxt();
             }
 
-        }
+        }//加法
 
         private void btnsub_Click(object sender, RoutedEventArgs e)
         {
+            w = 2;
             lbxQuestion.Items.Clear();
 
             if (btnL1.IsChecked == true)
             {
+
                 OneTheme oneTheme = new OneTheme();
                 oneTheme.SubThemeCount();
 
@@ -169,11 +176,11 @@ namespace WpfFourOperationsApp
 
 
             }
-        }
+        }//减法
 
         private void btnL2_Checked(object sender, RoutedEventArgs e)
         {
-
+            J = 2;
             btnL3.IsChecked = false;
             btnL4.IsChecked = false;
             btnL1.IsChecked = false;
@@ -190,10 +197,11 @@ namespace WpfFourOperationsApp
             btndiv.IsEnabled = false;
             btnmul.IsEnabled = false;
             btnHybrid.IsEnabled = false;
-        }
+        }//关闭摁键的方法
 
         private void btnL4_Checked(object sender, RoutedEventArgs e)
         {
+            J = 4;
             lbxQuestion.Items.Clear();
             btnL2.IsChecked = false;
             btnL3.IsChecked = false;
@@ -208,6 +216,7 @@ namespace WpfFourOperationsApp
 
         private void btnL3_Checked(object sender, RoutedEventArgs e)
         {
+            J = 3;
             lbxQuestion.Items.Clear();
             btnL2.IsChecked = false;
             btnL1.IsChecked = false;
@@ -218,11 +227,11 @@ namespace WpfFourOperationsApp
             btndiv.IsEnabled = true;
             btnmul.IsEnabled = true;
             btnHybrid.IsEnabled = true;
-            
+
         }
 
         private void btnsubmit_Click(object sender, RoutedEventArgs e)
-        { 
+        {
 
             if (lbxQuestion == null) { return; }
             else
@@ -230,7 +239,7 @@ namespace WpfFourOperationsApp
                 if (txtAnswer1.Text == vslist1[0])
                 {
                     txtJudge1.Text = "正确";
-
+                    R++;
                 }
                 else if (txtAnswer1.Text != vslist1[0])
                 {
@@ -241,7 +250,7 @@ namespace WpfFourOperationsApp
                 if (txtAnswer2.Text == vslist1[1])
                 {
                     txtJudge2.Text = "正确";
-
+                    R++;
                 }
                 else if (txtAnswer2.Text != vslist1[1])
                 {
@@ -252,7 +261,7 @@ namespace WpfFourOperationsApp
                 if (txtAnswer3.Text == vslist1[2])
                 {
                     txtJudge3.Text = "正确";
-
+                    R++;
                 }
                 else if (txtAnswer3.Text != vslist1[2])
                 {
@@ -263,7 +272,7 @@ namespace WpfFourOperationsApp
                 if (txtAnswer4.Text == vslist1[3])
                 {
                     txtJudge4.Text = "正确";
-
+                    R++;
                 }
                 else if (txtAnswer4.Text != vslist1[3])
                 {
@@ -274,7 +283,7 @@ namespace WpfFourOperationsApp
                 if (txtAnswer5.Text == vslist1[4])
                 {
                     txtJudge5.Text = "正确";
-
+                    R++;
                 }
                 else if (txtAnswer5.Text != vslist1[4])
                 {
@@ -285,7 +294,7 @@ namespace WpfFourOperationsApp
                 if (txtAnswer6.Text == vslist1[5])
                 {
                     txtJudge6.Text = "正确";
-
+                    R++;
                 }
                 else if (txtAnswer6.Text != vslist1[5])
                 {
@@ -296,7 +305,7 @@ namespace WpfFourOperationsApp
                 if (txtAnswer7.Text == vslist1[6])
                 {
                     txtJudge7.Text = "正确";
-
+                    R++;
                 }
                 else if (txtAnswer7.Text != vslist1[6])
                 {
@@ -307,7 +316,7 @@ namespace WpfFourOperationsApp
                 if (txtAnswer8.Text == vslist1[7])
                 {
                     txtJudge8.Text = "正确";
-
+                    R++;
                 }
                 else if (txtAnswer8.Text != vslist1[7])
                 {
@@ -318,7 +327,7 @@ namespace WpfFourOperationsApp
                 if (txtAnswer9.Text == vslist1[8])
                 {
                     txtJudge9.Text = "正确";
-
+                    R++;
                 }
                 else if (txtAnswer9.Text != vslist1[8])
                 {
@@ -329,22 +338,24 @@ namespace WpfFourOperationsApp
                 if (txtAnswer10.Text == vslist1[9])
                 {
                     txtJudge10.Text = "正确";
-
+                    R++;
                 }
-                else 
+                else
                 if (txtAnswer10.Text != vslist1[9])
                 {
                     txtJudge10.Text = "×";
 
                 }
+                S = R / 10 * 100;
+                txt.Text = Convert.ToString(S) + "%";
             }
-        }
+        }//判断对错
 
-        private void btnmul_Click(object sender, RoutedEventArgs e)
+        private void btnmul_Click(object sender, RoutedEventArgs e)//乘法
         {
             lbxQuestion.Items.Clear();
-
-             if (btnL3.IsChecked == true)
+            w = 3;
+            if (btnL3.IsChecked == true)
             {
                 ThreeTheme threeTheme = new ThreeTheme();
                 threeTheme.MultiplyThemeCount();
@@ -355,7 +366,7 @@ namespace WpfFourOperationsApp
                     lbxQuestion.Items.Add(vslist[i]);
                 }
 
-
+                threeTheme.AddOutPutTxt();
             }
             else if (btnL4.IsChecked == true)
             {
@@ -368,13 +379,14 @@ namespace WpfFourOperationsApp
                     lbxQuestion.Items.Add(vslist[i]);
                 }
 
-
+                fourTheme.AddOutPutTxt();
             }
         }
 
-        private void btnO_Click(object sender, RoutedEventArgs e)
+        private void btnO_Click(object sender, RoutedEventArgs e)//四则
         {
             lbxQuestion.Items.Clear();
+            w = 6;
             FourTheme fourTheme = new FourTheme();
             fourTheme.FourOperationsThemeCount();
             for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
@@ -388,7 +400,7 @@ namespace WpfFourOperationsApp
         private void btnHybrid_Click(object sender, RoutedEventArgs e)
         {
             lbxQuestion.Items.Clear();
-            
+            w = 5;
             if (btnL3.IsChecked == true)
             {
                 ThreeTheme threeTheme = new ThreeTheme();
@@ -415,25 +427,25 @@ namespace WpfFourOperationsApp
 
 
             }
-        }
+        }//混合
 
         private void BtnAbout_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("阿宽出品，必属精品", "正道的光");
-        }
+        }//关于
 
         private void BtnAgain_Click(object sender, RoutedEventArgs e)
         {
             MainWindow window = new MainWindow();
             window.Show();
             this.Close();
-           
+
         }
 
-        private void btndiv_Click(object sender, RoutedEventArgs e)
+        private void btndiv_Click(object sender, RoutedEventArgs e)//除法
         {
             lbxQuestion.Items.Clear();
-
+            w = 4;
             if (btnL3.IsChecked == true)
             {
                 ThreeTheme threeTheme = new ThreeTheme();
@@ -462,9 +474,125 @@ namespace WpfFourOperationsApp
             }
         }
 
-        private void BtnHelp_Click(object sender, RoutedEventArgs e)
+        private void BtnHelp_Click(object sender, RoutedEventArgs e)//帮助
         {
-            System.Diagnostics.Process.Start("explorer.exe","http://www.baidu.com");
+            System.Diagnostics.Process.Start("explorer.exe", "http://www.baidu.com");
+        }
+
+        private void btnPrinting_Click(object sender, RoutedEventArgs e)
+        {
+            if (w == 1)
+            {
+                for (int i = 0; i < vslist.Length; i++)
+                {
+                    oneTheme.ArrayTheme.Add(vslist[i]);
+                    oneTheme.ArrayAnswer.Add(vslist1[i]);
+                }
+                if (J == 1)
+                {
+                    oneTheme.AddOutPutTxt();
+                }
+                else if (J == 2)
+                {
+                    TwoTheme twoTheme = new TwoTheme();
+                    twoTheme.AddOutPutTxt();
+                }
+                else if (J == 3)
+                {
+                    ThreeTheme threeTheme = new ThreeTheme();
+                    threeTheme.AddOutPutTxt();
+                }
+                else if (J == 4)
+                {
+                    FourTheme fourTheme = new FourTheme();
+                    fourTheme.AddOutPutTxt();
+
+                }
+
+
+            }
+            else if (w == 2)
+            {
+                oneTheme.AddOutPutTxt();
+                if (J == 1)
+                {
+                    OneTheme oneTheme = new OneTheme();
+                    oneTheme.SubOutPutTxt();
+                }
+                else if (J == 2)
+                {
+                    TwoTheme twoTheme = new TwoTheme();
+                    twoTheme.SubOutPutTxt();
+                }
+                else if (J == 3)
+                {
+                    ThreeTheme threeTheme = new ThreeTheme();
+                    threeTheme.SubOutPutTxt();
+                }
+                else if (J == 4)
+                {
+                    FourTheme fourTheme = new FourTheme();
+                    fourTheme.SubOutPutTxt();
+
+                }
+            }
+            else if (w == 3)
+            {
+
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.MultiplyOutPutTxt();
+
+            }
+            else if (w == 4)
+            {
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.DivisionOutPutTxt();
+            }
+            else if (w == 5)
+            {
+                if (J == 3)
+                {
+                    ThreeTheme threeTheme = new ThreeTheme();
+                    threeTheme.MultiplyAndDivisionThemeOutPutTxt();
+                }
+                else if (J == 4)
+                {
+                    FourTheme fourTheme = new FourTheme();
+                    fourTheme.HybridOperationThemeOutPutTxt();
+
+                }
+            }
+            else if (w == 6)
+            {
+
+
+
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.FourOperationsThemeOutPutTxt();
+
+
+            }
+
+
+
+
+        }
+
+        private void Wrongbook_Click(object sender, RoutedEventArgs e)
+        {
+            List<string> list = new List<string>();
+            list.Add(Convert.ToString(txtJudge1));
+            list.Add(Convert.ToString(txtJudge2));
+            list.Add(Convert.ToString(txtJudge3));
+            list.Add(Convert.ToString(txtJudge4));
+            list.Add(Convert.ToString(txtJudge5));
+            list.Add(Convert.ToString(txtJudge6));
+            list.Add(Convert.ToString(txtJudge7));
+            list.Add(Convert.ToString(txtJudge8));
+            list.Add(Convert.ToString(txtJudge9));
+            list.Add(Convert.ToString(txtJudge10));
+            oneTheme.tempAnswer = list;
+            oneTheme.ErrorsText();
         }
     }
 }
