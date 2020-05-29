@@ -16,21 +16,21 @@
         <Button x:Name="button" Content="系统" Margin="38,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.109,-0.29" FontSize="20" Height="42" Width="77"/>
         <Button x:Name="button_Copy" Content="帮助" Margin="182,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.109,-0.29" FontSize="20" Height="42" Width="77"/>
         <Button x:Name="button_Copy1" Content="关于" Margin="334,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.109,-0.29" FontSize="20" Height="42" Width="77"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="582,76,0,0" Text="衡光运算器" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="60" Width="192"/>
-        <Ellipse HorizontalAlignment="Left" Height="167" Margin="582,180,0,0" Stroke="Black" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.883,0.602">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="455,75,0,0" Text="衡光运算器" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="60" Width="192"/>
+        <Ellipse HorizontalAlignment="Left" Height="167" Margin="450,180,0,0" Stroke="Black" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.883,0.602">
             <Ellipse.Fill>
                 <ImageBrush ImageSource="Assets\lADPBGY15Uv9VprM3Mzc_220_220.jpg_720x720q90g.jpg"/>
             </Ellipse.Fill>
         </Ellipse>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="455,381,0,0" Text="账号：" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="58" Width="117"/>
-        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="455,515,0,0" Text="密码：" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="58" Width="117" RenderTransformOrigin="0.011,0.575"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="581,377,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="312" FontSize="30"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="580,511,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="312" RenderTransformOrigin="0.516,1.183" FontSize="30"/>
-        <Button x:Name="button1" Content="登录" Margin="455,703,0,0" VerticalAlignment="Top" FontSize="30" Width="143" Height="54" Click="button1_Click"/>
-        <Button x:Name="button1_Copy" Content="注册" Margin="720,703,0,0" VerticalAlignment="Top" FontSize="30" Width="143" Height="54" Click="button1_Copy_Click"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="298,394,0,0" Text="账号：" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="58" Width="117"/>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="298,492,0,0" Text="密码：" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="58" Width="117" RenderTransformOrigin="0.011,0.575"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="450,386,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="312" FontSize="30"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="450,484,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="312" RenderTransformOrigin="0.516,1.183" FontSize="30"/>
+        <Button x:Name="button1" Content="登录" Margin="334,641,0,0" VerticalAlignment="Top" FontSize="30" Width="143" Height="54" Click="button1_Click"/>
+        <Button x:Name="button1_Copy" Content="注册" Margin="685,641,0,0" VerticalAlignment="Top" FontSize="30" Width="143" Height="54" Click="button1_Copy_Click"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="160,244,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" FocusVisualPrimaryBrush="#FFD31A1A" Foreground="#FFE51F1F"/>
-        <CheckBox Content="记住密码" Margin="487,617,0,0" VerticalAlignment="Top" Height="44" Width="153" FontSize="18"/>
-        <CheckBox Content="自动登录" Margin="769,617,0,0" VerticalAlignment="Top" Width="153" Height="44" FontSize="18"/>
+        <CheckBox Content="记住密码" Margin="393,571,0,0" VerticalAlignment="Top" Height="44" Width="153" FontSize="18"/>
+        <CheckBox Content="自动登录" Margin="609,571,0,0" VerticalAlignment="Top" Width="153" Height="44" FontSize="18"/>
 
 
 

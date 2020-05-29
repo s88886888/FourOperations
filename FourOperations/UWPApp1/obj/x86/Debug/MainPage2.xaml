@@ -8,16 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid Background="#7FFFD700" FocusVisualPrimaryBrush="#7FFFD700">
-        <TextBlock HorizontalAlignment="Left" Margin="414,209,0,0" Text="请输入正确结果题目中的正确结果" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="739" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="36">
+        <TextBlock HorizontalAlignment="Left" Margin="334,209,0,0" Text="请输入正确结果题目中的正确结果" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="739" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="36">
             <TextBlock.RenderTransform>
                 <CompositeTransform Rotation="0.621"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBox x:ConnectionId='2' x:Name="Textbox1" HorizontalAlignment="Left" Margin="298,380,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="255" FontSize="36"/>
-        <TextBox x:ConnectionId='3' x:Name="textbox2" HorizontalAlignment="Left" Margin="650,380,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="108" FontSize="48" RenderTransformOrigin="0.253,0.582"/>
-        <Button x:ConnectionId='4' Content="换一个" Margin="857,380,0,0" VerticalAlignment="Top" Height="77" Width="169" FontSize="48" Background="White"                        RenderTransformOrigin="0.238,0.405"/>
-        <Button x:ConnectionId='5' Content="确定" Margin="427,566,0,0" VerticalAlignment="Top" Height="85" Width="160" FontSize="48" Background="White"                     />
-        <Button Content="取消" Margin="781,566,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.698,2.176" Height="85" Width="160" FontSize="48" Background="White"/>
+        <TextBox x:ConnectionId='2' x:Name="Textbox1" HorizontalAlignment="Left" Margin="252,380,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="255" FontSize="36"/>
+        <TextBox x:ConnectionId='3' x:Name="textbox2" HorizontalAlignment="Left" Margin="585,380,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="108" FontSize="48" RenderTransformOrigin="0.253,0.582"/>
+        <Button x:ConnectionId='4' Content="换一个" Margin="781,380,0,0" VerticalAlignment="Top" Height="77" Width="169" FontSize="48" Background="White"                        RenderTransformOrigin="0.238,0.405"/>
+        <Button x:ConnectionId='5' Content="确定" Margin="379,524,0,0" VerticalAlignment="Top" Height="85" Width="160" FontSize="48" Background="White"                      RenderTransformOrigin="0.15,-0.034"/>
+        <Button Content="取消" Margin="705,524,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.698,2.176" Height="85" Width="160" FontSize="48" Background="White"/>
         <TextBlock x:ConnectionId='6' x:Name="Text1" HorizontalAlignment="Left" Margin="218,306,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Foreground="#FFE71818"/>
 
 

@@ -70,6 +70,9 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\打印文件一年级加法题目.txt">
+      <PackagePath>打印文件一年级加法题目.txt</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\CYH\Desktop\团队5\FourOperations\UWPApp1\bin\x86\Debug\UWPApp1.xr.xml">
       <PackagePath>UWPApp1.xr.xml</PackagePath>
     </AppxPackagedFile>

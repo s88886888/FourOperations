@@ -24,8 +24,8 @@ namespace ConsoleApp2
         public List<string> CCC = new List<string> { "+", "-", "*", "/" };
 
 
-        public readonly List<string> ArrayTheme = new List<string>();//题目集合
-        public readonly List<string> ArrayAnswer = new List<string>();//答案集合
+        public List<string> ArrayTheme = new List<string>();//题目集合
+        public List<string> ArrayAnswer = new List<string>();//答案集合
         public List<string> tempAnswer = new List<string>();//错题本答案
         public List<string> tempTheme = new List<string>();//错题本题目
         //读取xml 文本 的题目和答案

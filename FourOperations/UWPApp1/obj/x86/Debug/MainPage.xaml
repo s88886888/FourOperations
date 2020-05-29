@@ -14,10 +14,10 @@
         <Button x:ConnectionId='4' x:Name="HelpButton" Content="帮助" Margin="206,10,0,0" VerticalAlignment="Top" Width="69" Height="31" Background="White"/>
         <Button x:ConnectionId='5' x:Name="RegardButton1" Content="关于" Margin="298,11,0,0" VerticalAlignment="Top" Width="69" Height="31" Background="White"/>
         <TextBlock x:ConnectionId='6' x:Name="Name" HorizontalAlignment="Left" Margin="484,17,0,0" Text="衡光运算器" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" FocusVisualPrimaryBrush="#FF481919" Foreground="#FFD37828"/>
-        <Button x:ConnectionId='7' x:Name="One" Content="一年级" Margin="392,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.16,0.573"                   Background="White"/>
-        <Button x:ConnectionId='8' x:Name="Two" Content="二年级" Margin="484,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.244,0.596"                   Background="White"/>
-        <Button x:ConnectionId='9' x:Name="Three" Content="三年级" Margin="579,66,0,0" VerticalAlignment="Top"                     Background="White"/>
-        <Button x:ConnectionId='10' x:Name="Four" Content="四年级" Margin="675,66,0,0" VerticalAlignment="Top"                    Background="White"/>
+        <ToggleButton x:ConnectionId='7' x:Name="One" Content="一年级" Margin="392,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.16,0.573"                   Background="White"                      />
+        <ToggleButton x:ConnectionId='8' x:Name="Two" Content="二年级" Margin="484,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.244,0.596"                   Background="White"/>
+        <ToggleButton x:ConnectionId='9' x:Name="Three" Content="三年级" Margin="579,66,0,0" VerticalAlignment="Top"                     Background="White"/>
+        <ToggleButton x:ConnectionId='10' x:Name="Four" Content="四年级" Margin="675,66,0,0" VerticalAlignment="Top"                    Background="White"/>
         <ListBox x:ConnectionId='11' x:Name="listBox" Margin="31,226,907,0" Visibility="Visible" Height="393" VerticalAlignment="Top"/>
         <TextBox x:ConnectionId='12' x:Name="Text1" HorizontalAlignment="Left" Margin="411,238,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="109"/>
         <TextBox x:ConnectionId='13' x:Name="Text2" HorizontalAlignment="Left" Margin="410,275,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" RenderTransformOrigin="-0.035,0.645"/>
@@ -32,19 +32,19 @@
         <TextBlock x:ConnectionId='22' x:Name="Hint" HorizontalAlignment="Left" Margin="410,203,0,0" Text="请按顺序答题哦~" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='23' x:Name="textBlock" HorizontalAlignment="Left" Margin="765,143,0,0" Text="您好【XXX】！" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="135"/>
         <Rectangle HorizontalAlignment="Left" Height="136" Margin="744,338,0,0" Stroke="Black" VerticalAlignment="Top" Width="224"/>
-        <Button x:ConnectionId='24' x:Name="Multiplication" Content="乘法" Margin="756,390,0,0" VerticalAlignment="Top" Width="71" Background="White" BorderBrush="#FF656161" IsEnabled="False"                             />
-        <Button x:ConnectionId='25' x:Name="Division" Content="除法" Margin="878,390,0,0" VerticalAlignment="Top" Width="74" Background="White" BorderBrush="#FF827D7D" RenderTransformOrigin="-2.334,0.533" IsEnabled="False"                         />
-        <Button x:ConnectionId='26' x:Name="Mixture" Content="混合运算" Margin="756,433,0,0" VerticalAlignment="Top" Width="83" BorderBrush="#FF7D7979" Background="White" IsEnabled="False"                        />
-        <Button x:ConnectionId='27' x:Name="Arithmetic1" Content="四则运算" Margin="866,433,0,0" VerticalAlignment="Top" Width="86" Background="White" BorderBrush="#FF7C7878" RenderTransformOrigin="0.001,0.685" IsEnabled="False"                          />
+        <ToggleButton x:ConnectionId='24' x:Name="Multiplication" Content="乘法" Margin="756,390,0,0" VerticalAlignment="Top" Width="71" Background="White" BorderBrush="#FF656161" IsEnabled="False"                                                              />
+        <ToggleButton x:ConnectionId='25' x:Name="Division" Content="除法" Margin="878,390,0,0" VerticalAlignment="Top" Width="74" Background="White" BorderBrush="#FF827D7D" RenderTransformOrigin="-2.334,0.533" IsEnabled="False"                                                    />
+        <ToggleButton x:ConnectionId='26' x:Name="Mixture" Content="混合运算" Margin="756,433,0,0" VerticalAlignment="Top" Width="83" BorderBrush="#FF7D7979" Background="White" IsEnabled="False"                                                  />
+        <ToggleButton x:ConnectionId='27' x:Name="Arithmetic1" Content="四则运算" Margin="866,433,0,0" VerticalAlignment="Top" Width="86" Background="White" BorderBrush="#FF7C7878" RenderTransformOrigin="0.001,0.685" IsEnabled="False"                          />
         <Rectangle HorizontalAlignment="Left" Height="50" Margin="745,522,0,0" Stroke="Black" VerticalAlignment="Top" Width="223"/>
-        <Button x:ConnectionId='28' x:Name="Print_" Content="打印题目" Margin="756,531,0,0" VerticalAlignment="Top" Width="83" Background="White"/>
-        <Button x:ConnectionId='29' x:Name="Mistakes" Content="错题本" Margin="872,530,0,0" VerticalAlignment="Top" Width="86" Background="White"                       />
+        <ToggleButton x:ConnectionId='28' x:Name="Print_" Content="打印题目" Margin="756,531,0,0" VerticalAlignment="Top" Width="83" Background="White"                         />
+        <ToggleButton x:ConnectionId='29' x:Name="Mistakes" Content="错题本" Margin="872,530,0,0" VerticalAlignment="Top" Width="86" Background="White"                       />
         <TextBlock x:ConnectionId='30' x:Name="Time" HorizontalAlignment="Left" Margin="782,582,0,0" Text="已运行了999999.99分钟" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='31' x:Name="Date" HorizontalAlignment="Left" Margin="828,606,0,0" Text="当前时间" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='32' x:Name="textBlock1" HorizontalAlignment="Left" Margin="812,641,0,0" Text="当前版本号V1.1" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='33' x:Name="Add" Content="加法" Margin="756,349,0,0" VerticalAlignment="Top" Width="71"                   IsEnabled="False" Background="White"/>
-        <Button x:ConnectionId='34' x:Name="Subtract" Content="减法" Margin="878,348,0,0" VerticalAlignment="Top" Width="74"                        IsEnabled="False" Background="White"/>
-        <Button x:ConnectionId='35' x:Name="button" Content="提交" Margin="627,368,0,0" VerticalAlignment="Top"                      Height="38" Width="80" Background="White"/>
+        <ToggleButton x:ConnectionId='33' x:Name="Add" Content="加法" Margin="756,349,0,0" VerticalAlignment="Top" Width="71"                   IsEnabled="False" Background="White"                      />
+        <ToggleButton x:ConnectionId='34' x:Name="Subtract" Content="减法" Margin="878,348,0,0" VerticalAlignment="Top" Width="74"                        IsEnabled="False" Background="White"                           />
+        <ToggleButton x:ConnectionId='35' x:Name="button" Content="提交" Margin="627,368,0,0" VerticalAlignment="Top"                      Height="38" Width="80" Background="White"/>
         <TextBlock x:ConnectionId='36' x:Name="text1" HorizontalAlignment="Left" Margin="539,245,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='37' x:Name="text2" HorizontalAlignment="Left" Margin="539,281,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='38' x:Name="text3" HorizontalAlignment="Left" Margin="539,318,0,0"  TextWrapping="Wrap" VerticalAlignment="Top"/>

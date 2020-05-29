@@ -29,7 +29,7 @@ namespace UWPApp1
         double num;
         double judge;
         private int i;
-    
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -92,30 +92,11 @@ namespace UWPApp1
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            button.IsEnabled = true;
-            OneTheme oneTheme = new OneTheme();
-            oneTheme.AddThemeCount();
-            for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
-            {
-                vslist[i] = oneTheme.ArrayTheme[i];
-                vslist1[i] = oneTheme.ArrayAnswer[i];
-            }
-            listBox.ItemsSource = vslist;
 
         }
 
         private void Subtract_Click(object sender, RoutedEventArgs e)
         {
-            button.IsEnabled = true;
-            OneTheme oneThemes = new OneTheme();
-            oneThemes.SubThemeCount();
-
-            for (int i = 0; i < oneThemes.ArrayTheme.Count; i++)
-            {
-                vslist[i] = oneThemes.ArrayTheme[i];
-                vslist1[i] = oneThemes.ArrayAnswer[i];
-            }
-            listBox.ItemsSource = vslist;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -243,7 +224,7 @@ namespace UWPApp1
                 oneTheme.tempTheme.Add(vslist[9]);
                 oneTheme.tempAnswer.Add(vslist1[9]);
             }
-            judge = num / 10*100;
+            judge = num / 10 * 100;
             textBlock3.Text = judge + "分";
             button.IsEnabled = false;
         }
@@ -337,5 +318,225 @@ namespace UWPApp1
             OneTheme oneTheme = new OneTheme();
             oneTheme.ErrorsText();
         }
+
+        private void One_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Add_Checked(object sender, RoutedEventArgs e)
+        {
+            if (One.IsChecked == true)
+            {
+                OneTheme oneTheme = new OneTheme();
+                oneTheme.AddThemeCount();
+                for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = oneTheme.ArrayTheme[i];
+                    vslist1[i] = oneTheme.ArrayAnswer[i];
+                }
+                listBox.ItemsSource = vslist;
+            }
+            else if (Two.IsChecked == true)
+            {
+
+                TwoTheme twoTheme = new TwoTheme();
+                twoTheme.AddThemeCount();
+                for (int i = 0; i < twoTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = twoTheme.ArrayTheme[i];
+                    vslist1[i] = twoTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+            }
+            else if (Three.IsChecked == true)
+            {
+
+                ThreeTheme threeTheme = new ThreeTheme();
+                threeTheme.AddThemeCount();
+                for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = threeTheme.ArrayTheme[i];
+                    vslist1[i] = threeTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+            }
+            else if (Four.IsChecked == true)
+            {
+
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.AddThemeCount();
+                for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = fourTheme.ArrayTheme[i];
+                    vslist1[i] = fourTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+            }
+        }
+
+        private void Subtract_Checked(object sender, RoutedEventArgs e)
+        {
+            if (One.IsChecked == true)
+            {
+                OneTheme oneTheme = new OneTheme();
+                oneTheme.AddThemeCount();
+                for (int i = 0; i < oneTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = oneTheme.ArrayTheme[i];
+                    vslist1[i] = oneTheme.ArrayAnswer[i];
+
+
+                }
+                listBox.ItemsSource = vslist;
+                oneTheme.AddOutPutTxt();
+
+            }
+            else if (Two.IsChecked == true)
+            {
+
+                TwoTheme twoTheme = new TwoTheme();
+                twoTheme.AddThemeCount();
+                for (int i = 0; i < twoTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = twoTheme.ArrayTheme[i];
+                    vslist1[i] = twoTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+                twoTheme.AddOutPutTxt();
+            }
+            else if (Three.IsChecked == true)
+            {
+
+                ThreeTheme threeTheme = new ThreeTheme();
+                threeTheme.AddThemeCount();
+                for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = threeTheme.ArrayTheme[i];
+                    vslist1[i] = threeTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+                threeTheme.AddOutPutTxt();
+            }
+            else if (Four.IsChecked == true)
+            {
+
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.AddThemeCount();
+                for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = fourTheme.ArrayTheme[i];
+                    vslist1[i] = fourTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+                fourTheme.AddOutPutTxt();
+            }
+        }
+
+        private void Multiplication_Checked(object sender, RoutedEventArgs e)
+        {
+            if (Three.IsChecked == true)
+            {
+                ThreeTheme threeTheme = new ThreeTheme();
+                threeTheme.MultiplyThemeCount();
+                for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = threeTheme.ArrayTheme[i];
+                    vslist1[i] = threeTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+                threeTheme.AddOutPutTxt();
+            }
+            else if (Four.IsChecked == true)
+            {
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.MultiplyThemeCount();
+                for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = fourTheme.ArrayTheme[i];
+                    vslist1[i] = fourTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+                fourTheme.AddOutPutTxt();
+            }
+        }
+
+        private void Division_Checked(object sender, RoutedEventArgs e)
+        {
+            if (Three.IsChecked == true)
+            {
+                ThreeTheme threeTheme = new ThreeTheme();
+                threeTheme.DivisionThemeCount();
+                for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = threeTheme.ArrayTheme[i];
+                    vslist1[i] = threeTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+
+            }
+            else if (Four.IsChecked == true)
+            {
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.DivisionThemeCount();
+                for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = fourTheme.ArrayTheme[i];
+                    vslist1[i] = fourTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+
+            }
+        }
+
+        private void Mixture_Checked(object sender, RoutedEventArgs e)
+        {
+            if (Four.IsChecked == true)
+            {
+                ThreeTheme threeTheme = new ThreeTheme();
+                threeTheme.HybridOperationCount();
+                for (int i = 0; i < threeTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = threeTheme.ArrayTheme[i];
+                    vslist1[i] = threeTheme.ArrayAnswer[i];
+                }
+                listBox.ItemsSource = vslist;
+
+            }
+            else if (Four.IsChecked == true)
+            {
+                FourTheme fourTheme = new FourTheme();
+                fourTheme.HybridOperationThemeCount();
+                for (int i = 0; i < fourTheme.ArrayTheme.Count; i++)
+                {
+                    vslist[i] = fourTheme.ArrayTheme[i];
+                    vslist1[i] = fourTheme.ArrayAnswer[i];
+
+                }
+                listBox.ItemsSource = vslist;
+            }
+        }
+
+        private void Print__Checked(object sender, RoutedEventArgs e)
+        {
+            OneTheme oneTheme = new OneTheme();
+            for (int i = 0; i < vslist.Length; i++)
+            {
+                oneTheme.ArrayTheme.Add(vslist[i]);
+                oneTheme.ArrayAnswer.Add(vslist[i]);
+            }
+            oneTheme.AddOutPutTxt();
+        }
     }
 }
+
