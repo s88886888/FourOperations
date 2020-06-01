@@ -11,10 +11,7 @@ namespace ConsoleApp2.Base
 
         private readonly Random random = new Random();
         readonly string[] ShowTheme = new string[10];
-        readonly string[] ShowAnswer = new string[10];
-
-        //public readonly List<string> tempAnswer = new List<string>();//用户输出的答案
-        //public readonly List<string> tempTheme = new List<string>();//错的题目
+        readonly string[] ShowAnswer = new string[10];   
         /// <summary>
         /// 一年级出题范围：20以内加减
         /// </summary>
@@ -101,7 +98,6 @@ namespace ConsoleApp2.Base
                 oneTheme.AddTheme();
                 ArrayDate(ShowTheme, ShowAnswer, i, oneTheme);
             }
-            Show(ShowTheme, ShowAnswer);
         }
         /// <summary>
         ///  //调用此方法一次出10题减法题目
@@ -114,7 +110,6 @@ namespace ConsoleApp2.Base
                 oneTheme.SubTheme();
                 ArrayDate(ShowTheme, ShowAnswer, i, oneTheme);
             }
-            Show(ShowTheme, ShowAnswer);
         }
 
         /// <summary>

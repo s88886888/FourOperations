@@ -47,14 +47,14 @@ namespace FourOperationsTest
             double b = threeTheme.BasicDataB;
             Assert.IsTrue(a / b == threeTheme.Answer);
         }
-        [TestMethod]
-        public void HybridOperation()
-        {
-            ThreeTheme threeTheme = new ThreeTheme();
-            threeTheme.HybridOperation();
-            var table = new DataTable();
-            Assert.IsTrue(Convert.ToString(threeTheme.Answer) == Convert.ToString(table.Compute(threeTheme.Theme, null)));
-        }
+        //[TestMethod]
+        //public void HybridOperation()
+        //{
+        //    ThreeTheme threeTheme = new ThreeTheme();
+        //    threeTheme.HybridOperation();
+        //    var table = new DataTable();
+        //    Assert.IsTrue(Convert.ToString(threeTheme.Answer) == Convert.ToString(table.Compute(threeTheme.Theme, null)));
+        //}
 
 
 
